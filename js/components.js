@@ -72,8 +72,7 @@ const SITE_FOOTER = `
     <div class="row g-4 g-xl-5">
       <div class="col-xl-4">
         <a class="d-inline-block mb-3" href="index.html"><img src="images/top_logo_2.gif" width="104" height="56" alt="JD Smith Insurance"></a>
-        <p class="text-body-secondary mb-3" style="max-width: 22rem">Independent RIBO-licensed brokers serving Ontario families, churches and businesses since 1979.</p>
-        <a class="btn btn-primary rounded-pill px-4" href="jds-staff.htm">Contact your broker</a>
+        <p class="text-body-secondary mb-0" style="max-width: 22rem">Independent RIBO-licensed brokers serving Ontario families, churches and businesses since 1979.</p>
       </div>
       <div class="col-6 col-md-3 col-xl-2">
         <h2 class="footer-heading">Insurance</h2>

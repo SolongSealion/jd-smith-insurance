@@ -123,8 +123,8 @@ CTA with contact block, and related links. The 2016 winter tire dates were left 
   this from an existing page.
 - This works when pages are opened from disk (`file:///`) as well as over http, which is why the markup is
   in a JS string and not fetched from a partial `.html` file (fetch fails on `file:///`).
-- The navbar button says "Contact us" and the footer button says "Contact your broker". Both link to `jds-staff.htm`.
-  Neither says "Get a quote".
+- The navbar button says "Contact us" and links to `jds-staff.htm`. The footer has no contact button.
+  It doesn't say "Get a quote".
 - No page has the blue top banner (the `bg-primary` strip above the navbar). Don't add it back.
 - Phone numbers are always `tel:` links. An extension uses a comma pause: `tel:+19057647868,232`.
 
