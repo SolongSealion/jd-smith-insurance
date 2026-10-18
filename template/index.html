@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TEMPLATE ONLY: this page lives in /template, so <base> points every relative link (css, js, images and the
+       shared header/footer links) back to the site root. Real quotation pages sit in the root and have no <base>. -->
+  <base href="../">
+  <!-- Real pages: the Google tag (gtag.js) block from jds-get_a_quote.htm goes here. Left out so the template is not tracked. -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Quotation page template | JD Smith Insurance Brokers</title>
+  <meta name="description" content="Reference template for every insurance product (quotation) page. Not a public page.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/components.js"></script>
+  <style>
+    /* ===== TEMPLATE ONLY: annotation layer. Do not copy into real pages or css/styles.css. ===== */
+    .tpl-note {
+      border: 1px dashed #c2410c;
+      background: #fff7ed;
+      color: #7c2d12;
+      border-radius: .75rem;
+      padding: .85rem 1rem;
+      font-size: .875rem;
+      line-height: 1.5;
+    }
+    .tpl-note code { color: #9a3412; background: #ffedd5; padding: 0 .25rem; border-radius: .25rem; }
+    .tpl-note ul { padding-left: 1.1rem; margin-bottom: 0; }
+    .tpl-note li + li { margin-top: .2rem; }
+    .tpl-tag {
+      display: inline-block;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      padding: .15rem .5rem;
+      border-radius: 50rem;
+      background: #c2410c;
+      color: #fff;
+      margin-right: .35rem;
+    }
+    .tpl-tag-opt { background: #fff; color: #c2410c; border: 1px solid #c2410c; }
+    .tpl-ph { background: #fef3c7; color: #78350f; border-radius: .25rem; padding: 0 .2rem; }
+    .page-hero .tpl-ph, .cta-band .tpl-ph { background: rgba(254, 243, 199, .2); color: #fde68a; }
+    .tpl-block { outline: 2px dashed rgba(194, 65, 12, .45); outline-offset: -2px; }
+    .tpl-toggle { position: fixed; right: 1rem; bottom: 1rem; z-index: 1080; }
+    body.tpl-hide .tpl-note, body.tpl-hide .tpl-only { display: none !important; }
+    body.tpl-hide .tpl-block { outline: none; }
+    body.tpl-hide .tpl-ph { background: none; color: inherit; padding: 0; }
+  </style>
+</head>
+<body>
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 z-3 m-2 p-2 bg-white rounded shadow" href="#main-content">Skip to main content</a>
+
+  <site-header></site-header>
+
+  <button class="btn btn-dark rounded-pill shadow tpl-toggle" type="button" id="tpl-toggle" aria-pressed="false"><i class="bi bi-eye-slash me-2"></i>Hide template notes</button>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         TEMPLATE INTRO (template only, not on real pages)
+         ============================================================ -->
+    <section class="py-4 bg-body-tertiary border-bottom tpl-only">
+      <div class="container">
+        <div class="tpl-note">
+          <p class="mb-2"><strong>Quotation page template.</strong> Every insurance product page (Type "Quotation" in <code>content/PAGE_CONTENT.md</code>) is built from this page. The blocks always come in this order:</p>
+          <ol class="mb-2">
+            <li><strong>Hero</strong>: breadcrumb, H1, subheading, hero photo</li>
+            <li><strong>Quote options (top CTA)</strong>: the same quote method(s) as the item on <a href="jds-get_a_quote.htm">Get a free quote</a></li>
+            <li><strong>Information</strong>: why choose us, coverage, eligibility, prices, testimonials, FAQs (in that order)</li>
+            <li><strong>Quote options (bottom CTA)</strong>: a repeat of block 2, then the standard contact block</li>
+            <li><strong>Related links</strong>: sibling products, category overview, forms, articles</li>
+          </ol>
+          <ul>
+            <li><span class="tpl-tag">Required</span> blocks are on every page. <span class="tpl-tag tpl-tag-opt">Optional</span> blocks are used only when <code>PAGE_CONTENT.md</code> has content for them. If there is no content, <strong>leave the whole block out</strong> (and its entry in the "On this page" list). Never ship an empty heading or "coming soon".</li>
+            <li><span class="tpl-ph">{Highlighted text}</span> is a placeholder. Replace it with the text from <code>PAGE_CONTENT.md</code>, keeping the live wording where the brief says so.</li>
+            <li>The <a href="#variants">quote option variants</a> and the <a href="#rules">handling rules</a> are at the bottom of this page.</li>
+            <li>Use the button at the bottom right to hide these notes and see the page as a visitor would.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         0. NOTICE BANNER (optional)
+         ============================================================ -->
+    <div class="alert alert-warning rounded-0 border-0 border-bottom border-warning-subtle mb-0 py-2 small tpl-block" role="note">
+      <div class="container d-flex flex-wrap align-items-center justify-content-center gap-2 text-center">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        <strong>All auto policies in Ontario have changed as of July 2026.</strong>
+        <a class="alert-link" href="jds-auto_reform.htm">Learn what's different &rarr;</a>
+      </div>
+    </div>
+    <div class="container mt-3 tpl-only">
+      <div class="tpl-note">
+        <span class="tpl-tag tpl-tag-opt">Optional</span><strong>Notice banner.</strong> Only when the brief lists a "Notice banner". Today that is the Ontario auto reform notice on auto-related pages (Auto, UberX, Accident benefits). One banner at most, directly above the hero, same markup as <code>jds-get_a_quote.htm</code>. Never use it for marketing.
+      </div>
+    </div>
+
+    <!-- ============================================================
+         1. HERO (required)
+         ============================================================ -->
+    <div class="container mt-3 tpl-only">
+      <div class="tpl-note">
+        <span class="tpl-tag">Required</span><strong>1. Hero.</strong>
+        <ul>
+          <li><strong>Breadcrumb:</strong> Home › category overview page (e.g. <code>jds-quote_me.htm</code>, <code>small_business_online.htm</code>, <code>jds-corporate.htm</code>, <code>jds-life_health.htm</code>) › this item. For Commercial items you may add the menu group as plain text: Home › Commercial › {Product}.</li>
+          <li><strong>Eyebrow:</strong> the menu group (e.g. "Personal", "Small business", "Trades &amp; industry", "Life &amp; health").</li>
+          <li><strong>H1 and subheading:</strong> from the brief. One H1 per page. Keep the subheading to 1–2 sentences; move any extra text into Information.</li>
+          <li><strong>Photo:</strong> use the <em>suggested replacement</em> (2000 px, in <code>content/images/suggested/&lt;key&gt;.jpg</code>; copy it to <code>images/stock/</code> when building the page). Use the original only if it is a real JD Smith photo (staff, office, community). Decorative, so <code>alt=""</code>. Multi-part banners (e.g. UberX) become one photo. <strong>No photo?</strong> Remove the <code>&lt;img&gt;</code> and add <code>page-hero-compact</code>: the dark blue band stays.</li>
+          <li><strong>No hero buttons or links:</strong> the hero ends with the subheading. The quote options section right below holds the quote methods and phone number.</li>
+        </ul>
+      </div>
+    </div>
+    <section class="page-hero mt-3 tpl-block">
+      <img class="page-hero-img" src="content/images/suggested/quote_form.jpg" alt="" fetchpriority="high">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-8 col-xl-7">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-light small mb-3">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="jds-corporate.htm"><span class="tpl-ph">{Category overview}</span></a></li>
+                <li class="breadcrumb-item active" aria-current="page"><span class="tpl-ph">{Product name}</span></li>
+              </ol>
+            </nav>
+            <span class="text-uppercase small fw-semibold text-white text-opacity-75 d-block mb-2"><span class="tpl-ph">{Menu group}</span></span>
+            <h1 class="display-5 fw-bold mb-3"><span class="tpl-ph">{Product} insurance</span></h1>
+            <p class="lead mb-0 text-white text-opacity-75"><span class="tpl-ph">{Subheading from the brief: one or two sentences on who it is for and why JD Smith.}</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         2. QUOTE OPTIONS, TOP CTA (required)
+         ============================================================ -->
+    <section class="py-5 scroll-mt tpl-block" id="quote-options">
+      <div class="container">
+        <div class="tpl-note mb-4 tpl-only">
+          <span class="tpl-tag">Required</span><strong>2. Quote options (top CTA).</strong>
+          <ul>
+            <li>Copy the method(s) for this item <strong>exactly</strong> from <code>jds-get_a_quote.htm</code> (which follows <code>SITE_MAP.md</code> section 1): same link, same badge, same button label, same extension, same price. If they differ, the quote page wins; log the difference in <code>STAKEHOLDER_NOTES.txt</code>.</li>
+            <li><strong>Layout by number of methods:</strong> 1 method = one wide card; 2–3 methods = cards side by side, the fastest first ("Primary"), each with its own badge; 4+ methods (e.g. several PDFs) = the first card for the main method, then a <code>list-group</code> of rows like the accordions on the quote page.</li>
+            <li>Order of preference when several methods exist: Online rater › Quote &amp; bind › Web form › PDF application › Email › Call. The call option is always last and always present (main number if no extension is given).</li>
+            <li>See every card type in <a href="#variants">Quote option variants</a> below.</li>
+          </ul>
+        </div>
+        <div class="mb-4" style="max-width: 46rem">
+          <span class="text-uppercase small fw-semibold text-primary d-block mb-2">Free quote</span>
+          <h2 class="h3 fw-bold mb-2">Get your <span class="tpl-ph">{product}</span> quote</h2>
+          <p class="text-body-secondary fs-5 mb-0"><span class="tpl-ph">{Optional lead-in from the brief, e.g. "Our staff will give you a quick quote."}</span></p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="https://webrater.appliedsystems.com/WR/Default.aspx?GC=JDSMITH&LOB=AUTO&LANG=EN" target="_blank" rel="noopener">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-3"><span class="icon-badge"><i class="bi bi-laptop"></i></span><span class="badge rounded-pill text-bg-primary">Fastest</span></div>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">Online · about 7 minutes</span>
+                <h3 class="h5 fw-semibold text-body mb-2"><span class="tpl-ph">{Primary method title}</span></h3>
+                <div class="text-body-secondary mb-3"><span class="tpl-ph">{One-line note from the quote page, e.g. "Compare rates from 8 insurance companies."}</span></div>
+                <span class="mt-auto fw-semibold text-primary"><span class="tpl-ph">{Button label}</span> <i class="bi bi-box-arrow-up-right small"></i></span>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="tel:+19057647868,245">
+              <div class="card-body p-4 d-flex flex-column">
+                <div class="d-flex align-items-center gap-2 mb-3"><span class="icon-badge"><i class="bi bi-telephone"></i></span></div>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">By phone</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Talk to <span class="tpl-ph">{named broker or "a broker"}</span></h3>
+                <div class="text-body-secondary mb-3"><span class="tpl-ph">{Note, e.g. "Mon–Thu 9:00–4:00, Fri 9:00–3:00."}</span></div>
+                <span class="mt-auto fw-semibold text-primary">Call 905-764-7868 ext. <span class="tpl-ph">{245}</span> <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. INFORMATION (required block; each sub-section optional)
+         ============================================================ -->
+    <section class="py-5 bg-body-tertiary scroll-mt" id="information">
+      <div class="container">
+        <div class="tpl-note mb-4 tpl-only">
+          <span class="tpl-tag">Required</span><strong>3. Information.</strong> Sub-sections always in this order: Why choose us › Coverage › Eligibility › Prices › Testimonials › FAQs, then any extras (tips, helpful reading, on-page form). Each sub-section is <span class="tpl-tag tpl-tag-opt">Optional</span>: drop it and its "On this page" link when the brief has nothing for it. With 3 or fewer sub-sections, drop the "On this page" sidebar and use the full width (<code>col-lg-10</code>).
+        </div>
+        <div class="row g-5">
+          <!-- On this page (sticky side nav) -->
+          <div class="col-lg-3 d-none d-lg-block">
+            <nav class="toc position-sticky" style="top: 6rem" aria-label="On this page">
+              <div class="text-uppercase small fw-semibold text-body-secondary mb-2">On this page</div>
+              <ul class="nav flex-column small">
+                <li class="nav-item"><a class="nav-link px-0 py-1 text-body-secondary" href="#why">Why choose us</a></li>
+                <li class="nav-item"><a class="nav-link px-0 py-1 text-body-secondary" href="#coverage">What's covered</a></li>
+                <li class="nav-item"><a class="nav-link px-0 py-1 text-body-secondary" href="#eligibility">Who is eligible</a></li>
+                <li class="nav-item"><a class="nav-link px-0 py-1 text-body-secondary" href="#prices">Prices</a></li>
+                <li class="nav-item"><a class="nav-link px-0 py-1 text-body-secondary" href="#testimonials">What clients say</a></li>
+                <li class="nav-item"><a class="nav-link px-0 py-1 text-body-secondary" href="#faq">Questions</a></li>
+                <li class="nav-item"><a class="nav-link px-0 py-1 text-body-secondary" href="#articles">Articles</a></li>
+                <li class="nav-item"><a class="nav-link px-0 py-1 text-body-secondary" href="#reading">Helpful reading</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="col-lg-9 prose">
+
+            <!-- 3a. WHY CHOOSE US -->
+            <div class="tpl-note mb-3 tpl-only">
+              <span class="tpl-tag tpl-tag-opt">Optional</span><strong>3a. Why choose us.</strong> The live pages' "I want to save you $$$…" quote goes here as a pull quote, with a real staff photo from <code>images/staff/</code> (never a stock person posing as staff). If the brief names a broker for this product, show their card with a click-to-call extension. Numbers that conflict across pages (24 / 30 / 34 brokers) use the figure agreed in <code>STAKEHOLDER_NOTES.txt</code>; until confirmed, write "over 30 licensed brokers". Up to 3 short benefit points.
+            </div>
+            <section class="mb-5 scroll-mt tpl-block p-1" id="why">
+              <h2 class="h4 fw-bold mb-3">Why quote with JD Smith</h2>
+              <div class="card border-0 shadow-sm rounded-4 mb-4">
+                <div class="card-body p-4 d-flex flex-column flex-sm-row gap-4 align-items-sm-center">
+                  <img class="staff-portrait flex-shrink-0" src="images/staff/Jessica_2023.jpg" alt="Jessica Antoniel, Personal Insurance Manager" width="104" height="136">
+                  <div>
+                    <p class="quote-warm mb-2">&ldquo;<span class="tpl-ph">I want to save you $$$ and find better coverage. There are over 30 licensed brokers here to serve you.</span>&rdquo;</p>
+                    <p class="text-body-secondary small mb-3"><span class="tpl-ph">{Name}, {Role}</span></p>
+                    <a class="staff-ext text-decoration-none" href="tel:+19057647868,233"><i class="bi bi-telephone me-1"></i>ext. <span class="tpl-ph">{233}</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col"><div class="d-flex gap-3"><span class="icon-badge flex-shrink-0"><i class="bi bi-buildings"></i></span><div><div class="fw-semibold">Many insurers</div><div class="small text-body-secondary"><span class="tpl-ph">{We compare 8 companies for you.}</span></div></div></div></div>
+                <div class="col"><div class="d-flex gap-3"><span class="icon-badge flex-shrink-0"><i class="bi bi-patch-check"></i></span><div><div class="fw-semibold">RIBO licensed</div><div class="small text-body-secondary">Independent brokers since 1979.</div></div></div></div>
+                <div class="col"><div class="d-flex gap-3"><span class="icon-badge flex-shrink-0"><i class="bi bi-piggy-bank"></i></span><div><div class="fw-semibold">Discounts</div><div class="small text-body-secondary"><span class="tpl-ph">{e.g. "10–15% off for TCA/MCA members."}</span></div></div></div></div>
+              </div>
+            </section>
+
+            <!-- 3b. COVERAGE -->
+            <div class="tpl-note mb-3 tpl-only">
+              <span class="tpl-tag tpl-tag-opt">Optional</span><strong>3b. Coverage.</strong> What the policy covers, as a check list (2 columns when 6+ items). Coverage limits ("1 to 5 million", "up to $20,000 mobile equipment") go in bold at the end of the item. Sub-products (e.g. Church: building, D&amp;O, abuse, day care) become small cards, each with its own PDF button if it has one. A single paragraph is fine when the brief has no list.
+            </div>
+            <section class="mb-5 scroll-mt tpl-block p-1" id="coverage">
+              <h2 class="h4 fw-bold mb-3">What's covered</h2>
+              <p><span class="tpl-ph">{Optional intro paragraph.}</span></p>
+              <ul class="list-unstyled row row-cols-1 row-cols-md-2 g-2 list-check">
+                <li class="col d-flex gap-2"><i class="bi bi-check-circle-fill text-primary"></i><span><span class="tpl-ph">{Coverage item}</span></span></li>
+                <li class="col d-flex gap-2"><i class="bi bi-check-circle-fill text-primary"></i><span><span class="tpl-ph">{Coverage item}</span></span></li>
+                <li class="col d-flex gap-2"><i class="bi bi-check-circle-fill text-primary"></i><span><span class="tpl-ph">{Third-party liability}</span> <strong><span class="tpl-ph">$1 to $5 million</span></strong></span></li>
+                <li class="col d-flex gap-2"><i class="bi bi-check-circle-fill text-primary"></i><span><span class="tpl-ph">{Coverage item}</span></span></li>
+              </ul>
+              <div class="row row-cols-1 row-cols-md-2 g-3 mt-1">
+                <div class="col">
+                  <div class="card h-100 border rounded-4">
+                    <div class="card-body p-3 d-flex flex-column">
+                      <div class="fw-semibold mb-1"><span class="tpl-ph">{Sub-product, e.g. Directors &amp; officers}</span></div>
+                      <div class="small text-body-secondary mb-3"><span class="tpl-ph">{One line on what it covers.}</span></div>
+                      <a class="btn btn-sm btn-outline-primary rounded-pill align-self-start mt-auto" href="Applications/church_directors_officers.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf me-1"></i>PDF application</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 border rounded-4">
+                    <div class="card-body p-3 d-flex flex-column">
+                      <div class="fw-semibold mb-1"><span class="tpl-ph">{Sub-product}</span></div>
+                      <div class="small text-body-secondary mb-0"><span class="tpl-ph">{No PDF? Leave the button out.}</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 3c. ELIGIBILITY -->
+            <div class="tpl-note mb-3 tpl-only">
+              <span class="tpl-tag tpl-tag-opt">Optional</span><strong>3c. Eligibility.</strong> "Who can get a quote" rules as a list. Text the live page shouts in CAPITALS or bold becomes normal sentence case with <code>&lt;strong&gt;</code> on the key words. Hard exclusions ("We cannot insure homes south of Eglinton…") go in a yellow callout. Tip boxes from the live page ("BE SURE TO ANSWER THE QUESTIONS HONESTLY…") become a blue info callout. A "WARNING" from the live page (e.g. UberX "your present policy does not cover you") becomes a red callout, placed first in this section.
+            </div>
+            <section class="mb-5 scroll-mt tpl-block p-1" id="eligibility">
+              <h2 class="h4 fw-bold mb-3">Who is eligible</h2>
+              <div class="alert alert-danger rounded-4 d-flex gap-3" role="note">
+                <i class="bi bi-exclamation-octagon-fill fs-5"></i>
+                <div><strong>Warning:</strong> <span class="tpl-ph">{Optional warning from the live page.}</span></div>
+              </div>
+              <ul class="list-unstyled list-check">
+                <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-primary fs-5"></i><span><span class="tpl-ph">{You must have a "G2" licence for at least 1 year.}</span></span></li>
+                <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-primary fs-5"></i><span><span class="tpl-ph">{No more than 3 tickets in 3 years.}</span></span></li>
+                <li class="d-flex gap-2 mb-2"><i class="bi bi-check2 text-primary fs-5"></i><span><strong><span class="tpl-ph">{Not more than 1 at-fault claim in the past 5 years.}</span></strong></span></li>
+              </ul>
+              <div class="alert alert-warning rounded-4 d-flex gap-3" role="note">
+                <i class="bi bi-exclamation-triangle-fill fs-5"></i>
+                <div><span class="tpl-ph">{Hard exclusion or pre-approval rule.}</span></div>
+              </div>
+              <div class="alert alert-primary rounded-4 d-flex gap-3 mb-0" role="note">
+                <i class="bi bi-lightbulb-fill fs-5"></i>
+                <div><strong>Tip:</strong> <span class="tpl-ph">{Tip or discount note, e.g. "Ask about combined home and auto discounts."}</span></div>
+              </div>
+            </section>
+
+            <!-- 3d. PRICES -->
+            <div class="tpl-note mb-3 tpl-only">
+              <span class="tpl-tag tpl-tag-opt">Optional</span><strong>3d. Prices.</strong> Two forms:
+              <ul>
+                <li><strong>Starting price</strong> ("From $275 individual / $750 business"): price tiles. Use the same figure as the quote page. Where the live product page disagrees (Special events $100 vs $125, Barbers $200 vs $275, see STAKEHOLDER_NOTES 3), use the quote page figure until the office confirms.</li>
+                <li><strong>Sample rate table</strong> (UberX, golf hole-in-one, group plans): a responsive table with a caption saying what the figures are. Keep "approx." on every estimate.</li>
+              </ul>
+              Always end with the "Prices are estimates…" line. Dated figures (e.g. 2022 theft list) get the year in the caption.
+            </div>
+            <section class="mb-5 scroll-mt tpl-block p-1" id="prices">
+              <h2 class="h4 fw-bold mb-3">Prices</h2>
+              <div class="row row-cols-2 row-cols-md-3 g-3 mb-4">
+                <div class="col"><div class="bg-white rounded-4 shadow-sm p-3 h-100"><div class="small text-body-secondary">Individuals from</div><div class="display-6 fw-bold text-primary"><span class="tpl-ph">$275</span></div></div></div>
+                <div class="col"><div class="bg-white rounded-4 shadow-sm p-3 h-100"><div class="small text-body-secondary">Businesses from</div><div class="display-6 fw-bold text-primary"><span class="tpl-ph">$750</span></div></div></div>
+              </div>
+              <div class="table-responsive bg-white rounded-4 shadow-sm">
+                <table class="table table-hover align-middle mb-0">
+                  <caption class="px-3 small"><span class="tpl-ph">{What the figures are, e.g. "Estimated yearly UberX endorsement cost, Ontario only, best driving record."}</span></caption>
+                  <thead class="table-light">
+                    <tr><th scope="col"><span class="tpl-ph">{Column}</span></th><th scope="col"><span class="tpl-ph">{Column}</span></th><th scope="col" class="text-end"><span class="tpl-ph">{Price column}</span></th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><span class="tpl-ph">{Row}</span></td><td><span class="tpl-ph">{Detail}</span></td><td class="text-end"><span class="tpl-ph">$583</span> approx.</td></tr>
+                    <tr><td><span class="tpl-ph">{Row}</span></td><td><span class="tpl-ph">{Detail}</span></td><td class="text-end"><span class="tpl-ph">$692</span> approx.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="small text-body-secondary mt-3 mb-0">Prices are estimates. Your price depends on <span class="tpl-ph">{the rating factors from the brief}</span>. Our staff will confirm your price and coverage.</p>
+            </section>
+
+            <!-- 3e. TESTIMONIALS -->
+            <div class="tpl-note mb-3 tpl-only">
+              <span class="tpl-tag tpl-tag-opt">Optional</span><strong>3e. Testimonials.</strong> The live site has none on product pages yet, so this block is <strong>left out</strong> until the office supplies real ones. Only real, approved client words with a first name and town or organisation. Never invent or adapt a testimonial. Max 3 cards.
+            </div>
+            <section class="mb-5 scroll-mt tpl-block p-1" id="testimonials">
+              <h2 class="h4 fw-bold mb-3">What clients say</h2>
+              <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col">
+                  <figure class="bg-white rounded-4 shadow-sm p-4 h-100 mb-0">
+                    <i class="bi bi-quote fs-2 text-primary"></i>
+                    <blockquote class="mb-3"><p class="mb-0"><span class="tpl-ph">{Approved client quote.}</span></p></blockquote>
+                    <figcaption class="small text-body-secondary"><span class="tpl-ph">{First name}, {Town or organisation}</span></figcaption>
+                  </figure>
+                </div>
+              </div>
+            </section>
+
+            <!-- 3f. FAQs -->
+            <div class="tpl-note mb-3 tpl-only">
+              <span class="tpl-tag tpl-tag-opt">Optional</span><strong>3f. FAQs.</strong> A Bootstrap accordion, all closed, one open at a time (<code>data-bs-parent</code> set to its own accordion, as in CLAUDE.md). Questions as <code>&lt;h3&gt;</code> buttons, answers as normal text. Use it for questions the brief already has (e.g. auto reform Q&amp;A, "How long does a quote take?"). With more than 10 questions, group them under small subheadings.
+            </div>
+            <section class="mb-5 scroll-mt tpl-block p-1" id="faq">
+              <h2 class="h4 fw-bold mb-3">Questions</h2>
+              <div class="accordion bg-white rounded-4 shadow-sm" id="faq-accordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-1" aria-expanded="false" aria-controls="faq-1"><span class="tpl-ph">{How long does a quote take?}</span></button></h3>
+                  <div id="faq-1" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body"><span class="tpl-ph">{Answer.}</span></div></div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2"><span class="tpl-ph">{What do I need to send with the application?}</span></button></h3>
+                  <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion"><div class="accordion-body"><span class="tpl-ph">{Answer, e.g. brochure, fee schedule, past policy. Allow 14 days.}</span></div></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 3g. EXTRAS -->
+            <div class="tpl-note mb-3 tpl-only">
+              <span class="tpl-tag tpl-tag-opt">Optional</span><strong>3g. Extras</strong>, after the FAQs, in this order when present:
+              <ul>
+                <li><strong>How it works</strong> (Quote &amp; bind items): numbered steps with <code>list-steps</code>: describe your business › enter coverage › instant quote › pick payment › a broker confirms.</li>
+                <li><strong>Feature with photo</strong> (e.g. backflow valve, top 10 stolen cars): text beside one photo, with a caption.</li>
+                <li><strong>Helpful reading</strong>: internal articles first, then external ones (new tab, <code>bi-box-arrow-up-right</code> icon, source name in the text).</li>
+                <li><strong>On-page quote form</strong> (only items whose quote method is a form on this page, e.g. UberX): see the variant below. The CTA buttons then jump to <code>#quote-form</code>.</li>
+                <li><strong>Dated news</strong> (e.g. the UberX "News flash"): do not put it here. Move it to News &amp; humour or drop it, and flag it in STAKEHOLDER_NOTES.</li>
+              </ul>
+            </div>
+            <section class="mb-5 tpl-block p-1">
+              <h2 class="h4 fw-bold mb-3">How it works</h2>
+              <ol class="list-steps">
+                <li><strong>Describe your business.</strong> <span class="tpl-ph">{Step text}</span></li>
+                <li><strong>Enter your coverage.</strong> <span class="tpl-ph">{Step text}</span></li>
+                <li><strong>Get an instant quote</strong> and pick how to pay.</li>
+                <li><strong>A broker confirms</strong> your coverage and calls you.</li>
+              </ol>
+            </section>
+            <section class="mb-5 tpl-block p-1">
+              <div class="row g-4 align-items-center">
+                <div class="col-md-5">
+                  <figure class="mb-0">
+                    <img class="photo-tile" src="content/images/suggested/claims.jpg" alt="{Describe the photo}">
+                    <figcaption class="small text-body-secondary mt-2"><span class="tpl-ph">{Optional caption}</span></figcaption>
+                  </figure>
+                </div>
+                <div class="col-md-7">
+                  <h2 class="h4 fw-bold mb-3"><span class="tpl-ph">{Feature heading, e.g. Protect your home: install a backflow valve}</span></h2>
+                  <p class="mb-0"><span class="tpl-ph">{Feature text from the brief.}</span></p>
+                </div>
+              </div>
+            </section>
+            <!-- 3h. SUB-PAGES AS ACCORDIONS -->
+            <div class="tpl-note mb-3 tpl-only">
+              <span class="tpl-tag tpl-tag-opt">Optional</span><strong>3h. Sub-pages and articles as accordions.</strong> Sub-pages and short articles are <strong>not built as separate pages</strong>. Each one becomes an accordion item on its parent page. Applies to quotation and supporting pages alike, e.g.:
+              <ul>
+                <li>Dario's thoughts (58 devotionals) and the meditations › <code>jds-meditations.htm</code></li>
+                <li>Auto reform fact sheet, Q&amp;A, self assessment, scenarios › <code>jds-auto_reform.htm</code></li>
+                <li>Charity Village discounts › <code>jds-packages_non_profit_companies.htm</code></li>
+                <li>Claim stories › <code>jds-claims.htm</code> · Race reports › <code>jds-racing_team.htm</code> · News articles › <code>jds-news.htm</code></li>
+              </ul>
+              How to build them:
+              <ul>
+                <li><strong>One item per sub-page.</strong> Button = title, with date and author as small text. Body = the full text from the Appendix of <code>PAGE_CONTENT.md</code> (headings inside drop to <code>&lt;h4&gt;</code>; Scripture verse as a <code>blockquote</code>). Media the browser cannot play (.pps, .wmv) is left out and flagged.</li>
+                <li><strong>id = the old file name</strong> without the extension (<code>id="dario_08_05_22"</code>). <code>js/accordions.js</code> opens any item whose id is in the URL, so the old page can redirect to <code>jds-meditations.htm#dario_08_05_22</code> and links from elsewhere keep working. Try it: <a href="#dario_09_01_14">open "I Had Forgotten"</a>.</li>
+                <li><strong>Up to ~12 items:</strong> one flat accordion. <strong>More:</strong> nested accordions grouped by year (or topic), newest first, with a count badge, same nesting as the quote page. One panel open per level (<code>data-bs-parent</code>).</li>
+                <li><strong>Long structured sub-pages</strong> (auto reform Q&amp;A with 21 questions, the self-assessment checklist): the item body holds its own nested accordion or checklist.</li>
+                <li>The parent page gets one heading for the set, a 1–2 line intro, and its own "On this page" link. Remove the old sub-page from the build list in <code>PAGE_CONTENT.md</code> and note the redirect.</li>
+              </ul>
+            </div>
+            <section class="mb-5 scroll-mt tpl-block p-1" id="articles">
+              <h2 class="h4 fw-bold mb-2"><span class="tpl-ph">{Set heading, e.g. Dario's thoughts and comments}</span></h2>
+              <p class="text-body-secondary mb-3"><span class="tpl-ph">{1–2 line intro from the brief.}</span></p>
+              <div class="accordion bg-white rounded-4 shadow-sm" id="articles-accordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#articles-2009" aria-expanded="false" aria-controls="articles-2009">2009<span class="badge rounded-pill text-bg-light border ms-2 fw-medium"><span class="tpl-ph">{count}</span></span></button></h3>
+                  <div id="articles-2009" class="accordion-collapse collapse" data-bs-parent="#articles-accordion">
+                    <div class="accordion-body">
+                      <div class="accordion" id="articles-2009-items">
+                        <div class="accordion-item scroll-mt" id="dario_09_01_15">
+                          <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dario_09_01_15-body" aria-expanded="false" aria-controls="dario_09_01_15-body"><span><span class="fw-semibold d-block"><span class="tpl-ph">{Our Chemical Makeup}</span></span><span class="small text-body-secondary"><span class="tpl-ph">{January 15, 2009}</span> · <span class="tpl-ph">{Dario Ferko}</span></span></span></button></h4>
+                          <div id="dario_09_01_15-body" class="accordion-collapse collapse" data-bs-parent="#articles-2009-items"><div class="accordion-body"><blockquote class="border-start border-3 border-primary ps-3 fst-italic"><span class="tpl-ph">{Verse}</span></blockquote><p class="mb-0"><span class="tpl-ph">{Full article text.}</span></p></div></div>
+                        </div>
+                        <div class="accordion-item scroll-mt" id="dario_09_01_14">
+                          <h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dario_09_01_14-body" aria-expanded="false" aria-controls="dario_09_01_14-body"><span><span class="fw-semibold d-block"><span class="tpl-ph">{I Had Forgotten}</span></span><span class="small text-body-secondary"><span class="tpl-ph">{January 14, 2009}</span> · <span class="tpl-ph">{Dario Ferko}</span></span></span></button></h4>
+                          <div id="dario_09_01_14-body" class="accordion-collapse collapse" data-bs-parent="#articles-2009-items"><div class="accordion-body"><p class="mb-0"><span class="tpl-ph">{Full article text.}</span></p></div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header"><button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#articles-2008" aria-expanded="false" aria-controls="articles-2008">2008<span class="badge rounded-pill text-bg-light border ms-2 fw-medium"><span class="tpl-ph">{count}</span></span></button></h3>
+                  <div id="articles-2008" class="accordion-collapse collapse" data-bs-parent="#articles-accordion">
+                    <div class="accordion-body"><span class="tpl-ph">{Same nested pattern.}</span></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="mb-0 scroll-mt tpl-block p-1" id="reading">
+              <h2 class="h4 fw-bold mb-3">Helpful reading</h2>
+              <div class="list-group rounded-4 shadow-sm">
+                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center gap-3 py-3" href="jds-12waystosave.htm"><span><span class="tpl-ph">{Internal article}</span></span><i class="bi bi-arrow-right text-primary"></i></a>
+                <a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center gap-3 py-3" href="https://www.hagerty.com/" target="_blank" rel="noopener"><span><span class="tpl-ph">{External article title}</span> <span class="small text-body-secondary">· <span class="tpl-ph">{Source, e.g. Hagerty}</span></span></span><i class="bi bi-box-arrow-up-right text-primary"></i></a>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         4. QUOTE OPTIONS, BOTTOM CTA + CONTACT BLOCK (required)
+         ============================================================ -->
+    <section class="cta-band text-white py-5 tpl-block">
+      <div class="container">
+        <div class="tpl-note mb-4 tpl-only">
+          <span class="tpl-tag">Required</span><strong>4. Bottom CTA.</strong> The same methods, links and labels as block 2, as buttons on the dark band (primary = white solid, others = white outline). If the brief has a closing line ("CALL US FOR A QUOTE — 1-800-917-SAVE"), use it as the H2 in sentence case. Then the <strong>standard contact block</strong>, word for word from <code>PAGE_CONTENT.md</code> "Shared elements". Never write a different address, number or hours here.
+        </div>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <h2 class="h3 fw-bold mb-2">Ready for your <span class="tpl-ph">{product}</span> quote?</h2>
+            <p class="text-white text-opacity-75 mb-4"><span class="tpl-ph">{Short repeat of the lead-in.}</span></p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-light btn-lg rounded-pill px-4 fw-semibold" href="https://webrater.appliedsystems.com/WR/Default.aspx?GC=JDSMITH&LOB=AUTO&LANG=EN" target="_blank" rel="noopener"><span class="tpl-ph">{Primary quote button}</span> <i class="bi bi-box-arrow-up-right small ms-1"></i></a>
+              <a class="btn btn-outline-light btn-lg rounded-pill px-4" href="tel:+19057647868,245"><i class="bi bi-telephone me-2"></i>905-764-7868 ext. <span class="tpl-ph">245</span></a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="bg-white text-body rounded-4 p-4 shadow">
+              <div class="fw-semibold mb-2">JD Smith &amp; Associates Insurance Brokers Inc.</div>
+              <address class="small text-body-secondary mb-3" style="font-style: normal">105 West Beaver Creek Rd., Richmond Hill, ON L4B 1C6</address>
+              <ul class="list-unstyled small mb-3">
+                <li class="mb-1"><i class="bi bi-telephone text-primary me-2"></i>Toll free <a href="tel:18009177283">1-800-917-SAVE (7283)</a></li>
+                <li class="mb-1"><i class="bi bi-telephone text-primary me-2"></i>Local <a href="tel:9057647868">905-764-7868</a></li>
+                <li class="mb-1"><i class="bi bi-printer text-primary me-2"></i>Fax 905-764-9618</li>
+                <li><i class="bi bi-clock text-primary me-2"></i>Mon–Thu 9:00–4:00, Fri 9:00–3:00</li>
+              </ul>
+              <a class="btn btn-primary rounded-pill px-4" href="jds-staff.htm">Contact your broker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         5. RELATED LINKS (required)
+         ============================================================ -->
+    <section class="py-5 tpl-block">
+      <div class="container">
+        <div class="tpl-note mb-4 tpl-only">
+          <span class="tpl-tag">Required</span><strong>5. Related links.</strong> From the brief's "Related links" line. Order: category overview first, then 2–5 sibling products, then forms and articles. Cards for pages, a plain link row for forms/articles. If the brief lists none, use the category overview plus the two products next to this one in the header menu. Links to pages not built yet are still fine: the header already links to them.
+        </div>
+        <h2 class="h4 fw-bold mb-4">Related</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-4">
+          <div class="col"><a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="jds-corporate.htm"><div class="card-body p-3"><span class="badge rounded-pill text-bg-light border mb-2">Overview</span><div class="fw-semibold text-body"><span class="tpl-ph">{All commercial insurance}</span></div></div></a></div>
+          <div class="col"><a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="jds-packages_contractors.htm"><div class="card-body p-3"><div class="fw-semibold text-body"><span class="tpl-ph">{Sibling product}</span></div><div class="small text-body-secondary"><span class="tpl-ph">{One-line summary}</span></div></div></a></div>
+          <div class="col"><a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="jds-packages_tool_and_die.htm"><div class="card-body p-3"><div class="fw-semibold text-body"><span class="tpl-ph">{Sibling product}</span></div><div class="small text-body-secondary"><span class="tpl-ph">{One-line summary}</span></div></div></a></div>
+          <div class="col"><a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="jds-packages_doors_windows.htm"><div class="card-body p-3"><div class="fw-semibold text-body"><span class="tpl-ph">{Sibling product}</span></div><div class="small text-body-secondary"><span class="tpl-ph">{One-line summary}</span></div></div></a></div>
+        </div>
+        <p class="small mb-0"><span class="text-body-secondary me-2">Also useful:</span><a href="jds-claims.htm">Claims</a> · <a href="jds-12waystosave.htm">12 ways to save</a> · <a href="https://jdsmithinsurance.com/jds-applications.htm" target="_blank" rel="noopener">Application forms <i class="bi bi-box-arrow-up-right small"></i></a></p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         APPENDIX A: QUOTE OPTION VARIANTS (template only)
+         ============================================================ -->
+    <section class="py-5 bg-body-tertiary border-top tpl-only scroll-mt" id="variants">
+      <div class="container">
+        <div class="tpl-note mb-4">
+          <strong>Appendix A: quote option variants.</strong> One card per quote method in <code>SITE_MAP.md</code>. Copy the card that matches each method into blocks 2 and 4. Badge and button wording match <code>jds-get_a_quote.htm</code>. External links always get <code>target="_blank" rel="noopener"</code> and the <code>bi-box-arrow-up-right</code> icon; phone and on-page links get <code>bi-arrow-right</code>.
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-5">
+          <!-- Online rater -->
+          <div class="col">
+            <div class="small fw-semibold text-uppercase text-body-secondary mb-2">Online rater</div>
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="https://webrater.appliedsystems.com/WR/Default.aspx?GC=JDSMITH&LOB=AUTO&LANG=EN" target="_blank" rel="noopener">
+              <div class="card-body p-4 d-flex flex-column">
+                <span class="icon-badge mb-3"><i class="bi bi-car-front"></i></span>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">Online · about 7 minutes</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Compare 8 insurers online</h3>
+                <div class="text-body-secondary mb-3">For Ontario drivers with 3 tickets or fewer.</div>
+                <span class="mt-auto fw-semibold text-primary">Start online auto quote <i class="bi bi-box-arrow-up-right small"></i></span>
+              </div>
+            </a>
+          </div>
+          <!-- Quote & bind -->
+          <div class="col">
+            <div class="small fw-semibold text-uppercase text-body-secondary mb-2">Quote &amp; bind (securequotebot)</div>
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="https://jdsmithinsurance.securequotebot.com/special-event" target="_blank" rel="noopener">
+              <div class="card-body p-4 d-flex flex-column">
+                <span class="icon-badge mb-3"><i class="bi bi-laptop"></i></span>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">Quote &amp; buy online 24/7</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Get an instant quote</h3>
+                <div class="text-body-secondary mb-3">From $100. A broker then confirms your coverage.</div>
+                <span class="mt-auto fw-semibold text-primary">Quote online <i class="bi bi-box-arrow-up-right small"></i></span>
+              </div>
+            </a>
+          </div>
+          <!-- Web form (live site) -->
+          <div class="col">
+            <div class="small fw-semibold text-uppercase text-body-secondary mb-2">Web form on the live site</div>
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="https://jdsmithinsurance.com/jds-quote.htm" target="_blank" rel="noopener">
+              <div class="card-body p-4 d-flex flex-column">
+                <span class="icon-badge mb-3"><i class="bi bi-ui-checks"></i></span>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">Short form</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Request a business quote</h3>
+                <div class="text-body-secondary mb-3">Tell us about your business. A broker replies.</div>
+                <span class="mt-auto fw-semibold text-primary">Fill in the quote form <i class="bi bi-box-arrow-up-right small"></i></span>
+              </div>
+            </a>
+          </div>
+          <!-- PDF application (single) -->
+          <div class="col">
+            <div class="small fw-semibold text-uppercase text-body-secondary mb-2">PDF application (one)</div>
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="Applications/Camp_App_Word.pdf" target="_blank" rel="noopener">
+              <div class="card-body p-4 d-flex flex-column">
+                <span class="icon-badge mb-3"><i class="bi bi-file-earmark-pdf"></i></span>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">PDF application</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Day &amp; night camp application</h3>
+                <div class="text-body-secondary mb-3">Print, fill in and fax to 905-764-9618 or email it back.</div>
+                <span class="mt-auto fw-semibold text-primary">Download the PDF <i class="bi bi-box-arrow-up-right small"></i></span>
+              </div>
+            </a>
+          </div>
+          <!-- Email -->
+          <div class="col">
+            <div class="small fw-semibold text-uppercase text-body-secondary mb-2">Email</div>
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="mailto:manager@jdsmithinsurance.com?subject=Cyber%20liability%20quote">
+              <div class="card-body p-4 d-flex flex-column">
+                <span class="icon-badge mb-3"><i class="bi bi-envelope"></i></span>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">By email</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Email us for a quote</h3>
+                <div class="text-body-secondary mb-3">Pre-fill the subject with the product name.</div>
+                <span class="mt-auto fw-semibold text-primary">Email manager@jdsmithinsurance.com <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <!-- Call (extension / named broker) -->
+          <div class="col">
+            <div class="small fw-semibold text-uppercase text-body-secondary mb-2">Call (with extension)</div>
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="tel:+19057647868,239">
+              <div class="card-body p-4 d-flex flex-column">
+                <span class="icon-badge mb-3"><i class="bi bi-telephone"></i></span>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">By phone</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Talk to Haig Papazian</h3>
+                <div class="text-body-secondary mb-3">Our bond expert. No extension listed? Use <code>tel:18009177283</code>.</div>
+                <span class="mt-auto fw-semibold text-primary">Call 905-764-7868 ext. 239 <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </a>
+          </div>
+          <!-- Partner site -->
+          <div class="col">
+            <div class="small fw-semibold text-uppercase text-body-secondary mb-2">Partner site</div>
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="http://www.boatinsurancecanada.ca" target="_blank" rel="noopener">
+              <div class="card-body p-4 d-flex flex-column">
+                <span class="icon-badge mb-3"><i class="bi bi-water"></i></span>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">Partner site</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Boat insurance Canada</h3>
+                <div class="text-body-secondary mb-3">Part of the JDS Financial Group.</div>
+                <span class="mt-auto fw-semibold text-primary">Get a boat quote <i class="bi bi-box-arrow-up-right small"></i></span>
+              </div>
+            </a>
+          </div>
+          <!-- On-page form jump -->
+          <div class="col">
+            <div class="small fw-semibold text-uppercase text-body-secondary mb-2">Form on this page</div>
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="#quote-form">
+              <div class="card-body p-4 d-flex flex-column">
+                <span class="icon-badge mb-3"><i class="bi bi-ui-checks"></i></span>
+                <span class="badge rounded-pill text-bg-light border align-self-start mb-2">Short form</span>
+                <h3 class="h5 fw-semibold text-body mb-2">Quick quote form</h3>
+                <div class="text-body-secondary mb-3">Jumps to the form further down this page.</div>
+                <span class="mt-auto fw-semibold text-primary">Fill in the quote form <i class="bi bi-arrow-down"></i></span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Many methods: list-group rows -->
+        <div class="tpl-note mb-3"><strong>4+ methods or several PDFs</strong> (NDT/NDE ×3, CWB ×3, Church ×4, Renewable energy): keep the main method as a card, then list the rest as rows. Each row is name + note + button(s), the same <code>list-group-item</code> pattern as the quote page accordions. Use the PDF's real title, never its file name.</div>
+        <div class="bg-white rounded-4 shadow-sm px-4 mb-5">
+          <div class="list-group list-group-flush">
+            <div class="list-group-item px-0 py-3 d-flex flex-wrap align-items-center justify-content-between gap-2">
+              <div><div class="fw-semibold">Product liability questionnaire</div><div class="small text-body-secondary">Send all 3 forms, Attn: Mark Smith ext. 228.</div></div>
+              <div class="d-flex flex-wrap gap-2"><a class="btn btn-sm btn-outline-primary rounded-pill" href="Applications/cwb_liability_questionnaire2.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf me-1"></i>PDF application</a></div>
+            </div>
+            <div class="list-group-item px-0 py-3 d-flex flex-wrap align-items-center justify-content-between gap-2">
+              <div><div class="fw-semibold">Welding questionnaire</div><div class="small text-body-secondary">Allow 2 weeks for a quote.</div></div>
+              <div class="d-flex flex-wrap gap-2"><a class="btn btn-sm btn-outline-primary rounded-pill" href="Applications/cwb_welding_questionnaire2.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf me-1"></i>PDF application</a></div>
+            </div>
+            <div class="list-group-item px-0 py-3 d-flex flex-wrap align-items-center justify-content-between gap-2">
+              <div><div class="fw-semibold">Prefer to talk it through?</div><div class="small text-body-secondary">Mark Smith, VP Commercial.</div></div>
+              <div class="d-flex flex-wrap gap-2"><a class="btn btn-sm btn-outline-primary rounded-pill" href="tel:+19057647868,228"><i class="bi bi-telephone me-1"></i>Call ext. 228</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- On-page quote form -->
+        <div class="tpl-note mb-3"><strong>On-page quote form</strong> (only for items quoted by a form on their own page, e.g. UberX). Fields in the order the brief lists, real <code>&lt;label&gt;</code>s, <code>autocomplete</code> on name/address/email/phone, radios for 2–3 choices and selects for longer lists. The form must post over <strong>https</strong>; until the office confirms the endpoint (STAKEHOLDER_NOTES 4.7), link to the live form instead of rebuilding it. Required fields marked with *.</div>
+        <div class="bg-white rounded-4 shadow-sm p-4 scroll-mt" id="quote-form">
+          <h2 class="h4 fw-bold mb-1">Quick quote form</h2>
+          <p class="text-body-secondary mb-4">For a quick quote, fill in the form and press Send. A broker will call you.</p>
+          <form class="row g-3" action="#" onsubmit="return false">
+            <div class="col-md-6"><label class="form-label" for="f-name">Your name *</label><input class="form-control" id="f-name" autocomplete="name" required></div>
+            <div class="col-md-6"><label class="form-label" for="f-email">Email address *</label><input class="form-control" id="f-email" type="email" autocomplete="email" required></div>
+            <div class="col-md-6"><label class="form-label" for="f-phone">Cell phone number *</label><input class="form-control" id="f-phone" type="tel" autocomplete="tel" required></div>
+            <div class="col-md-6"><label class="form-label" for="f-time">Best time to call you</label><select class="form-select" id="f-time"><option>Morning</option><option>Afternoon</option></select></div>
+            <fieldset class="col-12">
+              <legend class="form-label fs-6">Hours of ride-sharing per week *</legend>
+              <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="f-hours" id="f-h1" required><label class="form-check-label" for="f-h1">Under 10 hours</label></div>
+              <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="f-hours" id="f-h2"><label class="form-check-label" for="f-h2">Up to 20 hours</label></div>
+            </fieldset>
+            <div class="col-12"><button class="btn btn-primary rounded-pill px-4" type="submit">Send</button> <span class="small text-body-secondary ms-2">Template only: this form does not send.</span></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         APPENDIX B: HANDLING RULES (template only)
+         ============================================================ -->
+    <section class="py-5 tpl-only scroll-mt" id="rules">
+      <div class="container">
+        <h2 class="h4 fw-bold mb-3">Appendix B: handling rules</h2>
+        <div class="table-responsive">
+          <table class="table align-top small">
+            <thead class="table-light"><tr><th scope="col" style="width: 22%">Element / situation</th><th scope="col">How to handle it</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">File, &lt;title&gt;, meta</th><td>Keep the live file name (e.g. <code>jds-packages_tool_and_die.htm</code>) so old links work. Use the brief's <em>Suggested &lt;title&gt;</em>, ending "| JD Smith Insurance". Use the <em>Suggested meta</em>; if there is none, write one of 150–160 characters. Fix "Untitled Document" and copied titles. Include the gtag block; never <code>noindex</code>.</td></tr>
+              <tr><th scope="row">Header &amp; footer</th><td><code>&lt;site-header&gt;</code> and <code>&lt;site-footer&gt;</code> only. Never paste nav or footer markup. Never add the blue top banner.</td></tr>
+              <tr><th scope="row">Quote methods</th><td>Copied from <code>jds-get_a_quote.htm</code>. Forms and PDFs link to <code>https://jdsmithinsurance.com/...</code>. A page that "has no tool" (Home: by phone only) never promises one.</td></tr>
+              <tr><th scope="row">Phone numbers</th><td>Always <code>tel:</code>. Extension = comma pause: <code>tel:+19057647868,245</code>. Show it as "905-764-7868 ext. 245". Unconfirmed direct lines (STAKEHOLDER_NOTES 2.5) are not used.</td></tr>
+              <tr><th scope="row">Conflicting facts</th><td>Extensions, prices, broker counts: use the value on the quote page / site map, and log the conflict in <code>STAKEHOLDER_NOTES.txt</code>. Never pick a value silently.</td></tr>
+              <tr><th scope="row">Images of text</th><td>Title gifs, "Quote me" buttons, "Amazing rates" banners: never used. Replace with a real heading or button.</td></tr>
+              <tr><th scope="row">Photos</th><td>Hero: suggested replacement (decorative, <code>alt=""</code>). In-content photos: real <code>alt</code>. Staff, office, community and event photos: keep the real JD Smith photo even if small. No stock photos of "staff".</td></tr>
+              <tr><th scope="row">CAPS &amp; shouting</th><td>Rewrite to sentence case; keep emphasis with <code>&lt;strong&gt;</code>. Keep the live meaning and figures exactly.</td></tr>
+              <tr><th scope="row">Dated content</th><td>Stats or news with a year (2016, 2022): add the year to the caption and flag it. News stories move to News &amp; humour.</td></tr>
+              <tr><th scope="row">Missing content</th><td>Leave the block out completely, along with its "On this page" link. Never "coming soon" or an empty heading. Required blocks (hero, both CTAs, contact, related) always appear.</td></tr>
+              <tr><th scope="row">External links</th><td>New tab, <code>rel="noopener"</code>, <code>bi-box-arrow-up-right</code> icon, source named in the text. Strip tracking parameters (<code>utm_*</code>, <code>sid=</code>) where the link still works without them.</td></tr>
+              <tr><th scope="row">Sub-pages &amp; articles</th><td>No separate page. Each becomes an accordion item on the parent (see 3h), <code>id</code> = old file name, grouped by year when there are more than ~12. The old URL redirects to <code>parent.htm#id</code>; <code>js/accordions.js</code> opens it.</td></tr>
+              <tr><th scope="row">Overview + quotation pages</th><td><code>jds-life_health.htm</code> is both: use this template, and put the product cards of the category (overview layout) right after Information, before the bottom CTA.</td></tr>
+              <tr><th scope="row">After building a page</th><td>Add it to the "Purpose of each page" list in <code>CLAUDE.md</code>. Check it at phone width, with the accordions, and that every <code>tel:</code> and PDF link opens.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/accordions.js"></script>
+  <script>
+    /* TEMPLATE ONLY. 1) <base href="../"> would send "#id" links to the root, so point them back at this page.
+       2) The notes toggle. */
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.href = location.href.split('#')[0] + a.getAttribute('href');
+    });
+    (function () {
+      var btn = document.getElementById('tpl-toggle');
+      btn.addEventListener('click', function () {
+        var hidden = document.body.classList.toggle('tpl-hide');
+        btn.setAttribute('aria-pressed', hidden);
+        btn.innerHTML = hidden ? '<i class="bi bi-eye me-2"></i>Show template notes' : '<i class="bi bi-eye-slash me-2"></i>Hide template notes';
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/* JD Smith brand theme for Bootstrap 5.3 (loaded after Bootstrap on every page).
+   Bootstrap variables are overridden first; below them is a small set of page
+   components Bootstrap has no class for (photo hero, reading column, icon lists).
+   Brand blue from the original site: #006699. */
+
+:root {
+  --bs-primary: #006699;
+  --bs-primary-rgb: 0, 102, 153;
+  --bs-primary-text-emphasis: #00293d;
+  --bs-primary-bg-subtle: #cce0eb;
+  --bs-primary-border-subtle: #99c2d6;
+  --bs-link-color: #006699;
+  --bs-link-color-rgb: 0, 102, 153;
+  --bs-link-hover-color: #00527a;
+  --bs-link-hover-color-rgb: 0, 82, 122;
+  --bs-focus-ring-color: rgba(0, 102, 153, .25);
+  --bs-body-font-family: "Inter", "Segoe UI", system-ui, -apple-system, Roboto, Arial, Helvetica, sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: #006699;
+  --bs-btn-border-color: #006699;
+  --bs-btn-hover-bg: #00577f;
+  --bs-btn-hover-border-color: #00527a;
+  --bs-btn-active-bg: #00527a;
+  --bs-btn-active-border-color: #004d73;
+  --bs-btn-disabled-bg: #006699;
+  --bs-btn-disabled-border-color: #006699;
+  --bs-btn-focus-shadow-rgb: 38, 125, 168;
+}
+
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: #006699;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #006699;
+  --bs-btn-border-color: #006699;
+  --bs-btn-hover-bg: #006699;
+  --bs-btn-hover-border-color: #006699;
+  --bs-btn-active-bg: #00527a;
+  --bs-btn-active-border-color: #00527a;
+}
+
+/* a little more breathing room at the screen edge on phones */
+@media (max-width: 575.98px) {
+  .container { --bs-gutter-x: 2rem; }
+}
+
+/* ===== Navigation ===== */
+@media (min-width: 992px) {
+  /* [data-bs-popper] matches Bootstrap's own `left: 0` rule so this one wins */
+  .dropdown-mega,
+  .dropdown-mega[data-bs-popper] {
+    left: 50%;
+    width: min(1100px, calc(100vw - 2rem));
+    transform: translateX(-50%);
+  }
+  /* let long items wrap so all five columns stay on one row at narrower widths */
+  .dropdown-mega .dropdown-item { white-space: normal; }
+}
+
+/* ===== Page hero: photo with a brand-blue wash so white text stays readable ===== */
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: #00293d;
+  padding: 4.5rem 0 4rem;
+}
+.page-hero-compact { padding: 3rem 0 2.5rem; }
+.page-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(0, 41, 61, .94) 0%, rgba(0, 61, 92, .82) 45%, rgba(0, 102, 153, .35) 100%);
+}
+.page-hero .container { z-index: 1; }
+.breadcrumb-light {
+  --bs-breadcrumb-divider-color: rgba(255, 255, 255, .5);
+  --bs-breadcrumb-item-active-color: rgba(255, 255, 255, .75);
+}
+.breadcrumb-light a { color: #fff; text-decoration: none; }
+.breadcrumb-light a:hover { text-decoration: underline; }
+
+.cta-band { background: linear-gradient(120deg, #00293d, #006699); }
+
+/* ===== Reading column ===== */
+.prose { line-height: 1.7; }
+.prose > p, .prose > ul, .prose > ol { max-width: 72ch; }
+.prose-wide > p { max-width: 80ch; }
+.prose > ul.row { max-width: none; }
+.prose-article { font-size: 1.0625rem; }
+.prose-article > p:first-child { font-size: 1.2rem; color: var(--bs-secondary-color); }
+.prose img { height: auto; }
+.prose figure img { max-height: 460px; width: auto; }
+
+/* ===== Lists ===== */
+.list-check .bi { margin-top: .2rem; }
+.list-steps { counter-reset: step; list-style: none; padding-left: 0; }
+.list-steps > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.75rem;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+}
+.list-steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: -.1rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+  font-weight: 600;
+  font-size: .9rem;
+  display: grid;
+  place-items: center;
+}
+
+/* ===== Cards & badges ===== */
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: .75rem;
+  background: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary);
+  font-size: 1.35rem;
+}
+.card-lift { transition: transform .15s ease, box-shadow .15s ease; }
+.card-lift:hover { transform: translateY(-3px); box-shadow: 0 .75rem 1.5rem rgba(0, 41, 61, .12) !important; }
+.object-fit-cover { object-fit: cover; }
+.toc .nav-link:hover { color: var(--bs-primary) !important; }
+.accordion { --bs-accordion-active-bg: var(--bs-primary-bg-subtle); --bs-accordion-active-color: var(--bs-primary-text-emphasis); --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(0, 102, 153, .25); }
+.scroll-mt { scroll-margin-top: 6rem; }
+
+/* ===== Staff directory ===== */
+.staff-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--bs-primary-bg-subtle);
+  color: var(--bs-primary-text-emphasis);
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: .02em;
+}
+.staff-avatar-lg { width: 3.5rem; height: 3.5rem; font-size: 1.1rem; }
+.staff-ext {
+  border-radius: 50rem;
+  padding: .3rem .7rem;
+  background: var(--bs-tertiary-bg);
+  color: var(--bs-primary);
+  font-weight: 600;
+  font-size: .85rem;
+  white-space: nowrap;
+}
+.staff-card:hover .staff-ext { background: var(--bs-primary); color: #fff; }
+.min-w-0 { min-width: 0; }
+img.staff-avatar { object-fit: cover; object-position: 50% 20%; background: var(--bs-tertiary-bg); }
+.staff-portrait {
+  width: 6.5rem;
+  height: 8.5rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  object-position: 50% 15%;
+  box-shadow: 0 .5rem 1rem rgba(0, 41, 61, .12);
+}
+
+/* ===== Photo stories (life at the office) ===== */
+.warm-band { background: #fbf7f1; }
+.photo-tile {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 .25rem .75rem rgba(0, 41, 61, .1);
+}
+.photo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; align-items: start; }
+.photo-pair .photo-tile { height: auto; min-width: 0; aspect-ratio: 1; border-radius: .75rem; }
+.quote-warm { font-size: 1.35rem; line-height: 1.45; }
+.side-photo { width: 100%; height: auto; aspect-ratio: 3 / 2; }
+@media (min-width: 576px) { .side-photo { width: 11rem; aspect-ratio: 4 / 5; } }
+
+/* ===== Footer ===== */
+.footer-heading {
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--bs-primary);
+  margin-bottom: 1rem;
+}
+.footer-link { color: var(--bs-secondary-color); text-decoration: none; }
+.footer-link:hover, .footer-link:focus { color: var(--bs-primary); text-decoration: underline; }
+.site-footer address { font-style: normal; line-height: 1.5; }

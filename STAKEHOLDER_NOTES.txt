@@ -1,0 +1,351 @@
+====================================================================
+1. MISSING FROM THE QUOTE PAGE
+====================================================================
+
+1.1 Campground Application  (ACTION: add to the quote page)
+    File: https://jdsmithinsurance.com/Applications/campground.pdf
+    This is a separate "CAMPGROUND APPLICATION" form. It is not the same as
+    the Day & Night Camp questionnaire (Camp_App_Word.pdf).
+    It is linked only from the live commercial quote form (jds-quote.htm),
+    where it is wrongly labelled "Camp Insurance". It is not on the
+    Application Forms page, so it was missed.
+    Proposal: add "Campgrounds" under "Churches, camps, schools &
+    non-profits" with a "PDF application" button.
+
+1.2 Older church application  (no action proposed)
+    File: https://jdsmithinsurance.com/Applications/church.pdf
+    This is an older version of "Church Application.pdf", which the quote
+    page already links. The live quote form (jds-quote.htm) links to it
+    with the label "Non Profit", which is wrong.
+    Question for the office: can this old file be retired?
+
+
+====================================================================
+2. PHONE NUMBERS AND EXTENSIONS THAT DO NOT MATCH
+====================================================================
+
+2.1 J D Smith's extension: 223 or 234?   (NEEDS CONFIRMATION)
+    - Staff List page: Dr. JD Smith, President = ext. 234
+      ("You can reach JD at Ext. 234")
+    - Non-Profits and NDT/NDE pages: J. D. Smith = ext. 234
+    - Life Insurance page: shows BOTH "J D Smith EXT 223" and
+      "J D Smith EXT 234"
+    - Group Life, Mortgage and Critical Illness pages: J D Smith = ext. 223
+    - Nobody has ext. 223 on the Staff List.
+    The quote page currently uses ext. 223 for Life insurance and Group
+    benefits, as the life pages do. If 234 is correct, those two buttons
+    (and the live life pages) must be changed.
+
+2.2 Mark Smith's extension on the Car & Truck Fleets page
+    The Fleet page says "Ext 245 for Tom Larha and Mark Smith".
+    The Staff List says Mark Smith is ext. 228 (245 is Tom Larha).
+    Live site fix: "Ext 245 for Tom Larha, Ext 228 for Mark Smith".
+
+2.3 Wrong toll-free number on the Retail / Wholesale page
+    The page says "1-800-817-SAVE". Everywhere else the number is
+    1-800-917-SAVE (7283). Live site fix: change 817 to 917.
+
+2.4 Kathy Turner and Caroline Tang on the Application Forms page
+    The Application Forms page lists Kathy Turner at ext. 207 and Caroline
+    Tang at ext. 206. The Staff List gives those extensions to Aaron Paisley
+    (207) and Giuseppe Simmarano (206). Kathy Turner and Caroline Tang are
+    not on the Staff List.
+    Question for the office: are they still with the firm?
+    The quote page does not use these contacts.
+
+2.5 Direct lines that appear on only one page
+    These numbers are on the live product pages but not on the Staff List.
+    Please confirm they are still in service:
+      - Mark Smith, direct 905-907-1418 (Builder's Risk large projects;
+        Golf / Hole-in-One)
+      - Rocco Scarano, direct 905-907-1417 (Golf / Hole-in-One;
+        also ext. 215)
+      - Haig Papazian, direct 905-907-9210 (Customs Bonds; Landscapers;
+        also ext. 239). The quote page uses this number.
+
+2.6 Named contacts the quote page does not use yet
+    These live pages name a specific person to call for a quote. The quote
+    page sends visitors to the main number, 1-800-917-7283, instead.
+    Proposal: use the named person's extension.
+      - Retail & wholesale: "For an Instant Quote call ... Tom Larha at
+        extension 245"   (strongest case: the page names him for quotes)
+      - Solar & wind (renewable energy): "call Mark Smith ... ext. 228"
+      - Car & truck fleets: Tom Larha ext. 245
+      - Windows & doors: Mark Smith ext. 228 / Tom Larha ext. 245
+      - Contractors: Rocco Scarano ext. 215 / Mark Smith ext. 228 /
+        Tom Larha ext. 245
+      - Non-profits: Mark Smith ext. 228 / J. D. Smith ext. 234
+      - Builder's risk, large projects (8 to 35 storey buildings or condos):
+        Mark Smith 905-907-1418
+      - Golf & hole-in-one: the quote page uses Rocco Scarano ext. 215.
+        The live page also offers Mark Smith 905-907-1418.
+
+
+====================================================================
+3. PRICES THAT DO NOT MATCH ON THE LIVE SITE
+====================================================================
+
+The Business Quotes 24/7 page (small_business_online.htm) and each product
+page give different starting prices. The quote page currently uses the
+prices from the Business Quotes 24/7 page.
+
+3.1 Special events
+    Business Quotes 24/7 page: "Starting Premium $100"
+    Special Events page:       "Premium starting from $125"
+    Quote page shows:          "From $100."
+
+3.2 Barbers & hairstylists
+    Business Quotes 24/7 page: "Starting Premium $200"
+    Barber & Hairstylists page: "Premium starting from $275"
+    (the same as the Health & Fitness page, so this may be a copy error)
+    Quote page shows:           "From $200."
+
+Question for the office: which price is current? The quote page and the
+live site should be updated to match.
+
+These match and need no change:
+    - Health & fitness: $275 individual / $750 business
+    - Professional liability: over 100 eligible professions
+    - Photography: mobile equipment up to $20,000
+    (The Photography and Professional Liability product pages also
+     say "starting from $120". This could be added to the quote page.)
+
+
+====================================================================
+4. BROKEN OR WRONG LINKS ON THE LIVE SITE
+====================================================================
+
+4.1 Broken church application link on the commercial quote form
+    jds-quote.htm links "Church" to
+    /Applications/church_building_application.pdf, which returns
+    "404 Not Found". The working file is church_building_application_02.pdf
+    (the quote page already uses the working one).
+
+4.2 Wrong labels on the commercial quote form (jds-quote.htm)
+    - "Camp Insurance" opens the Campground application (campground.pdf),
+      not the Camp questionnaire.
+    - "Non Profit" opens an old Church application (church.pdf).
+
+4.3 Broken menu links (footer)
+    "Home" and "Personal Insurance" point to index.htm1 and
+    jds-quote_me.htm1 (an extra "1" at the end).
+
+4.4 Pages with the wrong or no title
+    - "Untitled Document": uberx.htm, jds-cyber_liability_insurance.htm,
+      jds-online_payments.htm, jds-corporate_clients.htm
+    - Marine & Overland Cargo uses the Fleet page's title.
+
+4.5 Home insurance page
+    The title says "Get An Online Quote For Home Insurance", but the page
+    has no online quote tool. Only the phone number works.
+
+4.6 Boat quote
+    The Personal Insurance page mentions a quick boat quote, but there is no
+    boat quote tool. The Boat link goes to boatinsurancecanada.ca, a partner
+    site. That site does load.
+
+4.7 Forms that send to an outside server (worth testing)
+    The commercial quote form (jds-quote.htm) and the renewable energy quote
+    form send their data to sws006.actionhosting.ca. The UberX form sends
+    over plain http:// (not secure). These pages load, but form submissions
+    were NOT tested.
+    The UberX form (checked 2026-10-18) posts to
+    http://www.jdsmithinsurance.com/formmail.asp and sends each request to
+    badams@interad.ca, an outside address. Who should receive UberX quote
+    requests? The new uberx.htm links to the live form until an https
+    endpoint and recipient are confirmed.
+
+4.8 Online auto quote link does not work  (ACTION: send a working link)
+    The online auto quote (Applied Systems WebRater) at
+    https://webrater.appliedsystems.com/WR/Default.aspx?GC=JDSMITH&LOB=AUTO&LANG=EN
+    does not work: visitors cannot get an auto quote from it (reported
+    2026-10-18). The server still answers, so the problem is likely with
+    the JDSMITH account or the link settings, not the address itself.
+    This is the main auto quote method. It is used on:
+      - the live Auto and Personal Insurance pages
+      - the new Get a free quote page (jds-get_a_quote.htm)
+      - the new Auto insurance page (jds-quote_auto.htm): hero, quote
+        card and bottom buttons
+    Until it is fixed, visitors can still call 1-800-917-7283.
+    Question for the office: is the WebRater account still active? If the
+    link has changed, please send the new one so every page can be updated.
+
+
+====================================================================
+5. SMALL EXTRAS (OPTIONAL)
+====================================================================
+
+5.1 Camps: the Camp questionnaire says a quote needs at least 14 days and
+    asks for a brochure, camper application, fee schedule and past policy.
+    This could be added to the Camps note on the quote page.
+
+5.2 Special events: the live page says events can have up to 10,000
+    attendees and last up to 5 days.
+
+5.3 "List of business types we insure" (jds-corporate_clients.htm) is linked
+    from the Commercial page. The quote page covers these businesses with
+    the "Commercial insurance - Request a business quote" option.
+    A link is not needed.
+
+
+====================================================================
+6. PHOTOS ON THE CONTACT PAGE ARE LOW QUALITY  (ACTION: send originals)
+====================================================================
+The photos on the new "Contact your broker" page (jds-staff.htm) were
+downloaded from the live website. The live site only has small, compressed
+copies (most are 250 to 400 pixels wide, headshots about 140 pixels), so they
+look blurry on the new page, especially on large screens and phones.
+
+To get a better result, please send the ORIGINAL photos (straight from the
+camera or phone, full size) for:
+  - Staff headshots: JD Smith, Mark Smith, Jessica Antoniel,
+    Giuseppe Simmarano, Rocco Scarano
+  - Headshots of any other staff (the staff list shows initials for anyone
+    without a photo)
+  - Group photos: full staff (2023) and commercial team (Sept 2023)
+  - Office: outside of the building, lobby, boardroom, the office dog,
+    the rainbow over the building
+  - Community and staff life: food bank day, Operation Christmas Child
+    shoeboxes, baseball team, hockey sponsor banner, staff lunches,
+    staff night out, Christmas dinner theatre, Karen's and Dorret's
+    retirements
+  - The top banner photo of the contact page (contact_us_front.jpg)
+
+The page is already built for them: when the originals arrive, they replace
+the current files and nothing else needs to change.
+
+
+====================================================================
+7. VIDEO NEEDED FOR THE STAFF VIDEO MESSAGES PAGE  (ACTION: send video)
+====================================================================
+The new "Staff video messages" page (jds-staff_videos.htm) has no video
+yet. It shows a "Video coming soon" box instead.
+
+The live site has one video, "A message from Rocco Scarano & Dr. J.D.
+Smith". It is a Flash video (VLP/JDS_RS_VP6.flv, about 15 MB). Browsers no
+longer play Flash, so it cannot be used as it is.
+
+Please send ONE of these:
+  - The original video file of the Rocco Scarano & Dr. JD Smith message
+    (MP4 or MOV, full quality, straight from the camera or editor), or
+  - A new video message, if the old one is out of date.
+
+The page is already built for it: when the video arrives, it is saved as
+videos/JDS_RS.mp4 and the "Video coming soon" box is replaced with the
+player. If no original can be found, the old Flash file can be converted,
+but the quality will be low.
+
+    UPDATE (found while writing content/PAGE_CONTENT.md, 2026-10-18):
+    The live site has TWO MORE video messages, both Flash, linked from
+    product pages but not from the Staff Video Messages page:
+      - "A Message from Dr. J.D. Smith" (VLP/JDS_1.html, JDS_1_VP6.swf),
+        linked from the Canadian Welding Bureau page
+      - "A Message from Mark Smith & Dr. J.D. Smith" (VLP/JDS_MS.html,
+        JDS_MS_VP6.swf), linked from the Renewable Energy page
+    Please send the originals of these two as well (or say if they should
+    be dropped).
+
+
+====================================================================
+8. FOUND WHILE WRITING THE PAGE CONTENT (content/PAGE_CONTENT.md)
+====================================================================
+All live pages were read on 2026-10-18 to write the content file for the
+new quotation, overview and supporting pages. These points need an answer
+from the office. Each one is also flagged in PAGE_CONTENT.md.
+
+8.1 Numbers that do not agree (NEEDS CONFIRMATION)
+    - Number of brokers: Auto page "24 friendly brokers", Home page
+      "34 friendly brokers", Broker Advantage page "over 30 licensed
+      brokers". Which number should every page use?
+    - Contractors discount for TCA / MCA members: the Contractors page
+      says "ADDITIONAL 20% DISCOUNT" at the top, but "10% - 15%" in its
+      fleet section, on the Landscapers page and on the quote page.
+    - Franchises: Commercial page "more than 50 franchises", Retail &
+      Wholesale page "more than 380 franchise locations".
+    - CWB program savings: "over $2,167,000 in premiums" and "over
+      $1,980,000 in premiums each year" on the same page (Welding &
+      steel); the CWB page says $1,980,000 "in 2010".
+    - Wawanesa claims line: Claims page 1-844-929-2637, Staff List
+      page 1-800-268-7300.
+    - Commercial after-hours claims hotline (Crawford Adjusters) is
+      given as 1-888-224-5677, which is also Ecclesiastical's claims
+      number. Which is right?
+    - Auto page meta description says "rates from 5 companies"; the page
+      says 8.
+
+8.2 People not on the Staff List
+    - Jo-Anne Griffiths, ext. 240 (Canadian Welding Bureau page).
+    - John Bell, ext. 255, is named as the group specialist on the
+      Charity Village page (he is on the Staff List as Personal Sales).
+      Is he still the contact for Charity Village members?
+
+8.3 Broken links and missing files on the live site
+    - charity_village_group_insurance1.htm (404), linked from the
+      Non-Profits page (house & car picture).
+    - uberx_insurance_rates.htm (404), the "Sample rates" link on the
+      UberX page. The rates are on the UberX page itself.
+    - /Church Application.pdf (404), the bottom link on the Church page.
+      The working file is /Applications/Church Application.pdf.
+    - jds-12waysto1.htm (404), linked twice from jds-products.htm.
+    - media/Sharing_Thoughts1.pps (404), linked from the Church page.
+    - dario/dario_08_09_23htm (404, missing dot), on Dario's Thoughts.
+    - Not_For_Upload/caltex.htm (404), "The Senior Shopper" on News.
+    - The Charity Village page's "online quotation" buttons go to
+      www2.compu-quote.com, which no longer responds.
+    - ardillgroup.com (Life Insurance page) redirects elsewhere. Is it
+      still the associated web site?
+
+8.4 Content that looks out of date (please review)
+    - "Accident Benefits Explained" (jds-client_auto_insurance_changes_
+      2016.htm) and the auto benefit chart on the Claims page describe
+      the 2016 rules. They do not match the July 2026 reform pages.
+    - Life Insurance page: the Empire Life Solution 20 mortgage table is
+      based on a 2008 bank survey, while the Mortgage Insurance page now
+      features Wawanesa Life. Which product should be shown?
+    - The Mortgage Insurance page's content is one image (a 600x613
+      graphic). Please send the text so it can be put on the page.
+    - Cyber Liability prices say "plus 8% PST". Please confirm the tax
+      wording.
+    - Commercial partner logos include ACE INA (now Chubb) and the 2012
+      Economical logo (now Definity). The Broker Advantage page lists a
+      different set of insurers (incl. Sovereign) than the Insurance
+      Companies page. Which list is current?
+    - Most stolen cars list (Personal page) uses 2022 figures.
+    - Welding page: "NEW Coverages available in 2012".
+    - The UberX "News flash" is an old Toronto news story.
+    - Many News & Humour links are old PowerPoint (.pps) and Windows
+      Media (.wmv/.wvx) files that browsers no longer play. Keep,
+      convert or remove?
+
+8.5 Page titles and descriptions to fix (live site)
+    - All 5 Auto Reform pages, the Privacy Statement and the Terms of
+      Use use the title "JD Smith Insurance Brokers Code of Consumer
+      Rights" and the disclaimer banner photo.
+    - Home insurance page title promises an online quote (no tool).
+    - Barber page title typo "Barder".
+    - The small business pages all use the church page's meta
+      description, and their banner alt text says "Health & Fitness
+      Insurance".
+    - The Group Insurance, Mortgage and Critical Illness pages use the
+      same meta description ("Instant Issue Life Insurance").
+
+8.6 Missing information
+    - Customs Bonds: "complete our 2-page application", but there is no
+      application on the site. Please send the PDF.
+    - The Application Forms page does not list the main Church
+      Application, the CNA Marine Cargo application or the two Renewable
+      Energy applications (they are on other pages). The new page lists
+      them all.
+    - Commercial quote form (jds-quote.htm) has short-application labels
+      with no form: Business Interruption, Commercial Property, Employee
+      Dishonesty, Liability, Sports, Retail Store, T.V. & Magazine
+      Liability. Should these get forms, or be removed?
+
+8.7 Auto reform sub-pages (added 2026-10-18)
+    - The live Fact Sheet's "Coverage limits" column says "Insurers to
+      populate with coverage limits" for every benefit (template text).
+      The new page shows "Set by your insurer". Do you want real limits
+      shown, and from which insurer?
+    - Small wording fixes on the rebuilt pages: Q&A "Ontario's is
+      making" and "the name insured's spouse"; Fred's scenario mixed
+      "his", "they" and "Customer F's" (now "they" and "Fred's").
