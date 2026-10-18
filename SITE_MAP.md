@@ -5,7 +5,7 @@ Page paths are relative to the site root, e.g. `jds-quote_auto.htm` → https://
 
 **Main contact (for any quote, claim or question)**
 JD Smith & Associates Insurance Brokers Inc. — 105 West Beaver Creek Rd., Richmond Hill, ON L4B 1C6
-Toll free 1-800-917-SAVE (7283) · Tel 905-764-7868 · Fax 905-764-9618
+Toll free 1-800-917-7283 · Tel 905-764-7868 · Fax 905-764-9618
 Hours: Mon–Thu 9:00–4:00, Fri 9:00–3:00 · Chinese-language service available
 
 **Page content:** the text, quote options and photos for every page in the new header and footer are in `content/PAGE_CONTENT.md` (its page index follows the menus in `js/components.js`).
@@ -103,7 +103,7 @@ List of business types we insure: `jds-corporate_clients.htm` (header: Commercia
 
 | Insurance | Page | Category | How to get a quote |
 |---|---|---|---|
-| Life Insurance | `jds-life_health.htm` | Life | **CALL** 905-764-7868 / 1-800-917-SAVE, J D Smith ext. 223 (also financial planning, free consultation). Related site: ardillgroup.com |
+| Life Insurance | `jds-life_health.htm` | Life | **CALL** 905-764-7868 / 1-800-917-7283, J D Smith ext. 223 (also financial planning, free consultation). Related site: ardillgroup.com |
 | Life Insurance – Groups | `jds-life_groups.htm` | Life / Group benefits | **CALL** ext. 223 (plan tables on page: life, AD&D, LTD, health, dental) |
 | Mortgage Insurance | `jds-life_mortgage_insurance.htm` | Life | **CALL** 905-764-7868 — Tom Larha ext. 245 or J D Smith ext. 223 |
 | Critical Illness | `jds-life_insurance_critical_illness.htm` | Life / Health | **CALL** ext. 245 or ext. 223 (Quick Issue plan, ages 18–60, $10k–$100k) |
@@ -144,7 +144,7 @@ List of business types we insure: `jds-corporate_clients.htm` (header: Commercia
 
 ## 4. FIND YOUR BROKER / CONTACT — `jds-staff.htm`
 
-- Main 905-764-7868 · Toll free 1-800-917-SAVE · Fax 905-764-9618
+- Main 905-764-7868 · Toll free 1-800-917-7283 · Fax 905-764-9618
 - Emergency (only if the main lines are down): 905-907-1415, 905-764-2886, 1-800-779-7283 · Emergency fax 905-764-9560
 - Every client has a personal broker. Ask them for their direct line.
 

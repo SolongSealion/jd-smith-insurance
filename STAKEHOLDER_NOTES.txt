@@ -42,8 +42,8 @@
     Live site fix: "Ext 245 for Tom Larha, Ext 228 for Mark Smith".
 
 2.3 Wrong toll-free number on the Retail / Wholesale page
-    The page says "1-800-817-SAVE". Everywhere else the number is
-    1-800-917-SAVE (7283). Live site fix: change 817 to 917.
+    The page says "1-800-817-7283". Everywhere else the number is
+    1-800-917-7283. Live site fix: change 817 to 917.
 
 2.4 Kathy Turner and Caroline Tang on the Application Forms page
     The Application Forms page lists Kathy Turner at ext. 207 and Caroline

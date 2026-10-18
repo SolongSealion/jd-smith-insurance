@@ -53,7 +53,7 @@ links, with a comma pause for an extension (`tel:+19057647868,232`). The PDF app
 - **Header and footer:** come from `js/components.js`. The page order in this file follows the header menus.
 - **Standard contact block** (used under every bottom CTA):
   JD Smith & Associates Insurance Brokers Inc. · 105 West Beaver Creek Rd., Richmond Hill, ON L4B 1C6 ·
-  Toll free [1-800-917-SAVE (7283)](tel:18009177283) · Local [905-764-7868](tel:9057647868) · Fax 905-764-9618 ·
+  Toll free [1-800-917-7283](tel:18009177283) · Local [905-764-7868](tel:9057647868) · Fax 905-764-9618 ·
   Mon–Thu 9:00–4:00, Fri 9:00–3:00 · [Contact your broker](jds-staff.htm)
 - **Tagline:** the live site shows "Commercial and Personal Insurance Solutions Since 1979" on every page. Use it once, in the header area or the homepage hero, not on each page.
 
@@ -151,7 +151,7 @@ links, with a comma pause for an extension (`tel:+19057647868,232`). The PDF app
 - **Suggested replacement:** ![Family on a road trip](images/suggested/quote_me.jpg) *(suggested replacement · [Unsplash photo](https://unsplash.com/photos/man-photographs-children-leaning-out-of-car-window-sSr73PqtbYo) · free Unsplash License)*
 
 ### 2. Quote options (top CTA)
-Lead-in: "Our staff will give you a quick quote. Call us at 1-800-917-SAVE (7283)."
+Lead-in: "Our staff will give you a quick quote. Call us at 1-800-917-7283."
 
 | Insurance | How to get your quote | Button(s) |
 |---|---|---|
@@ -270,7 +270,7 @@ Promo graphic linked to the rater on the live page: ![Amazing Rates](images/orig
 - [Click here for 6 winter driving reminders](https://www.hagerty.com/media/driving/6-winter-driving-reminders-even-if-you-dont-get-snow/) ![Winter driving tips](images/original/images/winter_tips_01.jpg) *(original 304×138 · [live](https://jdsmithinsurance.com/images/winter_tips_01.jpg))*
 
 ### 4. Quote options (bottom CTA)
-"CALL US FOR A QUOTE — 1-800-917-SAVE"
+"CALL US FOR A QUOTE — 1-800-917-7283"
 
 - **Primary:** [Start online auto quote](https://webrater.appliedsystems.com/WR/Default.aspx?GC=JDSMITH&LOB=AUTO&LANG=EN) — online, about 7 minutes, compares 8 insurance companies (Ontario drivers, 3 tickets or fewer)
 - **Secondary:** [Call 1-800-917-7283](tel:18009177283) — "Our staff will give you a quick quote"
@@ -633,7 +633,7 @@ Make informed decisions; choose the benefits that best fit your needs and budget
 
 Need more information or assistance?
 
-Call us at 1-800-917-SAVE (7283), or 905-764-7868.
+Call us at 1-800-917-7283, or 905-764-7868.
 
 Disclaimer
 
@@ -779,7 +779,7 @@ If you are injured in an auto accident, you may have coverage through both your 
 
 Need more information or assistance?
 
-Call us at 1-800-917-SAVE (7283), or 905-764-7868.
+Call us at 1-800-917-7283, or 905-764-7868.
 
 Disclaimer
 
@@ -906,7 +906,7 @@ If you have a private or workplace benefits plan, you may already have coverage 
 
 Need more information or assistance?
 
-Call us at 1-800-917-SAVE (7283), or 905-764-7868.
+Call us at 1-800-917-7283, or 905-764-7868.
 
 Disclaimer
 
@@ -1099,7 +1099,7 @@ Optional benefits to consider:
 
 Need more information or assistance?
 
-Call us at 1-800-917-SAVE (7283), or 905-764-7868.
+Call us at 1-800-917-7283, or 905-764-7868.
 
 Disclaimer
 
@@ -1185,7 +1185,7 @@ Know your options! And talk to your insurance broker about customizing your auto
 
 905-764-7868
 
-1-800-917-SAVE(7283)
+1-800-917-7283
 
 **Committed to Peace of Mind Insurance**
 
@@ -1922,7 +1922,7 @@ Church trustees, directors and officers can be personally held responsible for t
 Our package can include accident coverage in the event someone at the church is severely injured during a church event. The policy will provide coverage for the loss of an eye, limbs, or life (i.e. sporting event, helping with renovations, church youth retreat). Contact us for more information on this unique package.
 
 **Quality Shield service**
-Our 24-hour claims offices are located in most major cities throughout Canada, and you can contact our office toll free at 1-800-917-SAVE (7283). If we insure your church, we will give the building a **free loss control inspection**. We will report if any changes should be made to increase safety and reduce claims.
+Our 24-hour claims offices are located in most major cities throughout Canada, and you can contact our office toll free at 1-800-917-7283. If we insure your church, we will give the building a **free loss control inspection**. We will report if any changes should be made to increase safety and reduce claims.
 
 **Quality Shield pricing**
 Often the church board will take the cheapest quotation without realizing that they are foregoing essential coverages. Our unique package is both comprehensive and competitive.
@@ -2259,7 +2259,7 @@ Linked from C4 ("Charity Village members"). Not in the menus. The live page uses
 - **Subheading:** Big insurance premium savings · better coverage · best personal service · best claims service. "My job is to save you money, with personal service."
 - **Photos (original):** ![House and car](images/original/images_sub_webs/house_car_3.jpg) *(original [live](https://jdsmithinsurance.com/images_sub_webs/house_car_3.jpg))* ![Charity Village](images/original/images_new/logo_charity_village.jpg) *(original 164×92 · [live](https://jdsmithinsurance.com/images_new/logo_charity_village.jpg))* ![Auto coverage](images/original/images_sub_webs/coverage_auto.jpg) *(original [live](https://jdsmithinsurance.com/images_sub_webs/coverage_auto.jpg))* ![Home coverage](images/original/images_sub_webs/coverage_home.jpg) *(original [live](https://jdsmithinsurance.com/images_sub_webs/coverage_home.jpg))* ![Reliable claims service](images/original/images_sub_webs/coverage_reliable.jpg) *(original [live](https://jdsmithinsurance.com/images_sub_webs/coverage_reliable.jpg))* ![Customer service representative](images/original/images_sub_webs/girl_csr_large.jpg) *(original [live](https://jdsmithinsurance.com/images_sub_webs/girl_csr_large.jpg))*
 - **Suggested replacement:** ![House with a lawn](images/suggested/charity_village.jpg) *(suggested replacement · [Unsplash photo](https://unsplash.com/photos/green-grass-lawn-in-front-of-white-concrete-house-y_ibWWpOiL0) · free Unsplash License)*
-- **CTA (top and bottom):** Call one of our group specialists: [1-800-917-SAVE](tel:18009177283) or [905-764-7868](tel:9057647868), [John Bell ext. 255](tel:+19057647868,255). *(The live "24/7 online quote" buttons go to compu-quote.com, which no longer responds. Use the auto rater and the phone instead: [Start online auto quote](https://webrater.appliedsystems.com/WR/Default.aspx?GC=JDSMITH&LOB=AUTO&LANG=EN) · home by phone.)*
+- **CTA (top and bottom):** Call one of our group specialists: [1-800-917-7283](tel:18009177283) or [905-764-7868](tel:9057647868), [John Bell ext. 255](tel:+19057647868,255). *(The live "24/7 online quote" buttons go to compu-quote.com, which no longer responds. Use the auto rater and the phone instead: [Start online auto quote](https://webrater.appliedsystems.com/WR/Default.aspx?GC=JDSMITH&LOB=AUTO&LANG=EN) · home by phone.)*
 
 Text:
 - **Group savings to date:** total $192,500.
@@ -2268,7 +2268,7 @@ Text:
 - **Home coverage:** choose from a broad selection of coverage packages to suit your needs, including homeowners, tenants, and condominium owners. Additional supplementary coverage is also available for boats and motors, sports equipment, jewellery and furs, musical instruments, seasonal/secondary residences, and more.
 - **Save money with discounts:** save even more on your premiums by taking full advantage of our numerous discounts, such as multi-vehicle ownership, anti-theft device on vehicle, claims-free home & auto, new home, monitored home alarm, and age. Plus, more package discounts are available for insuring both your home & auto with the J. D. Smith Insurance Charity Village Insurance Program.
 - **Flexible payment plans:** pre-authorized payments, with regular withdrawals from your financial institution · full payment with cash, cheque or credit card · instalment plan with cash, cheque or credit card. With J.D. Smith Insurance and the Charity Village Group Insurance Program there is no monthly service charge for our payment plan.
-- **Reliable claims service:** we're here for you day and night, every day. From anywhere in North America you can speak directly with one of our claims professionals. 1-800-917-SAVE.
+- **Reliable claims service:** we're here for you day and night, every day. From anywhere in North America you can speak directly with one of our claims professionals. 1-800-917-7283.
 - **Typical savings on our group plan:**
   > "On my 2007 BMW I saved $497 with your Employee Group Plan." — Russell S.
   > "As an employee, on my 2 vehicles I saved $642 using your Group Plan." — Dr. Jennifer M.
@@ -2441,7 +2441,7 @@ Contact block (standard).
 ### 2. Quote options (top CTA)
 Send all three forms, Attn: Mark Smith. CWB members save a further 10–16%. Allow 2 weeks for your quote.
 - [Product liability (PDF)](Applications/cwb_liability_questionnaire2.pdf) · [Welding (PDF)](Applications/cwb_welding_questionnaire2.pdf) · [Errors & omissions (PDF)](Applications/cwb_errors_and_ommissions.pdf) · [Call 905-764-7868 ext. 228](tel:+19057647868,228)
-- "You can contact J. D. Smith ext. 234 or Mark Smith ext. 228, by phone at 1-800-917-SAVE (7283)": [J. D. Smith ext. 234](tel:+19057647868,234)
+- "You can contact J. D. Smith ext. 234 or Mark Smith ext. 228, by phone at 1-800-917-7283": [J. D. Smith ext. 234](tel:+19057647868,234)
 
 ### 3. Information
 **Program features**
@@ -2888,7 +2888,7 @@ Contact block (standard).
 ### 2. Quote options (top CTA)
 Talk to our bond expert, Haig Papazian. Bonds are usually issued in a couple of days.
 - [Call 905-907-9210](tel:+19059079210)
-- Also: [1-800-917-SAVE ext. 239](tel:+19057647868,239) · "Complete our 2-page application" *(the application is not online: ask the office for the PDF, see STAKEHOLDER_NOTES)*
+- Also: [1-800-917-7283 ext. 239](tel:+19057647868,239) · "Complete our 2-page application" *(the application is not online: ask the office for the PDF, see STAKEHOLDER_NOTES)*
 
 ### 3. Information
 Canada's relationship with the USA is changing. Tariffs have brought increasing problems to exporters and importers. You may find that all of a sudden you have to pay extra fees to receive your goods across the Kingston, Niagara Falls or Windsor borders.
@@ -2903,7 +2903,7 @@ Canada's relationship with the USA is changing. Tariffs have brought increasing 
 If you are looking for bonding in this tough business environment, please give us a call and complete our 2-page application.
 
 ### 4. Quote options (bottom CTA)
-"Call our bond expert Haig Papazian, direct line 905-907-9210 or 1-800-917-SAVE ext. 239."
+"Call our bond expert Haig Papazian, direct line 905-907-9210 or 1-800-917-7283 ext. 239."
 Talk to our bond expert, Haig Papazian. Bonds are usually issued in a couple of days.
 - [Call 905-907-9210](tel:+19059079210)
 
@@ -2927,7 +2927,7 @@ Contact block (standard).
 ### 2. Quote options (top CTA)
 Instant quote over the phone.
 - [Call 1-800-917-7283](tel:18009177283) · [Quote form](https://jdsmithinsurance.com/jds-quote.htm)
-- "For an instant quote call 905-764-7868 or 1-800-917-SAVE and speak to Tom Larha at extension 245": [Tom Larha ext. 245](tel:+19057647868,245) *(the live page has the wrong toll-free number, 1-800-817-SAVE: STAKEHOLDER_NOTES 2.3)* · Mark Smith [ext. 228](tel:+19057647868,228)
+- "For an instant quote call 905-764-7868 or 1-800-917-7283 and speak to Tom Larha at extension 245": [Tom Larha ext. 245](tel:+19057647868,245) *(the live page has the wrong toll-free number, 1-800-817-7283: STAKEHOLDER_NOTES 2.3)* · Mark Smith [ext. 228](tel:+19057647868,228)
 
 ### 3. Information
 ![Retail](images/original/images/retail_wholesale.gif) *(original 108×75 · [live](https://jdsmithinsurance.com/images/retail_wholesale.gif))*
@@ -3105,7 +3105,7 @@ Contact block (standard).
 ### 2. Quote options (top CTA)
 A quote from our underwriters within 2 business days.
 - [Quote form](https://jdsmithinsurance.com/jds-renewable_energy_quote.htm) · [Property PDF (PDF)](Applications/RES_Property_App_1.pdf) · [Liability PDF (PDF)](Applications/RES_Liability_App_2.pdf)
-- "Review our web site for further information and call Mark Smith, V.P. Commercial Insurance, 1-800-917-SAVE or 905-764-7868 ext. 228": [Mark Smith ext. 228](tel:+19057647868,228) ([video message](https://jdsmithinsurance.com/VLP/JDS_MS.html): "A Message from Mark Smith & Dr. J.D. Smith", Flash, see STAKEHOLDER_NOTES) · Tom Larha [ext. 245](tel:+19057647868,245)
+- "Review our web site for further information and call Mark Smith, V.P. Commercial Insurance, 1-800-917-7283 or 905-764-7868 ext. 228": [Mark Smith ext. 228](tel:+19057647868,228) ([video message](https://jdsmithinsurance.com/VLP/JDS_MS.html): "A Message from Mark Smith & Dr. J.D. Smith", Flash, see STAKEHOLDER_NOTES) · Tom Larha [ext. 245](tel:+19057647868,245)
 
 ### 3. Information
 | Wind energy package | Solar energy insurance |
@@ -3270,7 +3270,7 @@ Contact block (standard).
 **W:** Watch & jewellery repair · Water depots · Water softening & treatment installations · Web sales · Website designers · Wholesalers
 
 ### 4. Quote options (bottom CTA)
-"Coverage outlines & quotes on our package programs can be emailed to you within 48 hours. Call 1-800-917-SAVE."
+"Coverage outlines & quotes on our package programs can be emailed to you within 48 hours. Call 1-800-917-7283."
 - **Primary:** [Request a business quote (quote form)](https://jdsmithinsurance.com/jds-quote.htm) — any business: tell us about it and a broker prepares your quote
 - **Secondary:** [Start online business quote](https://jdsmithinsurance.securequotebot.com/) (small businesses, 24/7) · [Call 1-800-917-7283](tel:18009177283)
 - Note: PDF applications can be filled in, printed, and scanned or faxed to 905-764-9618.
@@ -3291,7 +3291,7 @@ Contact block (standard; the live page lists phone (905) 764-7868 or 1-800-917-7
 
 ### 2. Quote options (top)
 - **Primary:** the form below.
-- **Prefer to talk?** "For immediate service from a friendly J.D. Smith Insurance professional, call 1-800-917-SAVE (7283) throughout Ontario, or 905-764-7868 within the G.T.A." [Call 1-800-917-7283](tel:18009177283)
+- **Prefer to talk?** "For immediate service from a friendly J.D. Smith Insurance professional, call 1-800-917-7283 throughout Ontario, or 905-764-7868 within the G.T.A." [Call 1-800-917-7283](tel:18009177283)
 - If you prefer, you can fill in the details, print the form and fax it to us (905-764-9618).
 - The following will give us some basic details so we can assign your request to the appropriate customer representative who specializes in your particular industry.
 
@@ -3346,7 +3346,7 @@ We work with insurance carriers that provide group insurance rates. We can provi
 - 24-hour monitoring system and alarm
 - All FIT program requirements are followed and adhered to
 
-For immediate service from a friendly J.D. Smith Insurance professional, call 1-800-917-SAVE (7283) throughout Ontario, or 905-764-7868 within the G.T.A. Alternative: [Property PDF](Applications/RES_Property_App_1.pdf) · [Liability PDF](Applications/RES_Liability_App_2.pdf)
+For immediate service from a friendly J.D. Smith Insurance professional, call 1-800-917-7283 throughout Ontario, or 905-764-7868 within the G.T.A. Alternative: [Property PDF](Applications/RES_Property_App_1.pdf) · [Liability PDF](Applications/RES_Liability_App_2.pdf)
 
 ### 3. The form (fields in order; * = required)
 **Company information:** Company name* · Contact name* · Address* · City* · Postal code* · Company URL · Email* · Telephone* · Fax
@@ -3482,7 +3482,7 @@ Contact block (standard).
 
 # D. LIFE & HEALTH
 
-Shared: every live life page ends with "Contact our office for great quotes: 905-764-7868 · 1-800-917-SAVE" and "Individual life and groups are our specialty". J D Smith's extension is shown as **223** on the life pages, but the staff list says **234** (STAKEHOLDER_NOTES 2.1). This file uses 223, as the quote page does, until the office confirms.
+Shared: every live life page ends with "Contact our office for great quotes: 905-764-7868 · 1-800-917-7283" and "Individual life and groups are our specialty". J D Smith's extension is shown as **223** on the life pages, but the staff list says **234** (STAKEHOLDER_NOTES 2.1). This file uses 223, as the quote page does, until the office confirms.
 
 ---
 
@@ -3909,7 +3909,7 @@ Wawanesa | 1-844-929-2637
 **When You Have an Auto Accident**
 
 ![girl_csr_large.jpg](images/original/images/girl_csr_large.jpg) *(original 108×117 · [live](https://jdsmithinsurance.com/images/girl_csr_large.jpg))* Call our office and speak to your Customer Care Representative.
-1-800-917-SAVE
+1-800-917-7283
 - Obtain the third party's driver's license number, year, make, model and serial number for the vehicle from the ownership, the vehicle's license plate number and insurance company and policy number from the pink liability slip for this vehicle.
 - Then take your vehicle to the Collision Reporting Centre within the area.
 - The police will complete a report and look at the damages to your vehicle.
@@ -3921,7 +3921,7 @@ All Insurance Companies have "Preferred Shops" that they will refer to you for t
 **Reporting Your Home Claim**
 
 ![customer_care_1.jpg](images/original/images_new/customer_care_1.jpg) *(original 158×108 · [live](https://jdsmithinsurance.com/images_new/customer_care_1.jpg))* Call our office and speak to your Customer Care Representative.
-1-800-917-SAVE
+1-800-917-7283
 - Remember, leakage claims are not covered.
 - Damage must be caused at your location.
 - Hydro outage or surges are not normally covered.
@@ -5406,7 +5406,7 @@ We will be there to help when you have a claim.
 
 Richmond Hill, Ontario, L4B 1C6
 
-Toll Free | 1-800-917-SAVE (7283)
+Toll Free | 1-800-917-7283
 
 Local | 905-764-7868
 
@@ -5672,7 +5672,7 @@ We are a Registered Broker Insurance Broker, with our head office in Richmond Hi
 
 We have commercial clients across Canada. if you should have an insurance claim, relax as we have claims offices in every major city
 
-We have been in business providing Insurance Solutions, since 1979. Many of our current clients have been with us for 45 years and we are thankful. Contact is 1-800-917-SAVE (7283)
+We have been in business providing Insurance Solutions, since 1979. Many of our current clients have been with us for 45 years and we are thankful. Contact is 1-800-917-7283
 
 Our brokerage is NOT associated with, or owned by any Financial Institution, or Insurance Company. We will supply you with a quote along with this overview, and once coverage is issued, a copy of the Insurance policy, along with its wordings. It is your responsibility to review it, decide on coverage and limits and write or call us with any questions.
 
@@ -6965,7 +6965,7 @@ Its impossible to know when, where or if youll get into an accident, but if 
 
 905-764-7868
 
-1-800-917-SAVE(7283)
+1-800-917-7283
 
 **Committed to Peace of Mind Insurance**
 
