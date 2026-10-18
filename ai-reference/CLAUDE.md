@@ -3,7 +3,7 @@
 ## Folder layout (since 2026-10-18)
 - `index.html` (homepage) is the only page in the root. Every other page is in `pages/<section>/`:
   `pages/personal/` (personal overview, auto, home, UberX), `pages/auto-reform/` (the auto reform page, its four
-  sub-pages and Accident benefits explained), `pages/about/` (core values, the broker advantage, staff, staff videos, job postings, community, car racing team, speeder's remorse, code of consumer rights),
+  sub-pages and Accident benefits explained), `pages/about/` (core values, the broker advantage, staff, staff videos, job postings, community, car racing team, speeder's remorse, and the four legal pages: privacy statement, terms of use, code of consumer rights, E. & O. E. disclaimer),
   `pages/resources/` (Claims, Claims: when you have an auto accident, 12 ways to save, 20 hot topics, Online payments and Insurance companies) and `pages/quotes/` (Get a free quote). Put a new page in
   the section its navbar menu belongs to.
 - Shared assets stay in the root: `css/`, `js/`, `Applications/` (PDF applications) and `images/`.
@@ -111,11 +111,34 @@ full-size `speeder-NN.jpg` (450px wide) in `images/speeders/`, restored from the
 
 ### Code of consumer rights — `pages/about/jds-code_consumer_rights.htm`
 Legal page, built from `ai-reference/PAGE_CONTENT.md` section G1, wording kept exactly as on the live page (typos included).
-The RIBO button on `pages/about/jds-values.htm` and the footer "Consumer rights" link go here. It holds the JDS code of consumer
-rights, the broker compensation disclosure (`#compensation`), when we quote, the CISRO principles (`#cisro`, linked to CISRO's own
-site, since the live page's PDF is only on the old site) and the "Questions about your rights?" CTA with contact block. The live
-page's privacy statement and terms of use links are left out (noted in a comment) until those pages are in the project.
+The RIBO button on `pages/about/jds-values.htm`, the homepage "Consumer rights & privacy" link and the footer "Consumer rights" link go here. It holds the legal pages strip, the JDS code of consumer
+rights, the broker compensation disclosure (`#compensation`), when we quote (its "privacy policy" links to the privacy statement), the CISRO principles (`#cisro`, linked to CISRO's own
+site, since the live page's PDF is only on the old site), the live "View the privacy statement / terms of use" links, and the "Questions about your rights?" CTA with contact block.
 Photos: `images/stock/legal.jpg` (hero, Unsplash, copied from `images/suggested/`) and `images/staff/staff_group_2023.jpg`.
+
+### Legal pages (shared layout)
+The four legal pages (privacy statement, terms of use, code of consumer rights, E. & O. E. disclaimer) are in `pages/about/` and
+linked from the footer's bottom row. Each has a compact hero, a "Legal pages" strip of pill links to all four (the current one
+marked active), the legal text in `.prose` with a sticky "On this page" card on the right, and a CTA with contact block. The
+wording is kept exactly as on the live pages (typos included); headings are the live sub-headings.
+
+### Privacy statement — `pages/about/jds-privacy_statement.htm`
+Legal page, built from `ai-reference/PAGE_CONTENT.md` section G2. The footer "Privacy" link, the consumer rights page and the terms of use
+link here. Section anchors: `#introduction`, `#sources`, `#what-we-collect`, `#purposes`, `#sharing`, `#automated`, `#cookies`,
+`#safeguards`, `#access`, `#consent`, `#complaints`, `#contact`. Privacy Officer card and CTA use manager@jdsmithinsurance.com and
+905-764-7868. The live text mentions a "cookies management tool on our site", which the site does not have (noted in a comment).
+Photo: `images/stock/privacy.jpg` (hero, Unsplash, copied from `images/suggested/`).
+
+### Terms of use — `pages/about/jds-terms_of_use.htm`
+Legal page, built from `ai-reference/PAGE_CONTENT.md` section G3. The footer "Terms of use" link, the consumer rights page and the
+disclaimer CTA link here. Each live bulleted section title is an h3 with an anchor (`#joint-website` … `#general`). Its privacy office
+email is manager@jdsfinancial.ca, which differs from the privacy statement; both are kept as on the live pages (noted in a comment).
+Photo: `images/stock/legal.jpg`.
+
+### E. & O. E. disclaimer — `pages/about/jds-disclaimer.htm`
+Legal page, built from `ai-reference/PAGE_CONTENT.md` section G4. The footer "E. & O. E." link goes here. The hero spells out "Errors
+and omissions excepted"; the live text follows unchanged, with the "limits and exclusions" sentence in a note box. Photo:
+`images/stock/legal.jpg`.
 
 ### About pages and the old site (checked 2026-10-18)
 No link in the body of any `pages/about/` page goes to jdsmithinsurance.com. `directdialinsurance.com` now redirects to
