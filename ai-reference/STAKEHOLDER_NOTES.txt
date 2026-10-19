@@ -154,6 +154,17 @@ These match and need no change:
     badams@interad.ca, an outside address. Who should receive UberX quote
     requests? The new uberx.htm links to the live form until an https
     endpoint and recipient are confirmed.
+    UPDATE 2026-10-19 (ACTION: send an email address or form endpoint)
+    The live formmail.asp now returns 404 (http redirects to https, which
+    is not found), so the live UberX form cannot deliver requests. The
+    rebuilt form is now on pages/personal/uberx.htm with Submit disabled
+    and a "call us" note. To turn it on we need ONE of:
+      - an email address that should receive UberX quote requests
+        (e.g. manager@ or jds@jdsmithinsurance.com), or
+      - an https form handler (Formspree, Netlify Forms, the host's own
+        form service) that emails the office.
+    Should it still go to badams@interad.ca? Probably not: it is outside
+    the office.
 
 4.8 Online auto quote link does not work  (ACTION: send a working link)
     The online auto quote (Applied Systems WebRater) at
@@ -399,3 +410,96 @@ from the office. Each one is also flagged in PAGE_CONTENT.md.
       save page, so the new page links there instead of repeating them.
     - Should the dated articles (1999 boating rules, 1998 ice storm,
       Decima bank survey) be kept, updated or removed?
+
+8.11 Ask a broker page (added 2026-10-19)
+    - "How to drive safe and save big bucks" (Dr. J.D. Smith) is an older
+      article. The new page keeps its figures, with a note that it comes
+      from the archive, until the office confirms or updates them:
+        - Toronto average premium "about $1850"
+        - "Over 600 cars a week are stolen in southern Ontario"
+        - the pastor's $15,967 premium for a 1999 and a 2001 car
+        - "Facility rates for most vehicles are about $4,000"
+        - "The government is working with insurance companies to reduce
+          the renewals by up to 10%. This fall is a good time..."
+    - "The guide in this Forever Young edition" refers to the magazine
+      the article first ran in, so it is left out.
+    - Does J. D. still recommend Boomerang (boomerangtracking.com) for
+      every car over $45,000? The link still works.
+    - The live News page links "Protect Your Credit - Be Prepared - Be
+      Proactive" to jds-ask_broker.htm, but that page is about driving.
+      Is a credit article missing?
+
+8.12 Reflection & encouragement page (added 2026-10-19)
+    - The live page and its Bible verses page are written for "these
+      difficult Covid-19 times". The new page leaves the Covid-19
+      wording out. Is that OK?
+    - The Franklin Graham links are dead: "Your Life Matters to God",
+      "Are You Fed Up?" and "A Call to Prayer" are 404 on billygraham.ca,
+      and "When the World is Shaken" loops on redirects. The new page
+      links to billygraham.ca instead. Are there newer messages the
+      office would like to link?
+    - "Unfolding The Rose" (llerrahmusic.com) now goes to the llerrah.com
+      home page, so it is left out.
+    - Several stories end with chain-email lines ("forward this", "pass
+      this on", "send it back to the one who asked God to bless you").
+      They are left out, as on the home page's burglar tips.
+    - The Thorn of Anxiety links its author's personal email address
+      (noles65@aol.com). The new page keeps her name only.
+    - Dario's Thoughts (jds-dario_thoughts.htm) was rebuilt on
+      2026-10-19 and the page now links to the new one. Does Dario still
+      send them by email?
+
+8.13 Links that still go to the old site (link check, 2026-10-19)
+    The new Resources pages were checked link by link on 2026-10-19.
+    Every link to a page, photo or file inside the new site works. These
+    17 links still go to files on the old jdsmithinsurance.com. They
+    work today, but they will break when the old site is switched off,
+    because the files are not in the new site.
+
+    a) News & humour page (jds-news.htm): 15 old media files
+       All are old Windows Media videos (.wmv) or PowerPoint slide shows
+       (.pps). Most browsers cannot play them, so visitors have to
+       download them (0.7 to 5.8 MB each). This is the same question as
+       8.4: keep, convert or remove? If you keep them, please send the
+       originals (or say we can copy them from the old site), and we
+       will convert the videos to MP4 and the slide shows to PDF or
+       pictures.
+         Story on the News page               File in /media/        Size
+         Beautiful seatbelt commercial        most_beautiful_seatbelt_commercial_.wmv  5.7 MB
+         Swiss army knife of cars             Swiss_technology.pps   1.9 MB
+         Bolivian "Road of Death"             bolivian_highway.pps   0.7 MB
+         Russia's tunnel of death             russian_tunnel_0f_death.wmv  2.0 MB
+         Kitchen fire prevention video        AKitchenOilFire1.wmv   1.5 MB
+         A 14" hole in the wrong place        LakePeigneur_SaltMine.wmv  5.8 MB
+         Some rather strange aircraft         strange_aircraft.pps   2.9 MB
+         Preikestolen: "The Rock Pulpit"      preikestolen_en.pps    2.9 MB
+         A pretty blue planet                 Pretty_Blue_Planet.pps 1.3 MB
+         Do you trust engineers?              doyoutrustengineers.pps  1.6 MB
+         How NOT to use parasails             how_not_to_use_parasails.wmv  2.5 MB
+         Impossible clothing changes          impossible_clothing_changes.wmv  5.8 MB
+         When it's not your time to die       WhenItsNotYourTimeToDie.wmv  2.8 MB
+         Japan Marimba Ponies band            ponies.wmv             3.8 MB
+         Speeding ticket turns to jail time   speeding_ticket_into_jail_time.wmv  4.6 MB
+       The kitchen fire and seatbelt videos are useful safety messages.
+       If the originals cannot be found, a current video on YouTube
+       could be linked instead. Which do you prefer?
+
+    b) Reflection & encouragement page (jds-meditations.htm): 2 links
+       - "Signs of the times" goes to the old church signs page
+         (images_church_signs/index.htm). That page is not in the new
+         site. Should it be rebuilt, or the link removed?
+       - The "Church insurance" card under Related goes to the old
+         jds-church.htm. The Church page is not rebuilt yet. It will
+         point to the new page once it is.
+
+8.14 Insurer links to check (link check, 2026-10-19)
+    - Ecclesiastical "Report a claim" (Claims page and Auto accident
+      page): the link goes to ecclesiastical.ca/contact/reportaclaim/.
+      That address has shown as "not found" or redirected elsewhere
+      since 2024. Ecclesiastical's home page now links to
+      ecclesiastical.ca/report-a-claim/. Is that the right page for our
+      clients?
+    - The Dominion (Insurance companies page): thedominion.ca now
+      redirects to travelerscanada.ca, and Travelers Canada already has
+      its own card on the page. Should the Dominion card be removed, or
+      kept under the Dominion name?

@@ -1,0 +1,434 @@
+/* News & humour page only (pages/resources/jds-news.htm), loaded after styles.css.
+   Every accordion header on the page uses the plain site style. The character of each old article
+   (letters, chalkboards, newsletters, signs, polaroids...) lives only inside its opened panel,
+   in the .nh-* components below. */
+
+.font-hand { font-family: "Caveat", "Segoe Print", cursive; }
+.font-type { font-family: "Special Elite", "Courier New", monospace; }
+.font-marker { font-family: "Permanent Marker", "Segoe Print", cursive; }
+.font-serif { font-family: Georgia, "Times New Roman", serif; }
+
+/* ===== Tabs ===== */
+.group-heading { scroll-margin-top: 6rem; }
+
+/* ===== Shared bits ===== */
+.nh-tape { position: relative; }
+.nh-tape::before {
+  content: "";
+  position: absolute;
+  top: -.6rem;
+  left: 50%;
+  width: 5.5rem;
+  height: 1.4rem;
+  transform: translateX(-50%) rotate(-3deg);
+  background: rgba(255, 236, 170, .75);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .12);
+  z-index: 1;
+}
+.nh-paper {
+  background: #fffdf6;
+  border-radius: .35rem;
+  box-shadow: 0 .35rem 1.2rem rgba(60, 45, 20, .14);
+}
+
+/* Polaroids (humorous photographs, beavers, kids & dogs) */
+.nh-polaroid {
+  display: block;
+  background: #fff;
+  padding: .6rem .6rem 0;
+  box-shadow: 0 .4rem 1rem rgba(0, 0, 0, .16);
+  transform: rotate(-1.5deg);
+  transition: transform .2s ease;
+}
+.nh-polaroid:nth-child(even), .col:nth-child(even) > .nh-polaroid { transform: rotate(1.4deg); }
+.nh-polaroid:hover { transform: rotate(0) scale(1.02); }
+.nh-polaroid img { display: block; width: 100%; height: auto; }
+.nh-polaroid figcaption { font-family: "Caveat", cursive; font-size: 1.45rem; line-height: 1.2; text-align: center; padding: .5rem .25rem .7rem; color: #333; }
+
+/* ===== Old media: TV set (videos) and slide projector (PowerPoint shows) ===== */
+.nh-tv {
+  background: linear-gradient(160deg, #8a5a32, #5d3a1d);
+  border-radius: 1.5rem;
+  padding: 1rem 4.5rem 1rem 1rem;
+  position: relative;
+  box-shadow: inset 0 0 0 3px rgba(0, 0, 0, .15), 0 .6rem 1.4rem rgba(0, 0, 0, .25);
+  max-width: 40rem;
+}
+.nh-tv::before, .nh-tv::after {
+  content: "";
+  position: absolute;
+  right: 1.35rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ddd, #777);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+}
+.nh-tv::before { top: 1.5rem; }
+.nh-tv::after { top: 4.25rem; }
+.nh-tv-screen {
+  border-radius: 1.6rem / 1.2rem;
+  overflow: hidden;
+  background: #111;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  color: #e8e8e8;
+  text-align: center;
+  position: relative;
+}
+.nh-tv-screen iframe { width: 100%; height: 100%; border: 0; }
+.nh-tv-screen.is-static {
+  background:
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, .05) 0 2px, transparent 2px 4px),
+    radial-gradient(circle at 50% 45%, #3a4a52, #0b0f12 75%);
+}
+.nh-tv-screen .nh-screen-text { padding: 1.25rem; max-width: 26rem; }
+.nh-tv-screen .nh-screen-title { font-family: "Special Elite", monospace; letter-spacing: .08em; font-size: 1.1rem; color: #9fe39f; text-shadow: 0 0 6px rgba(120, 255, 120, .5); }
+@media (max-width: 575.98px) {
+  .nh-tv { padding: .75rem .75rem 3.25rem; }
+  .nh-tv::before, .nh-tv::after { top: auto; bottom: .65rem; right: auto; width: 1.6rem; height: 1.6rem; }
+  .nh-tv::before { left: 1rem; }
+  .nh-tv::after { left: 3.1rem; }
+}
+
+.nh-slide {
+  max-width: 34rem;
+  background: #f4f1ea;
+  border: .9rem solid #fff;
+  outline: 1px solid #d8d2c4;
+  box-shadow: 0 .5rem 1.25rem rgba(0, 0, 0, .18);
+  padding: 1.5rem;
+  position: relative;
+  transform: rotate(-.6deg);
+}
+.nh-slide-label {
+  position: absolute;
+  top: -.8rem;
+  left: 1rem;
+  font-family: "Special Elite", monospace;
+  font-size: .75rem;
+  background: #fff;
+  padding: 0 .4rem;
+  color: #8a7f68;
+  letter-spacing: .1em;
+}
+.nh-slide-title { font-family: Georgia, serif; font-size: 1.6rem; font-weight: 700; color: #2c3e50; }
+
+/* ===== Missing poster (links that no longer work) ===== */
+.nh-missing {
+  max-width: 26rem;
+  background: #fff6c9;
+  padding: 1.75rem 1.5rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 .4rem 1rem rgba(80, 60, 0, .2);
+  transform: rotate(1deg);
+  position: relative;
+}
+.nh-missing-title { font-family: "Permanent Marker", cursive; font-size: 2.4rem; letter-spacing: .08em; color: #b3261e; line-height: 1; }
+.nh-missing .nh-tearoffs { display: flex; border-top: 2px dashed #c9b977; margin: 1.25rem -1.5rem -1.5rem; }
+.nh-missing .nh-tearoffs span {
+  flex: 1;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: .65rem;
+  padding: .5rem 0;
+  border-right: 1px dashed #c9b977;
+  color: #6b5d2a;
+  height: 6.5rem;
+}
+.nh-missing .nh-tearoffs span:last-child { border-right: 0; }
+
+/* ===== Hazard poster (kitchen fire) ===== */
+.nh-hazard {
+  border: .75rem solid transparent;
+  border-image: repeating-linear-gradient(45deg, #111 0 14px, #f5c400 14px 28px) 16;
+  background: #fff;
+  padding: 1.5rem;
+}
+.nh-hazard-head { font-family: "Permanent Marker", cursive; font-size: 2rem; color: #c1121f; line-height: 1.1; }
+
+/* ===== Cardboard sign (It's a beautiful day) ===== */
+.nh-cardboard {
+  background: linear-gradient(135deg, #c9a46a, #b88b4a);
+  color: #2a1d0b;
+  padding: 1.5rem 1.75rem;
+  border-radius: .25rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
+  font-family: "Permanent Marker", cursive;
+  font-size: clamp(1.35rem, 3.5vw, 2rem);
+  line-height: 1.25;
+  text-align: center;
+  max-width: 28rem;
+  margin-inline: auto;
+}
+.nh-cardboard-old { transform: rotate(-2deg); }
+.nh-cardboard-new { transform: rotate(1.5deg); }
+.nh-signoff { font-family: "Caveat", cursive; font-size: 2rem; color: var(--bs-primary); }
+
+/* ===== Barn doors ===== */
+.nh-barn {
+  background: #8b1e1e;
+  background-image: repeating-linear-gradient(90deg, rgba(0, 0, 0, .14) 0 2px, transparent 2px 46px);
+  border: .6rem solid #5b1010;
+  border-radius: .5rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.nh-barn::before {
+  content: "";
+  position: absolute;
+  inset: 1.25rem;
+  border: .35rem solid rgba(255, 255, 255, .85);
+  background:
+    linear-gradient(to top right, transparent calc(50% - 3px), rgba(255, 255, 255, .85) calc(50% - 3px) calc(50% + 3px), transparent calc(50% + 3px)),
+    linear-gradient(to top left, transparent calc(50% - 3px), rgba(255, 255, 255, .85) calc(50% - 3px) calc(50% + 3px), transparent calc(50% + 3px));
+  pointer-events: none;
+  opacity: .5;
+}
+.nh-barn > * { position: relative; }
+.nh-barn-question { font-family: "Permanent Marker", cursive; font-size: clamp(1.5rem, 4vw, 2.25rem); }
+.nh-barn.is-open { display: none; }
+.nh-lot { font-family: "Special Elite", monospace; font-size: .8rem; letter-spacing: .08em; color: #8b1e1e; }
+.nh-stamp {
+  display: inline-block;
+  border: .25rem solid currentColor;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  font-family: "Special Elite", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  transform: rotate(-2deg);
+}
+
+/* ===== Desert (bone yard) ===== */
+.nh-desert {
+  background: linear-gradient(180deg, #f7e7c6, #ead1a1);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #4a3417;
+}
+.nh-desert figcaption { font-weight: 600; }
+
+/* ===== Speeding ticket ===== */
+.nh-lights { height: .5rem; border-radius: .5rem .5rem 0 0; background: linear-gradient(90deg, #d00 0 50%, #0047d6 50% 100%); animation: nh-flash 1.2s steps(1) infinite; }
+@keyframes nh-flash { 50% { background: linear-gradient(90deg, #0047d6 0 50%, #d00 50% 100%); } }
+@media (prefers-reduced-motion: reduce) { .nh-lights { animation: none; } }
+.nh-ticket { background: #fff; border: 1px solid #ddd; border-top: 0; border-radius: 0 0 .75rem .75rem; padding: 1.5rem; }
+.nh-ticket-tip { border-left: .3rem solid #d00; padding-left: 1rem; }
+.nh-ticket-tip:nth-child(even) { border-left-color: #0047d6; }
+
+/* ===== Price tags ($1,000,000 car wreck) ===== */
+.nh-tally { font-family: "Special Elite", monospace; max-width: 38rem; }
+.nh-tally li { display: flex; align-items: baseline; gap: .5rem; padding: .35rem 0; }
+.nh-tally .nh-dots { flex: 1; border-bottom: 2px dotted #aaa; transform: translateY(-.3rem); min-width: 1rem; }
+.nh-tally .nh-what { max-width: 60%; }
+.nh-tally .nh-cost { font-weight: 700; color: #b3261e; text-align: right; max-width: 40%; }
+.nh-tally .nh-priceless .nh-cost { color: #1b7f3b; font-size: 1.25rem; }
+
+/* ===== Police news release (fraudulent cards) ===== */
+.nh-release { font-family: Georgia, serif; border-top: .5rem solid #002a5c; }
+.nh-release-head { font-family: "Special Elite", monospace; letter-spacing: .12em; color: #002a5c; }
+.nh-pinkslip {
+  background: #ffd6e3;
+  border: 1px dashed #c76b8a;
+  border-radius: .5rem;
+  padding: 1rem;
+  font-family: "Special Elite", monospace;
+  font-size: .8rem;
+  color: #7a2944;
+  max-width: 17rem;
+  transform: rotate(-3deg);
+  position: relative;
+}
+.nh-pinkslip .nh-void {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 2.4rem;
+  color: rgba(193, 18, 31, .75);
+  transform: rotate(-18deg);
+}
+
+/* ===== Forwarded chain email (be aware) ===== */
+.nh-email { font-family: "Segoe UI", Tahoma, Arial, sans-serif; border: 1px solid #c8d1dc; border-radius: .5rem; overflow: hidden; background: #fff; }
+.nh-email-head { background: #e9eef5; padding: .75rem 1rem; font-size: .85rem; border-bottom: 1px solid #c8d1dc; }
+.nh-email-body { padding: 1.25rem; }
+.nh-email-body .nh-shout { color: #c00; font-weight: 700; }
+
+/* ===== Road signs (red light cameras) ===== */
+.nh-traffic-light { display: inline-flex; flex-direction: column; gap: .3rem; background: #222; padding: .45rem; border-radius: .6rem; }
+.nh-traffic-light span { width: 1.15rem; height: 1.15rem; border-radius: 50%; background: #444; }
+.nh-traffic-light span:first-child { background: #ff3b30; box-shadow: 0 0 .6rem #ff3b30; }
+.nh-street { display: inline-block; background: #0b6b3a; color: #fff; border: 2px solid #fff; outline: 2px solid #0b6b3a; border-radius: .3rem; padding: .25rem .6rem; font-weight: 600; font-size: .85rem; margin: .3rem; }
+
+/* ===== Newspaper clipping (archive items) ===== */
+.nh-clipping {
+  background: #f6efdc;
+  font-family: Georgia, serif;
+  padding: 1.5rem;
+  box-shadow: 0 .3rem .8rem rgba(70, 50, 10, .18);
+  clip-path: polygon(0 1%, 4% 0, 9% 1%, 15% 0, 22% 1%, 30% 0, 38% 1%, 47% 0, 55% 1%, 63% 0, 71% 1%, 79% 0, 87% 1%, 94% 0, 100% 1%, 100% 99%, 95% 100%, 88% 99%, 80% 100%, 72% 99%, 64% 100%, 56% 99%, 48% 100%, 40% 99%, 32% 100%, 24% 99%, 16% 100%, 8% 99%, 0 100%);
+}
+.nh-clipping-kicker { font-family: "Special Elite", monospace; letter-spacing: .14em; font-size: .75rem; color: #7a5c1e; }
+.nh-clipping h4 { font-family: Georgia, serif; font-weight: 700; }
+
+/* ===== Christmas ===== */
+.nh-xmas {
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, .9) 1.5px, transparent 2px) 0 0 / 28px 28px,
+    radial-gradient(circle, rgba(255, 255, 255, .6) 1px, transparent 1.5px) 14px 14px / 28px 28px,
+    #14532d;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  border: .5rem solid #b91c1c;
+}
+.nh-xmas-greeting { font-family: "Caveat", cursive; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.25; }
+.nh-xmas a { color: #fde68a; }
+
+/* ===== In Touch newsletter ===== */
+.nh-newsletter { background: #fffff0; border: 1px solid #e6dcb8; border-radius: .5rem; overflow: hidden; font-family: Georgia, serif; }
+.nh-masthead { background: #800000; color: #ffffcc; padding: 1rem 1.25rem; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem; }
+.nh-masthead-title { font-family: Georgia, serif; font-style: italic; font-weight: 700; font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1; }
+.nh-masthead-meta { font-family: "Inter", sans-serif; font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; opacity: .9; }
+.nh-newsletter .accordion { --bs-accordion-bg: transparent; --bs-accordion-active-bg: #f7efd2; --bs-accordion-active-color: #800000; --bs-accordion-border-color: #e6dcb8; --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(128, 0, 0, .2); }
+.nh-newsletter .accordion-button { font-family: Georgia, serif; font-weight: 700; color: #000080; }
+.nh-newsletter .accordion-body { font-family: Georgia, serif; line-height: 1.7; }
+.nh-newsletter .accordion-body h5 { font-family: Georgia, serif; color: #800000; font-size: 1rem; font-weight: 700; margin-top: 1.25rem; }
+.nh-newsletter .nh-art { float: right; margin: 0 0 1rem 1.25rem; max-width: 40%; height: auto; }
+.nh-newsletter .nh-pullquote { border-top: 3px double #800000; border-bottom: 3px double #800000; color: #800000; font-weight: 700; text-align: center; padding: .75rem; margin: 1.25rem 0; }
+.nh-newsletter table { font-family: "Inter", sans-serif; font-size: .9rem; }
+.nh-issue {
+  display: block;
+  background: #fffff0;
+  border: 1px solid #e6dcb8;
+  border-top: 2.25rem solid #800000;
+  border-radius: .35rem;
+  padding: .9rem;
+  text-decoration: none;
+  color: #222;
+  position: relative;
+  box-shadow: .35rem .35rem 0 #e9dfbd;
+  transition: transform .15s ease;
+  height: 100%;
+}
+.nh-issue::before {
+  content: "In Touch";
+  position: absolute;
+  top: -1.85rem;
+  left: .9rem;
+  color: #ffffcc;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+.nh-issue:hover { transform: translateY(-3px) rotate(-.5deg); color: #222; }
+
+/* ===== Smile tab ===== */
+/* pegboard garage */
+.nh-pegboard {
+  background: radial-gradient(circle, #6b4a2b 2.5px, transparent 3px) 0 0 / 22px 22px, #c8a372;
+  border-radius: .75rem;
+  padding: 1.5rem;
+}
+.nh-pegboard .nh-polaroid { transform: rotate(-1deg); }
+.nh-pegboard .col:nth-child(3n) .nh-polaroid { transform: rotate(1.5deg); }
+.nh-pegboard-title { font-family: "Permanent Marker", cursive; color: #3b2612; font-size: 1.6rem; }
+
+/* resume */
+.nh-resume { font-family: Georgia, serif; padding: 2rem; border-top: .45rem solid #2c3e50; }
+.nh-resume-name { font-size: 1.6rem; font-weight: 700; letter-spacing: .04em; }
+.nh-resume-section { font-family: "Inter", sans-serif; font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: #6c757d; border-bottom: 1px solid #ccc; padding-bottom: .35rem; }
+.nh-job { display: grid; grid-template-columns: 2.25rem 1fr auto; gap: .75rem; align-items: start; padding: .75rem 0; border-bottom: 1px dotted #ddd; }
+.nh-job-no { font-weight: 700; color: #2c3e50; }
+.nh-job img { max-height: 3.5rem; width: auto; }
+.nh-hired { color: #1b7f3b; }
+
+/* church signs */
+.nh-signframe { background: #2b2b2b; padding: .6rem; border-radius: .35rem; box-shadow: 0 .4rem .9rem rgba(0, 0, 0, .3); display: block; }
+.nh-signframe img { display: block; width: 100%; height: auto; border: 2px solid #111; }
+.nh-signframe span { display: block; color: #f4f4f4; font-family: "Special Elite", monospace; font-size: .75rem; text-align: center; padding-top: .4rem; letter-spacing: .1em; }
+.nh-signpost { width: .6rem; height: 1.25rem; background: #2b2b2b; margin: 0 auto; }
+
+/* official letter and reply (the DAM notice) */
+.nh-official { font-family: "Special Elite", "Courier New", monospace; padding: 2rem; font-size: .95rem; line-height: 1.6; position: relative; }
+.nh-letterhead { border-bottom: 3px double #333; padding-bottom: .75rem; margin-bottom: 1.25rem; text-align: center; }
+.nh-letterhead strong { display: block; font-size: 1.05rem; letter-spacing: .08em; }
+.nh-certified { display: table; margin: -.5rem 0 1rem auto; color: #b3261e; font-size: .8rem; }
+.nh-reply {
+  font-family: Georgia, serif;
+  padding: 2rem 2rem 2rem 3.25rem;
+  line-height: 2rem;
+  background:
+    linear-gradient(90deg, transparent 2.4rem, #f2a3a3 2.4rem 2.5rem, transparent 2.5rem),
+    repeating-linear-gradient(180deg, transparent 0 calc(2rem - 1px), #c9dcef calc(2rem - 1px) 2rem),
+    #fffef8;
+  background-position: 0 0, 0 -.4rem, 0 0;
+  box-shadow: 0 .35rem 1.2rem rgba(60, 45, 20, .14);
+}
+.nh-reply p { margin-bottom: 2rem; }
+.nh-reply .nh-dam { font-weight: 700; color: #7a4a12; }
+.nh-signature { font-family: "Caveat", cursive; font-size: 2.1rem; line-height: 1.1; }
+
+/* chalkboard (Bill Gates) */
+.nh-chalkboard {
+  background: radial-gradient(ellipse at 30% 20%, rgba(255, 255, 255, .06), transparent 60%), #24402f;
+  border: .9rem solid #7a5230;
+  border-radius: .5rem;
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, .45), 0 .5rem 1rem rgba(0, 0, 0, .25);
+  color: #f1f1e8;
+  padding: 1.75rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.45rem;
+  line-height: 1.35;
+}
+.nh-chalkboard .nh-rule-no { color: #ffe08a; font-weight: 700; white-space: nowrap; }
+.nh-chalkboard ol { list-style: none; padding: 0; margin: 0; }
+.nh-chalkboard li { display: grid; grid-template-columns: 5.5rem 1fr; gap: .5rem; padding: .3rem 0; }
+@media (max-width: 575.98px) { .nh-chalkboard li { grid-template-columns: 1fr; gap: 0; } }
+
+/* scrapbook (kids & dogs) */
+.nh-scrapbook { background: #fdf3f6; border-radius: 1rem; padding: 1.5rem; }
+.nh-poem { font-family: "Caveat", cursive; font-size: 1.6rem; line-height: 1.3; color: #6b2140; }
+
+/* right foot trick */
+.nh-foot { background: #eef6fb; border-radius: 1rem; padding: 1.5rem; }
+.nh-foot-step { display: flex; gap: 1rem; align-items: flex-start; padding: .75rem 0; }
+.nh-foot-step .nh-num { flex-shrink: 0; width: 2.5rem; height: 2.5rem; border-radius: 50%; background: #fff; display: grid; place-items: center; font-weight: 700; color: var(--bs-primary); box-shadow: 0 .15rem .4rem rgba(0, 41, 61, .12); }
+.nh-gotcha { font-family: "Permanent Marker", cursive; font-size: 2rem; color: #c1121f; transform: rotate(-3deg); display: inline-block; }
+
+/* claim forms (strange but true) */
+.nh-claimform { background: #fff; border: 1px solid #c9d3dd; border-radius: .4rem; height: 100%; overflow: hidden; }
+.nh-claimform-head { background: #eaf1f7; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; padding: .4rem .75rem; color: #456; border-bottom: 1px solid #c9d3dd; display: flex; justify-content: space-between; }
+.nh-claimform blockquote {
+  margin: 0;
+  padding: .5rem .9rem .75rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.45rem;
+  line-height: 1.75rem;
+  color: #1a2f8a;
+  background: repeating-linear-gradient(180deg, transparent 0 calc(1.75rem - 1px), #d6dfe8 calc(1.75rem - 1px) 1.75rem);
+  background-position: 0 .5rem;
+}
+
+/* help wanted (quit complaining) */
+.nh-wanted { background: #fff; border: 2px solid #222; padding: .6rem; height: 100%; text-align: center; }
+.nh-wanted-head { font-family: "Special Elite", monospace; font-size: .8rem; letter-spacing: .14em; border-bottom: 2px solid #222; margin-bottom: .5rem; padding-bottom: .25rem; }
+.nh-wanted img { width: 100%; height: auto; }
+
+/* dictionary (what words really mean) */
+.nh-dictionary { font-family: Georgia, serif; padding: 2rem; }
+.nh-dictionary-title { font-size: 1.5rem; font-weight: 700; border-bottom: 3px double #333; padding-bottom: .5rem; }
+.nh-dictionary dl { columns: 2 18rem; column-gap: 2.5rem; column-rule: 1px solid #e3ddd0; margin: 0; }
+.nh-dictionary .nh-entry { break-inside: avoid; padding: .5rem 0; }
+.nh-dictionary dt { display: inline; font-variant: small-caps; font-size: 1.15rem; font-weight: 700; letter-spacing: .03em; }
+.nh-dictionary dt::after { content: " (n.)"; font-variant: normal; font-style: italic; font-weight: 400; font-size: .9rem; color: #777; }
+.nh-dictionary dd { display: inline; margin: 0; }
+.nh-dictionary dd::before { content: " "; }
