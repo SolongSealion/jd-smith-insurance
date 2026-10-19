@@ -2,16 +2,21 @@
 
 ## Folder layout (since 2026-10-18)
 - `index.html` (homepage) is the only page in the root. Every other page is in `pages/<section>/`:
-  `pages/personal/` (personal overview, auto, home, UberX), `pages/auto-reform/` (the auto reform page, its four
+  `pages/personal/` (personal overview, auto, home, UberX), `pages/small-business/` (the small business overview and its seven package pages), `pages/commercial/` (the commercial overview and its nineteen package pages), `pages/life-health/` (the Life & Health overview / life insurance & planning page and its group, mortgage and critical illness pages, since 2026-10-19), `pages/auto-reform/` (the auto reform page, its four
   sub-pages and Accident benefits explained), `pages/about/` (core values, the broker advantage, staff, staff videos, job postings, community, car racing team, speeder's remorse, and the four legal pages: privacy statement, terms of use, code of consumer rights, E. & O. E. disclaimer),
   `pages/resources/` (Claims, Claims: when you have an auto accident, 12 ways to save, 20 hot topics, Drive safe and save, Winter storage tips, Online payments, Insurance companies and Reflection & encouragement) and `pages/quotes/` (Get a free quote). Put a new page in
   the section its navbar menu belongs to.
-- Shared assets stay in the root: `css/`, `js/`, `Applications/` (PDF applications) and `images/`.
+- Shared assets stay in the root: `css/`, `js/`, `Applications/` (PDF applications) and `images/`. The browser-tab icon
+  (`favicon.svg`, `favicon.ico`, `apple-touch-icon.png`) is also in the root and linked in every page's `<head>` right after
+  `css/styles.css`. It is a placeholder until the office agrees on a logo (STAKEHOLDER_NOTES 8.16).
   `images/` holds the site photos (`stock/`, `staff/`, `office/`, `life/`, `community/`, plus a few in the root) and the photo
   library used by `ai-reference/PAGE_CONTENT.md`: `images/original/` (copies from the live site) and
   `images/suggested/` (Unsplash replacements).
 - `ai-reference/` holds the project notes and build material, not site pages: this file, `SITE_MAP.md`,
-  `PAGE_CONTENT.md`, `STAKEHOLDER_NOTES.txt` and `template/index.html`. The root `CLAUDE.md` only imports this file.
+  `PAGE_CONTENT.md`, `STAKEHOLDER_NOTES.txt`, `NOTES_FOR_THE_OFFICE.txt` and `template/index.html`. The root `CLAUDE.md` only imports this file.
+- `STAKEHOLDER_NOTES.txt` is the technical log (page comments cite its item numbers, so don't renumber it).
+  `NOTES_FOR_THE_OFFICE.txt` is the plain-language version for the office, who are not technical: no file names, code or
+  jargon, minor items dropped, most urgent first. When an item is added to or settled in one, update the other.
 - Links in a page are relative to that page. From `pages/<section>/` the root is `../../` (e.g.
   `../../css/styles.css`, `../../images/stock/auto.jpg`, `../../index.html`), a page in another section is
   `../<section>/<page>.htm`, and a page in the same section is just `<page>.htm`. Links to pages that are not in the
@@ -181,6 +186,115 @@ jumps to these cards; the separate "Free quote" section of five quote methods wa
 the RIBO trust strip, and the bottom CTA with contact block. Photos: `images/stock/personal.jpg` (hero), `auto.jpg`,
 `home.jpg`, `boat.jpg`, `uberx.jpg`, `auto_reform.jpg`.
 
+### All small business — `pages/small-business/small_business_online.htm`
+The Small Business overview page, built from `ai-reference/PAGE_CONTENT.md` section B0 in the layout of All personal insurance
+(since 2026-10-19; it replaced the live page's plain list). The navbar Small Business toggle and Small Business > All small business,
+the footer Small Business link and the homepage "Small Business, Online 24/7" card go here. It holds one card per package in header order
+(Barbers & hairstylists, Builder's risk, Health & fitness, Non-profit liability, Photography services, Professional liability, Special
+events), each with the live coverage line as badges, the live highlight, a one-line summary from its B1–B7 page, "Quote online" (the
+quote-and-bind link from `ai-reference/SITE_MAP.md` 1b) and "Learn more" (the local B1–B7 page, since 2026-10-19; Builder's risk also has
+`../../Applications/builders_risk.pdf`), plus a "Business not listed?" card (over 450 types, Commercial insurance, which goes to `pages/commercial/jds-corporate.htm`). The hero "Get a free
+quote" button jumps to the cards. Then how online quoting works (`#how-it-works`: the 4 steps and what happens after you buy), what the
+letters mean (`#glossary`: E&O, CGL, COED, D&O, NOA) with the RIBO trust strip, and the bottom CTA (start online business quote, one
+button per package, call) with contact block. Starting premiums follow the live overview and the quote page ($200 barbers, $100 events,
+STAKEHOLDER_NOTES 3.1 and 3.2). The live overview calls non-profit "E&O, CGL, COED"; the card says D&O, as on the non-profit page (noted in a
+comment). No auto reform banner. Photos: `images/stock/sb_online.jpg` (hero) and `sb_barber.jpg`, `sb_builders.jpg`, `sb_fitness.jpg`,
+`sb_nonprofit.jpg`, `sb_photo.jpg`, `sb_prof.jpg`, `sb_events.jpg` (Unsplash, copied from `images/suggested/`).
+
+### Small business package pages (B1–B7)
+Seven quotation pages in `pages/small-business/`, built on 2026-10-19 from `ai-reference/PAGE_CONTENT.md` sections B1–B7 (the live
+pages' wording). The "Learn more" buttons on `small_business_online.htm` and the navbar Small Business items go here.
+They share one layout: the hero (its `images/stock/sb_*.jpg` card photo, breadcrumb back to
+the overview, the "Small business online quotes 24/7" eyebrow), a sub-navigation strip of all eight small business pages (the current
+one marked active), the top quote options (`#quote-options`: online quote-and-bind link from `ai-reference/SITE_MAP.md` 1b and a call
+card; Builder's risk also has its PDF), the information section with a sticky "On this page" list (`#about` with the testimonial,
+`#coverage-types`, `#coverage` table of limits and starting premiums, then page-specific sections such as `#eligible`), the bottom CTA with
+contact block, and related cards. Starting premiums follow the overview: barbers $200 and special events $100 (the live pages say $275
+and $125 per day, noted in each page's top comment, STAKEHOLDER_NOTES 3.1 and 3.2).
+- **Barbers & hairstylists — `small_business_barber_hairstylist.htm`:** chair rental to a 20-employee shop, Julio's testimonial.
+- **Builder's risk — `small_business_builders_risk.htm`:** the 24-month / 14-day backdating note, large projects card (Mark at ext. 228,
+  not the unconfirmed direct line, STAKEHOLDER_NOTES 2.5), extensions and warranties (`#extensions`), eligible projects.
+- **Health & fitness — `small_business_health_fitness.htm`:** eligible classes as one accordion (`#classes-list`, items `#health-wellness`,
+  `#personal-training`, `#yoga`; `js/accordions.js` opens one from the URL hash).
+- **Non-profit liability — `small_business_non_profit.htm`:** D&O, CGL and COED, eligible organizations, links to the live Commercial
+  non-profit and church pages and the D&O PDF.
+- **Photography services — `small_business_photography.htm`:** no testimonial on the live page; mobile equipment row from the overview.
+- **Professional liability — `small_business_professional_liability.htm`:** eligible classes accordion (`#financial`, `#media-marketing`,
+  `#consulting`, `#miscellaneous`), links to `pages/quotes/jds-get_a_quote.htm#co-pro` for the PDF applications.
+- **Special events — `small_business_special_events.htm`:** key facts cards, the host responsibility note, eligible events and the two
+  paper applications (`#paper`: special events, exhibitors & kiosks).
+
+### All commercial insurance — `pages/commercial/jds-corporate.htm`
+The Commercial overview page, built from `ai-reference/PAGE_CONTENT.md` section C0 in the layout of All small business (since 2026-10-19).
+The navbar Commercial toggle and Commercial > Get started > All commercial insurance, the footer Commercial link, the homepage "Commercial
+Insurance" card and the "Commercial insurance" button on the small business "Business not listed?" card go here. It holds the hero (Request a
+business quote on `jds-quote.htm`, call), why JD Smith (`#why`: the six features and the "Free insurance review" card with the commercial
+team photo; the small business band was removed on 2026-10-19, as this page is only about commercial businesses), the industry packages
+(`#packages`, grouped as in the mega-menu: `#faith`, `#trades`, `#transport`, `#specialty`), special programs with the D&O news card (`#programs`,
+the live D&O PDF), coverages available (`#coverage`), our partners (`#partners`: the 16 E3 logos, linking to
+`pages/resources/jds-insurance_companies.htm`, IBC, RIBO strip), and the bottom CTA (business quote form, online business quote, application
+forms, call) with contact block. Each package card has the live summary, its quote method from `ai-reference/SITE_MAP.md` 1c (the same as
+`pages/quotes/jds-get_a_quote.htm`; items with several forms link to that page's category, e.g. `#co-mfg`, `#co-faith`, `#co-energy`) and
+"Learn more" (the local C1–C19 page, since 2026-10-19). Retail keeps the overview's "more than 50 franchises" (noted in a comment). No auto reform
+banner. Photos: `images/stock/com_corporate.jpg` (hero) and `com_<key>.jpg` for each card (Unsplash, copied from `images/suggested/<key>.jpg`),
+`images/staff/Commercial_Team_Sept_23.jpg` and `images/insurers/`.
+
+### Commercial package pages (C1–C19)
+Nineteen quotation pages in `pages/commercial/`, built on 2026-10-19 from `ai-reference/PAGE_CONTENT.md` sections C1–C19 (the live
+pages' wording, same file names). The "Learn more" buttons on `jds-corporate.htm`, the navbar Commercial mega-menu, the footer and the
+related cards on other pages go here. They share the B1–B7 layout: the hero (`images/stock/com_<key>.jpg`, breadcrumb back to the
+overview), a sub-navigation strip of "All commercial" plus the pages in the same mega-menu group (Faith & non-profit, Trades & industry,
+Transport & trade, Specialty; the current one marked active), the top quote options (`#quote-options`: the quote method from
+`ai-reference/SITE_MAP.md` 1c as cards, then any extra PDF applications as a list and the named specialists as staff cards with their
+extensions), the information section with a sticky "On this page" list (the standard commercial coverage blocks are cards: property,
+loss of income, crime, general liability, car & fleet, other liability), the bottom CTA ("Contact one of our professional brokers for a
+review of your coverages today!" unless the page has its own) with contact block, and related cards. Each page's top comment lists what
+was changed from the live page and why. Pages not rebuilt yet (Charity Village, church signs, the CWB flyer) link to the live site; the Group insurance related cards go to `pages/life-health/jds-life_groups.htm` (since 2026-10-19).
+- **Faith & non-profit:** `jds-church.htm` (all 7 church/faith PDFs, fire photos, D&O, the Church Shield plan, "For reflection" to
+  `pages/resources/jds-meditations.htm`), `jds-camp-insurance.htm` (14-day note; the campground PDF waits for STAKEHOLDER_NOTES 1.1),
+  `jds-school_insurance.htm` (school photo gallery), `jds-packages_non_profit_companies.htm` (Charity Village and CCBF discounts, D&O costs).
+- **Trades & industry:** `jds-packages_contractors.htm` (uses 10–15% for TCA/MCA, STAKEHOLDER_NOTES 8.1), `jds-packages_landscape_snow_removal.htm`,
+  `jds-packages_metals_welding.htm` (client comments; the conflicting $1,980,000 line and "NEW in 2012" left out), `jds-packages_cwb_insurance.htm`
+  (Jo-Anne Griffiths left out, 8.2), `jds-packages_tool_and_die.htm`, `jds-packages_doors_windows.htm`, `jds-packages_non_destructive_testing.htm`.
+- **Transport & trade:** `jds-packages_fleet_insurance.htm` (Mark is ext. 228, 2.2), `jds-packages_marine_overland_insurance.htm` (cargo loss
+  gallery), `jds-customs_bonding.htm` (ask Haig for the 2-page application, 8.6), `jds-packages_retail_wholesale.htm` (380 franchise locations,
+  1-800-917-7283, 2.3).
+- **Specialty:** `jds-cyber_liability_insurance.htm` (premium table "plus 8% PST", 8.4; policy guidance accordion `#policies-list`, items
+  `#roles`, `#privacy-policy`, `#internet-usage`, `#social-media`, `#reputation`; loads `js/accordions.js`), `jds-packages_renewable_energy.htm`,
+  `jds-hole-in-one.htm` (extensions 215 and 228, not the unconfirmed direct lines, 2.5), `jds-corporate_clients.htm` (contractors plus the A–Z
+  list with letter jump links; business types with their own page link to it).
+Photos: `images/stock/com_*.jpg` (Unsplash; `com_snow.jpg` and `com_wind.jpg` cropped/resized from `images/suggested/`) and
+`images/commercial/` (church fire, school, cargo loss and CWB photos and partner logos, copied from `images/original/`).
+
+### Business quote request — `pages/commercial/jds-quote.htm`
+The commercial quote form, built on 2026-10-19 from `ai-reference/PAGE_CONTENT.md` section C20. Every "Request a business quote" / "Quote
+form" button (the commercial pages, `pages/quotes/jds-get_a_quote.htm`) and the navbar/footer "Business quote request" go here. It holds
+the hero, three ways to request a quote (`#quote-options`), the form (`#quote-form`, form id `quotation`) with the "Short applications"
+card (`#applications`, the corrected C20 list) and Mark Smith beside it, and the "Prefer to talk to a broker?" CTA with contact block.
+**The form submits to the same endpoint as the live form, on purpose:** `action="http://sws006.actionhosting.ca/formmail.asp"`, `method="get"`,
+the same hidden `recipient` (manager@jdsmithinsurance.com), `subject` and `redirect` (the live `jds-quote_thank_you.htm`) fields, and the
+same 55 field names, live misspellings included (`Oganization_Name`, `Premesis`, `Present Insurance Company`), so the office's emails
+look the same. Don't rename fields or change the action unless the office asks. Required: `My_Name_is`, `Phone`, `email` (the live
+validator's). Only change: storey "15" added (missing on the live list). On 2026-10-19 the host `sws006.actionhosting.ca` did not
+resolve in DNS, so submissions cannot arrive (STAKEHOLDER_NOTES 4.7). `js/quote-forms.js` is loaded only to prefill "Quote my
+insurance needs for" from `?type=`; the form has no `data-mailto`, so the script doesn't touch submission. Photo:
+`images/stock/com_quote_form.jpg` (Unsplash, cropped from `images/suggested/quote_form.jpg`) and `images/staff/Mark_2023.jpg`.
+
+### Solar & wind quote form — `pages/commercial/jds-renewable_energy_quote.htm`
+The renewable energy quote form, built on 2026-10-19 from `ai-reference/PAGE_CONTENT.md` section C21 in the layout of `jds-quote.htm`.
+The Solar / Wind quote buttons on `jds-packages_renewable_energy.htm` (top cards, package cards, CTA), the Renewable energy card on
+`jds-corporate.htm` and the Solar & wind row on `pages/quotes/jds-get_a_quote.htm` (`#co-energy`) go here. It holds the hero (Solar quote,
+Wind quote, call), the C21 intro with a Solar and a Wind photo card and the two RES PDFs (`#quote-options`), the form (`#quote-form`, form
+id `solarwindquotation`) with "What your quote includes", the RES applications and Mark Smith beside it, and the CTA with contact block.
+The live page is one form for both; here a Solar / Wind switch (`#form-type`, not submitted) shows the questions that fit, and
+`?type=solar|wind` preselects it (solar by default). An inline script disables the hidden questions so they are not sent; without JS
+every question shows. **Same endpoint as the live form, on purpose:** `formmail.asp` action, `method="get"`, hidden `recipient`
+(sales@jdsfinancial.ca, as live), `subject`, `redirect` (live `jds-quote_thank_you_renewable1.htm`), and the live field names and values.
+Required: the live validator's seven (company, contact, address, city, postal code, email, phone). Changes (listed in the page's top
+comment): solar does not offer "Wind Mill"; wind sends `Project_Type=Wind Mill`, skips the four roof/building questions and adds
+`Number_of_turbines`, `Turbine_make_model`, `Tower_height` (new, not on the live form); year lists 2026–1950; income "800,00" fixed.
+The endpoint does not resolve (STAKEHOLDER_NOTES 4.7). Photos: `images/stock/com_solar.jpg` (hero), `com_wind.jpg`, `images/staff/Mark_2023.jpg`.
+
 ### UberX ride-sharing — `pages/personal/uberx.htm`
 Quotation page built from `ai-reference/template/index.html` and `ai-reference/PAGE_CONTENT.md` section A4. The navbar Personal > UberX
 ride-sharing links here. It holds the two quote methods (the short quote form and a call
@@ -347,6 +461,20 @@ Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` se
 section of its Appendix. The navbar Resources > Reading > News & humour, the homepage "Helpful resources" card ("Insurance news")
 and the Related card on `pages/resources/jds-meditations.htm` go here (since 2026-10-19; none link to the live page any more).
 Its Meditations card goes to the local `jds-meditations.htm`, and its Dario card to the local `jds-dario_thoughts.htm`. Page-only styles and script: `css/news.css`, `js/news.js`.
+It has the live page's three columns as Bootstrap tabs: What's new (`#whats-new`, 43 items in four groups: `#road`, `#home-safety`,
+`#wonders`, `#lift`), Current client newsletter (`#newsletter`: the auto benefits item, In Touch #9, #8–#3 as PDFs, #2, #1) and Today's
+smile (`#todays-smile`, 16 items). Every live item is an accordion item whose id comes from its old page name (`#dam-notice`,
+`#check-the-barn`, `#in-touch-9`…); `js/accordions.js` shows the right tab before opening an item from the URL hash, and `js/news.js`
+keeps the tab in the address bar, loads the two YouTube embeds (youtube-nocookie) only when opened, and runs the barn doors and
+right foot reveals. Closed accordion headers use the plain site style; each article's character (official letter and lined-paper
+reply, chalkboard, résumé, dictionary, claim forms, maroon "In Touch" masthead, TV set for videos, slide frame for .pps, "Missing"
+poster for dead links…) is only inside its opened panel, in the `.nh-*` classes of `css/news.css`, with Caveat, Special Elite and
+Permanent Marker loaded on this page only. Items that have their own page (burglar tips, unusual claims, lucky to be alive, speeder's
+remorse, racing team, Drive safe and save, the hot topics articles) are short teasers linking there. Old .wmv/.pps files offer the
+download from the live site (STAKEHOLDER_NOTES 8.13a); "Forgotten Information on 9/11" is left out and the other content questions
+are in STAKEHOLDER_NOTES 8.15. Photos: `images/stock/news.jpg` (hero, Unsplash, cropped to 1600×900), `images/news/` (copied from
+`images/original/`, with the full-size Ferrari, job and garage #3 photos from the live site) and the In Touch PDFs in `media/`
+(restored from the backup).
 
 ### Dario's thoughts and comments — `pages/resources/jds-dario_thoughts.htm`
 Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E9.1 and the 59 live `/dario/` pages (text
@@ -360,6 +488,30 @@ with contact block, and related links. Each devotional has its verse as a blockq
 the Lord always! / Dario Ferko" sign-off. Live wording with small typo fixes; titles in sentence case. Gaps that are on the live pages
 too and the uncertain 2020 date are noted in a comment. Photos: `images/reflection/darios_thoughts-front.jpg` (the live hero) and
 `images/reflection/news_dario.gif`.
+
+### Life & health pages (D1–D4)
+Four quotation pages in `pages/life-health/`, built on 2026-10-19 from `ai-reference/PAGE_CONTENT.md` sections D1–D4 (the live pages'
+wording, same file names). The navbar Life & Health toggle and its four items, the footer Life & Health link, the homepage "Life & Financial
+Planning" card and the Group insurance related cards on `jds-church.htm`, `jds-packages_non_profit_companies.htm` and
+`jds-school_insurance.htm` go here. They share the B1–B7 layout: the hero (`images/stock/life*.jpg`, Unsplash, cropped from
+`images/suggested/`; no sub-navigation strip, since 2026-10-19 the pages stand on their own), the top quote options (`#quote-options`,
+by phone, from `ai-reference/SITE_MAP.md` 1d), the information section with a sticky "On this page" list, the "Contact our office for great
+quotes" CTA ("Individual life and groups are our specialty") with contact block, and related cards. J D Smith is ext. 223 everywhere
+(the life pages' number, not the staff list's 234, STAKEHOLDER_NOTES 2.1); Tom Larha is ext. 245. Each page's top comment lists what changed.
+Small photos and the Wawanesa Life logo are in `images/life-health/` (copied from `images/original/`).
+- **Life insurance & planning — `jds-life_health.htm`:** only life insurance and planning. Since 2026-10-19 it has no group, mortgage or
+  critical illness content or links (quote cards, sections or related cards): one Life insurance quote card (ext. 223), then `#life-insurance`
+  (ardillgroup.com, now https, unconfirmed 8.3), `#financial-planning`, `#seg-funds` and `#death-taxes` (Susan and Bruce example, "not tax experts" note).
+- **Group insurance — `jds-life_groups.htm`:** Basic vs Enhanced table (`#plans`), sample rates (`#rates`) and key elements as one accordion
+  (`#elements-list`, items `#el-life`, `#el-add`, `#el-ltd`, `#el-health`, `#el-vision`, `#el-dental`; loads `js/accordions.js`).
+- **Mortgage insurance — `jds-life_mortgage_insurance.htm`:** the live page is one image (`mortgage_insurance_01.gif`); its text is typed out
+  word for word as `#not-the-same` and the ten-row Wawanesa Life vs bank table (`#compare`), plus a link to critical illness (`#see-also`;
+  the Solution 20 comparison left the overview, so nothing mentions it).
+- **Old site (checked 2026-10-19):** no link on the four pages, or in the shared navbar/footer they load, goes to jdsmithinsurance.com.
+  The navbar Commercial > Application forms now goes to `pages/quotes/jds-get_a_quote.htm#commercial-options`.
+- **Critical illness — `jds-life_insurance_critical_illness.htm`:** the Quick Issue plan (`#about`), the "Did you know?" graphic typed out
+  (`#why`, dated 2008 figures), `#at-a-glance` (14 illnesses), `#plan-options`, the 8 qualifying questions as a list, not a form
+  (`#questions`), and `#weight-table`.
 
 ## Navbar and footer are the same on every page
 - The navbar and footer are shared components in `js/components.js` (`SITE_HEADER` and `SITE_FOOTER`).
@@ -391,11 +543,14 @@ The nav and footer link removed pages to the live site (`https://jdsmithinsuranc
 - The items on `pages/quotes/jds-get_a_quote.htm` must match the items in `ai-reference/SITE_MAP.md` section 1 (Quotes):
   1a Personal, 1b Small Business, 1c Commercial, 1d Life & Health. If one changes, update the other.
 - Use the quote method that `ai-reference/SITE_MAP.md` lists for each item, including phone extensions and PDF names.
-- The UberX form is on `pages/personal/uberx.htm#quote-form`. The other forms (`jds-quote.htm`,
-  `jds-renewable_energy_quote.htm`) are no longer in the project, so the page links to them on the live site, `https://jdsmithinsurance.com/...`. All of those links returned 200 on 2026-10-18.
+- The UberX form is on `pages/personal/uberx.htm#quote-form`, the business quote form on `pages/commercial/jds-quote.htm` and the
+  solar & wind form on `pages/commercial/jds-renewable_energy_quote.htm` (`?type=solar` / `?type=wind`, all since 2026-10-19).
 - The application PDFs are in the project's `Applications/` folder (all 56 from the live site, restored from the backup
   on 2026-10-18), so every PDF link is relative: `../../Applications/<file>.pdf`. This includes `campground.pdf` and the old
-  `church.pdf` (STAKEHOLDER_NOTES 1.1 and 1.2), which no page links to yet.
+  `church.pdf` (STAKEHOLDER_NOTES 1.1 and 1.2). `campground.pdf` is only on the `jds-quote.htm` Short applications card, not
+  on the quote page yet; no page links `church.pdf`.
+- Publishing: `wrangler.jsonc` serves the project root, so `.assetsignore` must keep `ai-reference/`, `CLAUDE.md` and the
+  unused `images/original/` and `images/suggested/` out of the published site (STAKEHOLDER_NOTES 10.3).
 - Every PDF on the live `jds-applications.htm` is also on the quote page (since 2026-10-18), so there is
   no "See all application forms" link. The full list is in `ai-reference/SITE_MAP.md` section 5.
 - Small business and Commercial options are nested Bootstrap accordions: one top-level item each, then

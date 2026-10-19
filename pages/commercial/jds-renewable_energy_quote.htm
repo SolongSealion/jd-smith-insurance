@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9EMKGWK3Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L9EMKGWK3Q');
+  </script>
+  <title>Insurance Quote for a Solar or Wind Power Plant | JD Smith Insurance</title>
+  <meta name="description" content="Request an insurance quote for your solar or wind power plant. Group rates, up to $100 million limits and $10,000,000 general liability, with a quote from our underwriters within 2 business days.">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="icon" href="../../favicon.ico" sizes="48x48">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+  <script src="../../js/components.js"></script>
+</head>
+<body>
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 z-3 m-2 p-2 bg-white rounded shadow" href="#main-content">Skip to main content</a>
+
+  <site-header></site-header>
+
+  <main id="main-content">
+    <!-- Built from ai-reference/PAGE_CONTENT.md section C21 (live jds-renewable_energy_quote.htm, copied 2026-10-19) in the layout of
+         jds-quote.htm. The live page is one form for both kinds of plant; here a Solar / Wind switch at the top of the form (#form-type)
+         shows the questions that fit (?type=solar or ?type=wind preselects it, and every solar / wind button on the site uses that).
+         Both send the live field names, so the office's emails look the same. Changes from the live form:
+         - Solar: "Wind Mill" is not offered as a project type (the Wind form sends Project_Type = "Wind Mill" instead).
+         - Wind: the roof questions (Building_construction, Building_Roof_Type, Date_Building_Constructed, Date_Roof_Updated) are not
+           asked, the supplier label says "turbine" instead of "solar equipment", and three new fields are asked: Number_of_turbines,
+           Turbine_make_model and Tower_height (not on the live form; the office can drop them).
+         - The year lists run from the current year (2026) down to 1950 (the live lists stop at 2011, C21 says to extend them).
+         - Income_protection "800,00" on the live list is fixed to "800,000".
+         Without JavaScript every question shows (the wind-only ones marked) and the form still works. Photos: images/stock/com_solar.jpg
+         (hero) and com_wind.jpg (Unsplash, the C17 photos). -->
+    <!-- ===== Hero ===== -->
+    <section class="page-hero">
+      <img class="page-hero-img" src="../../images/stock/com_solar.jpg" alt="" fetchpriority="high">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-lg-8 col-xl-7">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb breadcrumb-light small mb-3">
+                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="jds-corporate.htm">Commercial insurance</a></li>
+                <li class="breadcrumb-item"><a href="jds-packages_renewable_energy.htm">Renewable energy</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Solar &amp; wind quote</li>
+              </ol>
+            </nav>
+            <span class="text-uppercase small fw-semibold text-white text-opacity-75 d-block mb-2">Green power insurance</span>
+            <h1 class="display-5 fw-bold mb-3">Insurance quote for a solar or wind power plant</h1>
+            <p class="lead mb-4 text-white text-opacity-75">Complete the online quote application and receive a quote back from our underwriters within 2 business days of your submission.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-light btn-lg rounded-pill px-4 fw-semibold" href="?type=solar#quote-form" data-pick="solar"><i class="bi bi-sun me-2"></i>Solar quote</a>
+              <a class="btn btn-light btn-lg rounded-pill px-4 fw-semibold" href="?type=wind#quote-form" data-pick="wind"><i class="bi bi-wind me-2"></i>Wind quote</a>
+              <a class="btn btn-outline-light btn-lg rounded-pill px-4" href="tel:18009177283"><i class="bi bi-telephone me-2"></i>1-800-917-7283</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Choose your form + why us ===== -->
+    <section class="py-5 scroll-mt" id="quote-options">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <span class="text-uppercase small fw-semibold text-primary d-block mb-2">Free quote</span>
+            <h2 class="h3 fw-bold mb-3">Group rates for green power</h2>
+            <p class="text-body-secondary">We work with insurance carriers that provide group insurance rates. We can provide coverage up to $100 million limits, with $10,000,000 commercial general liability if needed. Discounts if you own and operate more than one site.</p>
+            <div class="fw-semibold mb-2">Rates are based on:</div>
+            <ul class="list-unstyled d-grid gap-2 mb-4">
+              <li class="d-flex gap-2"><i class="bi bi-check2-circle text-primary"></i><span>Sites installed professionally</span></li>
+              <li class="d-flex gap-2"><i class="bi bi-check2-circle text-primary"></i><span>Warranted equipment</span></li>
+              <li class="d-flex gap-2"><i class="bi bi-check2-circle text-primary"></i><span>24-hour monitoring system and alarm</span></li>
+              <li class="d-flex gap-2"><i class="bi bi-check2-circle text-primary"></i><span>All FIT program requirements are followed and adhered to</span></li>
+            </ul>
+            <p class="small text-body-secondary mb-0">For immediate service from a friendly J.D. Smith Insurance professional, call <a href="tel:18009177283">1-800-917-7283</a> throughout Ontario, or <a href="tel:9057647868">905-764-7868</a> within the G.T.A.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col">
+                <a class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-decoration-none card-lift" href="?type=solar#quote-form" data-pick="solar">
+                  <div class="ratio ratio-16x9"><img class="object-fit-cover" src="../../images/stock/com_solar.jpg" alt="" loading="lazy"></div>
+                  <div class="card-body p-4 d-flex flex-column">
+                    <span class="badge rounded-pill text-bg-light border align-self-start mb-2"><i class="bi bi-sun me-1"></i>Online form</span>
+                    <h3 class="h5 fw-semibold text-body mb-2">Solar power plant</h3>
+                    <div class="text-body-secondary mb-3">Commercial, residential and agricultural roof tops, and agricultural ground mounts.</div>
+                    <span class="mt-auto fw-semibold text-primary">Start the solar quote <i class="bi bi-arrow-down"></i></span>
+                  </div>
+                </a>
+              </div>
+              <div class="col">
+                <a class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden text-decoration-none card-lift" href="?type=wind#quote-form" data-pick="wind">
+                  <div class="ratio ratio-16x9"><img class="object-fit-cover" src="../../images/stock/com_wind.jpg" alt="" loading="lazy"></div>
+                  <div class="card-body p-4 d-flex flex-column">
+                    <span class="badge rounded-pill text-bg-light border align-self-start mb-2"><i class="bi bi-wind me-1"></i>Online form</span>
+                    <h3 class="h5 fw-semibold text-body mb-2">Wind power plant</h3>
+                    <div class="text-body-secondary mb-3">Wind turbines, from a single farm turbine to a multi-site project.</div>
+                    <span class="mt-auto fw-semibold text-primary">Start the wind quote <i class="bi bi-arrow-down"></i></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="card border-0 shadow-sm rounded-4 mt-4">
+              <div class="card-body p-4 d-flex flex-column flex-md-row gap-3 align-items-md-center">
+                <span class="icon-badge flex-shrink-0"><i class="bi bi-file-earmark-text"></i></span>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold">Prefer a paper application?</div>
+                  <div class="small text-body-secondary">Fill in the renewable energy applications, print them and fax them to 905-764-9618.</div>
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <a class="btn btn-sm btn-outline-primary rounded-pill" href="../../Applications/RES_Property_App_1.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-arrow-down me-1"></i>Property PDF</a>
+                  <a class="btn btn-sm btn-outline-primary rounded-pill" href="../../Applications/RES_Liability_App_2.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-arrow-down me-1"></i>Liability PDF</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== The form ===== -->
+    <section class="py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-8">
+            <section class="scroll-mt" id="quote-form">
+              <div class="bg-white rounded-4 shadow-sm p-4 p-lg-5">
+                <h2 class="h4 fw-bold mb-1" data-solar-text="Solar power plant quote" data-wind-text="Wind power plant quote">Solar or wind power plant quote</h2>
+                <p class="text-body-secondary mb-4">Fields marked <span class="text-danger">*</span> are required. If you prefer, you can fill in the details, print the form and fax it to us at 905-764-9618.</p>
+
+                <!-- Not part of the form: it only picks which questions show. Hidden until the script runs (without it, every question shows). -->
+                <div class="mb-4 scroll-mt" id="form-type" hidden>
+                  <div class="form-label fw-medium" id="form-type-label">What are you insuring?</div>
+                  <div class="btn-group w-100" role="group" aria-labelledby="form-type-label">
+                    <input type="radio" class="btn-check" name="form-type" id="ft-solar" value="solar" autocomplete="off">
+                    <label class="btn btn-outline-primary py-2" for="ft-solar"><i class="bi bi-sun me-2"></i>Solar power plant</label>
+                    <input type="radio" class="btn-check" name="form-type" id="ft-wind" value="wind" autocomplete="off">
+                    <label class="btn btn-outline-primary py-2" for="ft-wind"><i class="bi bi-wind me-2"></i>Wind power plant</label>
+                  </div>
+                </div>
+
+                <!-- The form sends what the live jds-renewable_energy_quote.htm sent: the same action (http://sws006.actionhosting.ca/formmail.asp),
+                     method (get), hidden recipient (sales@jdsfinancial.ca, not manager@ as on jds-quote.htm), subject and redirect
+                     (jds-quote_thank_you_renewable1.htm on the live site) fields, field names and values. Required fields are the live
+                     validator's: Company_Name, Contact_Name, Address, City, Postal_Code, email, Phone (now HTML `required`).
+                     WARNING (checked 2026-10-19): sws006.actionhosting.ca does not resolve in DNS, so this endpoint cannot deliver requests,
+                     on the live site or here (STAKEHOLDER_NOTES 4.7). It is also plain http and a GET. To switch to a working handler, change
+                     the action (and method="post") or use data-mailto / data-endpoint with js/quote-forms.js as on uberx.htm. -->
+                <form action="http://sws006.actionhosting.ca/formmail.asp" method="get" name="solarwindquotation" id="solarwindquotation">
+                  <input type="hidden" name="recipient" value="sales@jdsfinancial.ca">
+                  <input type="hidden" name="subject" value="Solar or Wind Power Insurance Quotation Request">
+                  <input type="hidden" name="redirect" value="http://www.jdsmithinsurance.com/jds-quote_thank_you_renewable1.htm">
+
+                  <h3 class="h6 fw-semibold mb-3"><i class="bi bi-building text-primary me-2"></i>Company information</h3>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-company">Company name <span class="text-danger">*</span></label><input class="form-control" type="text" id="r-company" name="Company_Name" autocomplete="organization" required></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-contact">Contact name <span class="text-danger">*</span></label><input class="form-control" type="text" id="r-contact" name="Contact_Name" autocomplete="name" required></div>
+                    <div class="col-12"><label class="form-label fw-medium" for="r-address">Address <span class="text-danger">*</span></label><input class="form-control" type="text" id="r-address" name="Address" autocomplete="street-address" required></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-city">City <span class="text-danger">*</span></label><input class="form-control" type="text" id="r-city" name="City" autocomplete="address-level2" required></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-postal">Postal code <span class="text-danger">*</span></label><input class="form-control" type="text" id="r-postal" name="Postal_Code" autocomplete="postal-code" required></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-email">Email <span class="text-danger">*</span></label><input class="form-control" type="email" id="r-email" name="email" autocomplete="email" required></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-url">Company website</label><input class="form-control" type="text" id="r-url" name="Company_URL" autocomplete="url" inputmode="url" placeholder="www."></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-phone">Telephone <span class="text-danger">*</span></label><input class="form-control" type="tel" id="r-phone" name="Phone" autocomplete="tel" required></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-fax">Fax</label><input class="form-control" type="tel" id="r-fax" name="Fax"></div>
+                  </div>
+
+                  <h3 class="h6 fw-semibold mb-3"><i class="bi bi-lightning-charge text-primary me-2"></i>Installation information</h3>
+                  <div class="row g-3 mb-4">
+                    <div class="col-12"><label class="form-label fw-medium" for="r-site">Renewable site location address</label><textarea class="form-control" id="r-site" name="Renewable_Site_Location" rows="3" aria-describedby="r-site-help"></textarea><div class="form-text" id="r-site-help">List all sites if applicable.</div></div>
+                    <div class="col-md-6" data-mode="solar">
+                      <label class="form-label fw-medium" for="r-type">Project type</label>
+                      <select class="form-select" id="r-type" name="Project_Type">
+                        <option value="Not Selected" selected>Please select</option>
+                        <option value="Commercial Roof Top">Commercial roof top</option>
+                        <option value="Residential Roof Top">Residential roof top</option>
+                        <option value="Agricultural Roof Top">Agricultural roof top</option>
+                        <option value="Agricultural Ground Mount">Agricultural ground mount</option>
+                        <option value="Wind Mill" data-mode="wind">Wind mill</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <!-- The wind form's project type. Disabled in the markup so it is only sent when the script turns the Wind form on. -->
+                    <input type="hidden" name="Project_Type" value="Wind Mill" data-mode="wind" disabled>
+                    <div class="col-md-6">
+                      <label class="form-label fw-medium" for="r-size">Project size</label>
+                      <select class="form-select" id="r-size" name="Project_size">
+                        <option value="Not Selected" selected>Please select</option>
+                        <option value="1-9 kW">1–9 kW</option>
+                        <option value="10- 25kW">10–25 kW</option>
+                        <option value="25-99 kW">25–99 kW</option>
+                        <option value="100-249 kW">100–249 kW</option>
+                        <option value="250-499 kW">250–499 kW</option>
+                        <option value="500-999 kW">500–999 kW</option>
+                        <option value="1,000-4,999 kW">1,000–4,999 kW</option>
+                        <option value="5,000-9,999 kW">5,000–9,999 kW</option>
+                        <option value="10,000 Kw +">10,000 kW +</option>
+                      </select>
+                    </div>
+                    <!-- Wind only: new questions, not on the live form. -->
+                    <div class="col-md-4" data-mode="wind"><label class="form-label fw-medium" for="r-turbines">Number of turbines <span class="small fw-normal text-body-secondary" data-nojs-note>(wind only)</span></label><input class="form-control" type="number" min="1" id="r-turbines" name="Number_of_turbines"></div>
+                    <div class="col-md-4" data-mode="wind"><label class="form-label fw-medium" for="r-make">Turbine make &amp; model <span class="small fw-normal text-body-secondary" data-nojs-note>(wind only)</span></label><input class="form-control" type="text" id="r-make" name="Turbine_make_model"></div>
+                    <div class="col-md-4" data-mode="wind"><label class="form-label fw-medium" for="r-height">Tower height <span class="small fw-normal text-body-secondary" data-nojs-note>(wind only)</span></label><input class="form-control" type="text" id="r-height" name="Tower_height" placeholder="metres or feet"></div>
+                    <fieldset class="col-md-6">
+                      <legend class="form-label fw-medium fs-6">Have you submitted a FIT application?</legend>
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="FIT_Submitted" id="r-fs1" value="Yes"><label class="form-check-label" for="r-fs1">Yes</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="FIT_Submitted" id="r-fs2" value="No"><label class="form-check-label" for="r-fs2">No</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="FIT_Submitted" id="r-fs3" value="Site_in_Operation"><label class="form-check-label" for="r-fs3">Site in operation</label></div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="col-md-6">
+                      <legend class="form-label fw-medium fs-6">Have you been approved?</legend>
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="FIT_Approval" id="r-fa1" value="Yes"><label class="form-check-label" for="r-fa1">Yes</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="FIT_Approval" id="r-fa2" value="No"><label class="form-check-label" for="r-fa2">No</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="FIT_Approval" id="r-fa3" value="Site_in_Operation"><label class="form-check-label" for="r-fa3">Site in operation</label></div>
+                      </div>
+                    </fieldset>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-start">Estimated start date of installation</label><input class="form-control" type="date" id="r-start" name="Installation_Start"></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-end">Estimated completion date of installation</label><input class="form-control" type="date" id="r-end" name="Installation_Completion"></div>
+                    <fieldset class="col-12">
+                      <legend class="form-label fw-medium fs-6">Do you require coverage for the installation?</legend>
+                      <div class="d-flex gap-3">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Installation_Coverage" id="r-ic1" value="Yes"><label class="form-check-label" for="r-ic1">Yes</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Installation_Coverage" id="r-ic2" value="No"><label class="form-check-label" for="r-ic2">No</label></div>
+                      </div>
+                    </fieldset>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-suppliers" data-solar-text="Name of solar equipment supplier(s)" data-wind-text="Name of turbine supplier(s)">Name of solar equipment or turbine supplier(s)</label><textarea class="form-control" id="r-suppliers" name="Suppliers" rows="3"></textarea></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-installers">Name of company(s) installing the project</label><textarea class="form-control" id="r-installers" name="Installers" rows="3"></textarea></div>
+                  </div>
+
+                  <h3 class="h6 fw-semibold mb-3"><i class="bi bi-geo-alt text-primary me-2"></i><span data-solar-text="Building &amp; land" data-wind-text="Land">Building &amp; land</span></h3>
+                  <div class="row g-3 mb-4">
+                    <fieldset class="col-md-6">
+                      <legend class="form-label fw-medium fs-6" data-solar-text="Do you own the building/land it is installed on?" data-wind-text="Do you own the land it is installed on?">Do you own the building/land it is installed on?</legend>
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Own_the_building_land" id="r-own1" value="Yes"><label class="form-check-label" for="r-own1">Yes</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Own_the_building_land" id="r-own2" value="No"><label class="form-check-label" for="r-own2">No</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Own_the_building_land" id="r-own3" value="Not_Applicable"><label class="form-check-label" for="r-own3">N/A</label></div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="col-md-6">
+                      <legend class="form-label fw-medium fs-6" data-solar-text="Do you have a lease in place for the building/land?" data-wind-text="Do you have a lease in place for the land?">Do you have a lease in place for the building/land?</legend>
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Lease_the_building_land" id="r-lease1" value="Yes"><label class="form-check-label" for="r-lease1">Yes</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Lease_the_building_land" id="r-lease2" value="No"><label class="form-check-label" for="r-lease2">No</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Lease_the_building_land" id="r-lease3" value="Not_Applicable"><label class="form-check-label" for="r-lease3">N/A</label></div>
+                      </div>
+                    </fieldset>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="r-space">What amount of space are you using/leasing?</label><input class="form-control" type="text" id="r-space" name="Space_Using_Leasing_Area" inputmode="decimal"></div>
+                    <fieldset class="col-md-6">
+                      <legend class="form-label fw-medium fs-6">Area in</legend>
+                      <div class="d-flex gap-3">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Area_in" id="r-area1" value="Square Feet"><label class="form-check-label" for="r-area1">Square feet</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Area_in" id="r-area2" value="Acres"><label class="form-check-label" for="r-area2">Acres</label></div>
+                      </div>
+                    </fieldset>
+                    <div class="col-md-6" data-mode="solar">
+                      <label class="form-label fw-medium" for="r-construction">Building construction</label>
+                      <select class="form-select" id="r-construction" name="Building_construction">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="Concrete Roof">Fire resistive (concrete roof)</option>
+                        <option value="Steel Deck Roof">Non-combustible (steel deck roof)</option>
+                        <option value="Masonry Frame Roof">Non-combustible, masonry (frame roof)</option>
+                        <option value="Brick Veneer">Frame, brick veneer</option>
+                        <option value="Frame">Frame</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6" data-mode="solar">
+                      <label class="form-label fw-medium" for="r-roof">Roof top type</label>
+                      <select class="form-select" id="r-roof" name="Building_Roof_Type">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="Flat Deck Gravel">Flat deck gravel</option>
+                        <option value="Flat Deck Shingled">Flat deck shingled</option>
+                        <option value="Angled Shingled">Angled shingled</option>
+                        <option value="Flat Deck Steel">Flat deck steel</option>
+                        <option value="Angled Steel">Angled steel</option>
+                        <option value="Concrete">Concrete</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6" data-mode="solar">
+                      <label class="form-label fw-medium" for="r-built">Date building was constructed</label>
+                      <select class="form-select" id="r-built" name="Date_Building_Constructed">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                        <option value="1989">1989</option>
+                        <option value="1988">1988</option>
+                        <option value="1987">1987</option>
+                        <option value="1986">1986</option>
+                        <option value="1985">1985</option>
+                        <option value="1984">1984</option>
+                        <option value="1983">1983</option>
+                        <option value="1982">1982</option>
+                        <option value="1981">1981</option>
+                        <option value="1980">1980</option>
+                        <option value="1979">1979</option>
+                        <option value="1978">1978</option>
+                        <option value="1977">1977</option>
+                        <option value="1976">1976</option>
+                        <option value="1975">1975</option>
+                        <option value="1974">1974</option>
+                        <option value="1973">1973</option>
+                        <option value="1972">1972</option>
+                        <option value="1971">1971</option>
+                        <option value="1970">1970</option>
+                        <option value="1969">1969</option>
+                        <option value="1968">1968</option>
+                        <option value="1967">1967</option>
+                        <option value="1966">1966</option>
+                        <option value="1965">1965</option>
+                        <option value="1964">1964</option>
+                        <option value="1963">1963</option>
+                        <option value="1962">1962</option>
+                        <option value="1961">1961</option>
+                        <option value="1960">1960</option>
+                        <option value="1959">1959</option>
+                        <option value="1958">1958</option>
+                        <option value="1957">1957</option>
+                        <option value="1956">1956</option>
+                        <option value="1955">1955</option>
+                        <option value="1954">1954</option>
+                        <option value="1953">1953</option>
+                        <option value="1952">1952</option>
+                        <option value="1951">1951</option>
+                        <option value="1950">1950</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6" data-mode="solar">
+                      <label class="form-label fw-medium" for="r-roofdate">Date roof last updated</label>
+                      <select class="form-select" id="r-roofdate" name="Date_Roof_Updated">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                        <option value="2005">2005</option>
+                        <option value="2004">2004</option>
+                        <option value="2003">2003</option>
+                        <option value="2002">2002</option>
+                        <option value="2001">2001</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+                        <option value="1998">1998</option>
+                        <option value="1997">1997</option>
+                        <option value="1996">1996</option>
+                        <option value="1995">1995</option>
+                        <option value="1994">1994</option>
+                        <option value="1993">1993</option>
+                        <option value="1992">1992</option>
+                        <option value="1991">1991</option>
+                        <option value="1990">1990</option>
+                        <option value="1989">1989</option>
+                        <option value="1988">1988</option>
+                        <option value="1987">1987</option>
+                        <option value="1986">1986</option>
+                        <option value="1985">1985</option>
+                        <option value="1984">1984</option>
+                        <option value="1983">1983</option>
+                        <option value="1982">1982</option>
+                        <option value="1981">1981</option>
+                        <option value="1980">1980</option>
+                        <option value="1979">1979</option>
+                        <option value="1978">1978</option>
+                        <option value="1977">1977</option>
+                        <option value="1976">1976</option>
+                        <option value="1975">1975</option>
+                        <option value="1974">1974</option>
+                        <option value="1973">1973</option>
+                        <option value="1972">1972</option>
+                        <option value="1971">1971</option>
+                        <option value="1970">1970</option>
+                        <option value="1969">1969</option>
+                        <option value="1968">1968</option>
+                        <option value="1967">1967</option>
+                        <option value="1966">1966</option>
+                        <option value="1965">1965</option>
+                        <option value="1964">1964</option>
+                        <option value="1963">1963</option>
+                        <option value="1962">1962</option>
+                        <option value="1961">1961</option>
+                        <option value="1960">1960</option>
+                        <option value="1959">1959</option>
+                        <option value="1958">1958</option>
+                        <option value="1957">1957</option>
+                        <option value="1956">1956</option>
+                        <option value="1955">1955</option>
+                        <option value="1954">1954</option>
+                        <option value="1953">1953</option>
+                        <option value="1952">1952</option>
+                        <option value="1951">1951</option>
+                        <option value="1950">1950</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <h3 class="h6 fw-semibold mb-3"><i class="bi bi-cash-stack text-primary me-2"></i>Insurance information</h3>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                      <label class="form-label fw-medium" for="r-project-value">Estimated project insured value</label>
+                      <select class="form-select" id="r-project-value" name="Project_insured_value">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="25,000">$25,000</option>
+                        <option value="30,000">$30,000</option>
+                        <option value="40,000">$40,000</option>
+                        <option value="50,000">$50,000</option>
+                        <option value="60,000">$60,000</option>
+                        <option value="70,000">$70,000</option>
+                        <option value="80,000">$80,000</option>
+                        <option value="90,000">$90,000</option>
+                        <option value="100,000">$100,000</option>
+                        <option value="200,000">$200,000</option>
+                        <option value="300,000">$300,000</option>
+                        <option value="400,000">$400,000</option>
+                        <option value="500,000">$500,000</option>
+                        <option value="600,000">$600,000</option>
+                        <option value="700,000">$700,000</option>
+                        <option value="800,000">$800,000</option>
+                        <option value="900,000">$900,000</option>
+                        <option value="1,000,000">$1,000,000</option>
+                        <option value="1,100,000">$1,100,000</option>
+                        <option value="1,200,000">$1,200,000</option>
+                        <option value="1,300,000">$1,300,000</option>
+                        <option value="1,400,000">$1,400,000</option>
+                        <option value="1,500,000">$1,500,000</option>
+                        <option value="1,600,000">$1,600,000</option>
+                        <option value="1,700,000">$1,700,000</option>
+                        <option value="1,800,000">$1,800,000</option>
+                        <option value="1,900,000">$1,900,000</option>
+                        <option value="2,000,000">$2,000,000</option>
+                        <option value="2,100,000">$2,100,000</option>
+                        <option value="2,200,000">$2,200,000</option>
+                        <option value="2,300,000">$2,300,000</option>
+                        <option value="2,400,000">$2,400,000</option>
+                        <option value="2,500,000">$2,500,000</option>
+                        <option value="2,600,000">$2,600,000</option>
+                        <option value="2,700,000">$2,700,000</option>
+                        <option value="2,800,000">$2,800,000</option>
+                        <option value="2,900,000">$2,900,000</option>
+                        <option value="3,000,000">$3,000,000</option>
+                        <option value="3,500,000">$3,500,000</option>
+                        <option value="4,000,000">$4,000,000</option>
+                        <option value="4,500,000">$4,500,000</option>
+                        <option value="5,000,000">$5,000,000</option>
+                        <option value="5,500,000">$5,500,000</option>
+                        <option value="6,000,000">$6,000,000</option>
+                        <option value="6,500,000">$6,500,000</option>
+                        <option value="7,000,000">$7,000,000</option>
+                        <option value="7,500,000">$7,500,000</option>
+                        <option value="8,000,000">$8,000,000</option>
+                        <option value="8,500,000">$8,500,000</option>
+                        <option value="9,000,000">$9,000,000</option>
+                        <option value="9,500,000">$9,500,000</option>
+                        <option value="10,000,000">$10,000,000</option>
+                        <option value="&gt;10,000,000">More than $10,000,000</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-medium" for="r-building-value" data-solar-text="Insured value of building" data-wind-text="Insured value of any buildings on site">Insured value of building</label>
+                      <select class="form-select" id="r-building-value" name="Building_insured_value">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="25,000">$25,000</option>
+                        <option value="30,000">$30,000</option>
+                        <option value="40,000">$40,000</option>
+                        <option value="50,000">$50,000</option>
+                        <option value="60,000">$60,000</option>
+                        <option value="70,000">$70,000</option>
+                        <option value="80,000">$80,000</option>
+                        <option value="90,000">$90,000</option>
+                        <option value="100,000">$100,000</option>
+                        <option value="200,000">$200,000</option>
+                        <option value="300,000">$300,000</option>
+                        <option value="400,000">$400,000</option>
+                        <option value="500,000">$500,000</option>
+                        <option value="600,000">$600,000</option>
+                        <option value="700,000">$700,000</option>
+                        <option value="800,000">$800,000</option>
+                        <option value="900,000">$900,000</option>
+                        <option value="1,000,000">$1,000,000</option>
+                        <option value="1,100,000">$1,100,000</option>
+                        <option value="1,200,000">$1,200,000</option>
+                        <option value="1,300,000">$1,300,000</option>
+                        <option value="1,400,000">$1,400,000</option>
+                        <option value="1,500,000">$1,500,000</option>
+                        <option value="1,600,000">$1,600,000</option>
+                        <option value="1,700,000">$1,700,000</option>
+                        <option value="1,800,000">$1,800,000</option>
+                        <option value="1,900,000">$1,900,000</option>
+                        <option value="2,000,000">$2,000,000</option>
+                        <option value="2,100,000">$2,100,000</option>
+                        <option value="2,200,000">$2,200,000</option>
+                        <option value="2,300,000">$2,300,000</option>
+                        <option value="2,400,000">$2,400,000</option>
+                        <option value="2,500,000">$2,500,000</option>
+                        <option value="2,600,000">$2,600,000</option>
+                        <option value="2,700,000">$2,700,000</option>
+                        <option value="2,800,000">$2,800,000</option>
+                        <option value="2,900,000">$2,900,000</option>
+                        <option value="3,000,000">$3,000,000</option>
+                        <option value="3,500,000">$3,500,000</option>
+                        <option value="4,000,000">$4,000,000</option>
+                        <option value="4,500,000">$4,500,000</option>
+                        <option value="5,000,000">$5,000,000</option>
+                        <option value="5,500,000">$5,500,000</option>
+                        <option value="6,000,000">$6,000,000</option>
+                        <option value="6,500,000">$6,500,000</option>
+                        <option value="7,000,000">$7,000,000</option>
+                        <option value="7,500,000">$7,500,000</option>
+                        <option value="8,000,000">$8,000,000</option>
+                        <option value="8,500,000">$8,500,000</option>
+                        <option value="9,000,000">$9,000,000</option>
+                        <option value="9,500,000">$9,500,000</option>
+                        <option value="10,000,000">$10,000,000</option>
+                        <option value="&gt;10,000,000">More than $10,000,000</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-medium" for="r-machinery">Machinery &amp; electrical breakdown coverage</label>
+                      <select class="form-select" id="r-machinery" name="Machinery_electrical_coverage">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="25,000">$25,000</option>
+                        <option value="30,000">$30,000</option>
+                        <option value="40,000">$40,000</option>
+                        <option value="50,000">$50,000</option>
+                        <option value="60,000">$60,000</option>
+                        <option value="70,000">$70,000</option>
+                        <option value="80,000">$80,000</option>
+                        <option value="90,000">$90,000</option>
+                        <option value="100,000">$100,000</option>
+                        <option value="200,000">$200,000</option>
+                        <option value="300,000">$300,000</option>
+                        <option value="400,000">$400,000</option>
+                        <option value="500,000">$500,000</option>
+                        <option value="600,000">$600,000</option>
+                        <option value="700,000">$700,000</option>
+                        <option value="800,000">$800,000</option>
+                        <option value="900,000">$900,000</option>
+                        <option value="1,000,000">$1,000,000</option>
+                        <option value="1,100,000">$1,100,000</option>
+                        <option value="1,200,000">$1,200,000</option>
+                        <option value="1,300,000">$1,300,000</option>
+                        <option value="1,400,000">$1,400,000</option>
+                        <option value="1,500,000">$1,500,000</option>
+                        <option value="1,600,000">$1,600,000</option>
+                        <option value="1,700,000">$1,700,000</option>
+                        <option value="1,800,000">$1,800,000</option>
+                        <option value="1,900,000">$1,900,000</option>
+                        <option value="2,000,000">$2,000,000</option>
+                        <option value="2,100,000">$2,100,000</option>
+                        <option value="2,200,000">$2,200,000</option>
+                        <option value="2,300,000">$2,300,000</option>
+                        <option value="2,400,000">$2,400,000</option>
+                        <option value="2,500,000">$2,500,000</option>
+                        <option value="2,600,000">$2,600,000</option>
+                        <option value="2,700,000">$2,700,000</option>
+                        <option value="2,800,000">$2,800,000</option>
+                        <option value="2,900,000">$2,900,000</option>
+                        <option value="3,000,000">$3,000,000</option>
+                        <option value="3,500,000">$3,500,000</option>
+                        <option value="4,000,000">$4,000,000</option>
+                        <option value="4,500,000">$4,500,000</option>
+                        <option value="5,000,000">$5,000,000</option>
+                        <option value="5,500,000">$5,500,000</option>
+                        <option value="6,000,000">$6,000,000</option>
+                        <option value="6,500,000">$6,500,000</option>
+                        <option value="7,000,000">$7,000,000</option>
+                        <option value="7,500,000">$7,500,000</option>
+                        <option value="8,000,000">$8,000,000</option>
+                        <option value="8,500,000">$8,500,000</option>
+                        <option value="9,000,000">$9,000,000</option>
+                        <option value="9,500,000">$9,500,000</option>
+                        <option value="10,000,000">$10,000,000</option>
+                        <option value="&gt;10,000,000">More than $10,000,000</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-medium" for="r-liability">Liability insurance limit required</label>
+                      <select class="form-select" id="r-liability" name="Liability_insurance">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="1,000,000">$1,000,000</option>
+                        <option value="2,000,000">$2,000,000</option>
+                        <option value="3,000,000">$3,000,000</option>
+                        <option value="4,000,000">$4,000,000</option>
+                        <option value="5,000,000">$5,000,000</option>
+                        <option value="6,000,000">$6,000,000</option>
+                        <option value="7,000,000">$7,000,000</option>
+                        <option value="8,000,000">$8,000,000</option>
+                        <option value="9,000,000">$9,000,000</option>
+                        <option value="10,000,000">$10,000,000</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label fw-medium" for="r-income">Income protection limit required</label>
+                      <select class="form-select" id="r-income" name="Income_protection">
+                        <option value="None selected" selected>Select one</option>
+                        <option value="10,000">$10,000</option>
+                        <option value="20,000">$20,000</option>
+                        <option value="30,000">$30,000</option>
+                        <option value="40,000">$40,000</option>
+                        <option value="50,000">$50,000</option>
+                        <option value="60,000">$60,000</option>
+                        <option value="70,000">$70,000</option>
+                        <option value="80,000">$80,000</option>
+                        <option value="90,000">$90,000</option>
+                        <option value="100,000">$100,000</option>
+                        <option value="110,000">$110,000</option>
+                        <option value="120,000">$120,000</option>
+                        <option value="130,000">$130,000</option>
+                        <option value="140,000">$140,000</option>
+                        <option value="150,000">$150,000</option>
+                        <option value="160,000">$160,000</option>
+                        <option value="170,000">$170,000</option>
+                        <option value="180,000">$180,000</option>
+                        <option value="190,000">$190,000</option>
+                        <option value="200,000">$200,000</option>
+                        <option value="210,000">$210,000</option>
+                        <option value="220,000">$220,000</option>
+                        <option value="230,000">$230,000</option>
+                        <option value="240,000">$240,000</option>
+                        <option value="250,000">$250,000</option>
+                        <option value="300,000">$300,000</option>
+                        <option value="350,000">$350,000</option>
+                        <option value="400,000">$400,000</option>
+                        <option value="450,000">$450,000</option>
+                        <option value="500,000">$500,000</option>
+                        <option value="550,000">$550,000</option>
+                        <option value="600,000">$600,000</option>
+                        <option value="650,000">$650,000</option>
+                        <option value="700,000">$700,000</option>
+                        <option value="750,000">$750,000</option>
+                        <option value="800,000">$800,000</option>
+                        <option value="850,000">$850,000</option>
+                        <option value="900,000">$900,000</option>
+                        <option value="950,000">$950,000</option>
+                        <option value="1,000,000">$1,000,000</option>
+                        <option value="&gt;1,000,000">More than $1,000,000</option>
+                      </select>
+                    </div>
+                    <fieldset class="col-md-6">
+                      <legend class="form-label fw-medium fs-6">Do you plan to add more locations later?</legend>
+                      <div class="d-flex gap-3">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Add_more_locations" id="r-more1" value="Yes"><label class="form-check-label" for="r-more1">Yes</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Add_more_locations" id="r-more2" value="No"><label class="form-check-label" for="r-more2">No</label></div>
+                      </div>
+                    </fieldset>
+                    <div class="col-12"><label class="form-label fw-medium" for="r-other">Other information pertinent to this quotation</label><textarea class="form-control" id="r-other" name="Additional_information" rows="3"></textarea></div>
+                  </div>
+
+                  <div class="d-flex flex-wrap gap-2 mb-4">
+                    <button class="btn btn-primary rounded-pill px-4" type="submit" name="From_solarwindquotation" value="Quote Me"><i class="bi bi-send me-2"></i>Quote me</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4" type="reset">Reset</button>
+                    <button class="btn btn-link px-2" type="button" onclick="window.print()"><i class="bi bi-printer me-2"></i>Print to fax</button>
+                  </div>
+                  <p class="small text-body-secondary mb-0"><strong>For operations within Canada only.</strong> Quotations are provided in accordance with the information submitted. Any incorrect information may alter the amount you are quoted. The submission results are for quotation purposes only, and do not guarantee you any coverage. E. &amp; O. E.</p>
+                </form>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="position-sticky" style="top: 6rem">
+              <div class="card border-0 shadow-sm rounded-4 mb-4">
+                <div class="card-body p-4">
+                  <h2 class="h5 fw-bold mb-2">What your quote includes</h2>
+                  <p class="small text-body-secondary mb-3">Our insurance underwriters will be in touch with you shortly once you have submitted the above information. Our insurance quote provides you with:</p>
+                  <ul class="list-unstyled small d-grid gap-2 mb-0">
+                    <li class="d-flex gap-2"><i class="bi bi-check2 text-primary"></i><span>All risk property insurance coverage</span></li>
+                    <li class="d-flex gap-2"><i class="bi bi-check2 text-primary"></i><span>Business income protection &amp; machinery &amp; electrical insurance coverage</span></li>
+                    <li class="d-flex gap-2"><i class="bi bi-check2 text-primary"></i><span>Over 45 renewable energy insurance extensions</span></li>
+                    <li class="d-flex gap-2"><i class="bi bi-check2 text-primary"></i><span>Comprehensive general liability</span></li>
+                    <li class="d-flex gap-2"><i class="bi bi-check2 text-primary"></i><span>Warranty insurance &amp; bonding is available</span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm rounded-4 mb-4">
+                <div class="card-body p-4">
+                  <h2 class="h6 fw-bold mb-2">Renewable energy applications</h2>
+                  <div class="list-group list-group-flush small">
+                    <a class="list-group-item list-group-item-action d-flex gap-2 px-0" href="../../Applications/RES_Property_App_1.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf text-primary"></i><span>Property application</span></a>
+                    <a class="list-group-item list-group-item-action d-flex gap-2 px-0" href="../../Applications/RES_Liability_App_2.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf text-primary"></i><span>Liability application</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-body p-4 d-flex gap-3 align-items-center">
+                  <img class="staff-avatar staff-avatar-lg flex-shrink-0" src="../../images/staff/Mark_2023.jpg" width="56" height="56" alt="" loading="lazy">
+                  <div>
+                    <div class="fw-semibold">Mark Smith</div>
+                    <div class="small text-body-secondary mb-1">V.P. Commercial Insurance</div>
+                    <a class="small fw-semibold text-decoration-none" href="tel:+19057647868,228"><i class="bi bi-telephone me-1"></i>Ext. 228</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="cta-band text-white py-5">
+      <div class="container">
+        <div class="row g-4 g-lg-5 align-items-center">
+          <div class="col-lg-7">
+            <h2 class="h3 fw-bold mb-2">Prefer to talk to a broker?</h2>
+            <p class="text-white text-opacity-75 mb-4">For immediate service from a friendly J.D. Smith Insurance professional, call 1-800-917-7283 throughout Ontario, or 905-764-7868 within the G.T.A. For green power insurance, ask for Mark Smith at ext. 228.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-light rounded-pill px-4 fw-semibold" href="tel:+19057647868,228"><i class="bi bi-telephone me-2"></i>Mark Smith, ext. 228</a>
+              <a class="btn btn-outline-light rounded-pill px-4" href="tel:18009177283"><i class="bi bi-telephone me-2"></i>1-800-917-7283</a>
+              <a class="btn btn-outline-light rounded-pill px-4" href="jds-packages_renewable_energy.htm"><i class="bi bi-sun me-2"></i>Renewable energy coverages</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="bg-white text-body rounded-4 p-4 shadow">
+              <div class="fw-semibold mb-2">JD Smith &amp; Associates Insurance Brokers Inc.</div>
+              <address class="small text-body-secondary mb-3" style="font-style: normal">105 West Beaver Creek Rd., Richmond Hill, ON L4B 1C6</address>
+              <ul class="list-unstyled small mb-3">
+                <li class="mb-1"><i class="bi bi-telephone text-primary me-2"></i>Toll free <a href="tel:18009177283">1-800-917-7283</a></li>
+                <li class="mb-1"><i class="bi bi-telephone text-primary me-2"></i>Local <a href="tel:9057647868">905-764-7868</a></li>
+                <li class="mb-1"><i class="bi bi-printer text-primary me-2"></i>Fax 905-764-9618</li>
+                <li><i class="bi bi-clock text-primary me-2"></i>Mon–Thu 9:00–4:00, Fri 9:00–3:00</li>
+              </ul>
+              <a class="small fw-semibold text-decoration-none" href="../about/jds-staff.htm">Contact your broker <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    /* Solar / Wind switch. Shows the questions for the chosen plant and disables the others, so a hidden question is never sent.
+       ?type=solar or ?type=wind picks the form (solar if neither), and the data-pick buttons switch it without reloading. */
+    (function () {
+      var form = document.getElementById('solarwindquotation');
+      var picker = document.getElementById('form-type');
+      picker.hidden = false;
+      document.querySelectorAll('[data-nojs-note]').forEach(function (el) { el.remove(); });
+
+      function setMode(mode) {
+        document.getElementById('ft-' + mode).checked = true;
+        document.querySelectorAll('#quote-form [data-mode]').forEach(function (el) {
+          var off = el.getAttribute('data-mode') !== mode;
+          if (el.tagName !== 'INPUT') el.hidden = off;
+          if (el.matches('input, select, textarea, option')) el.disabled = off;
+          el.querySelectorAll('input, select, textarea').forEach(function (c) { c.disabled = off; });
+        });
+        var projectType = document.getElementById('r-type');
+        if (mode === 'solar' && projectType.value === 'Wind Mill') projectType.value = 'Not Selected';
+        document.querySelectorAll('#quote-form [data-solar-text]').forEach(function (el) {
+          el.textContent = el.getAttribute('data-' + mode + '-text');
+        });
+        var url = new URL(window.location.href);
+        url.searchParams.set('type', mode);
+        history.replaceState(null, '', url);
+      }
+
+      var start = new URLSearchParams(window.location.search).get('type');
+      setMode(start === 'wind' ? 'wind' : 'solar');
+
+      picker.addEventListener('change', function (e) { setMode(e.target.value); });
+      document.querySelectorAll('[data-pick]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          setMode(link.getAttribute('data-pick'));
+          document.getElementById('quote-form').scrollIntoView({ behavior: 'smooth' });
+          history.replaceState(null, '', window.location.pathname + window.location.search + '#quote-form');
+        });
+      });
+      /* Reset clears the answers but keeps the chosen form. */
+      form.addEventListener('reset', function () {
+        var mode = document.getElementById('ft-wind').checked ? 'wind' : 'solar';
+        setTimeout(function () { setMode(mode); }, 0);
+      });
+    })();
+  </script>
+</body>
+</html>
