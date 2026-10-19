@@ -8,7 +8,7 @@
 const SITE_ROOT = new URL('..', document.currentScript.src);
 
 const SITE_HEADER = `
-<nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm sticky-top py-2" aria-label="Main">
+<nav class="site-header navbar navbar-expand-lg bg-white border-bottom shadow-sm sticky-top py-2" aria-label="Main">
   <div class="container">
     <a class="navbar-brand py-0" href="index.html"><img src="images/top_logo_2.gif" width="104" height="56" alt="JD Smith Insurance"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@ const SITE_HEADER = `
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="pages/resources/jds-claims.htm" role="button" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
-          <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2"><li><h6 class="dropdown-header text-uppercase small fw-semibold text-primary">For clients</h6></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-claims.htm">Claims</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-online_payments.htm">Online payments</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-insurance_companies.htm">Insurance companies</a></li><li><hr class="dropdown-divider"></li><li><h6 class="dropdown-header text-uppercase small fw-semibold text-primary">Advice</h6></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-12waystosave.htm">12 ways to save</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-hot_topics.htm">20 hot topics</a></li><li><a class="dropdown-item rounded-2" href="https://jdsmithinsurance.com/jds-ask_broker.htm">Ask a broker</a></li><li><a class="dropdown-item rounded-2" href="https://jdsmithinsurance.com/jds-winter_storage.htm">Winter storage tips</a></li><li><hr class="dropdown-divider"></li><li><h6 class="dropdown-header text-uppercase small fw-semibold text-primary">Reading</h6></li><li><a class="dropdown-item rounded-2" href="https://jdsmithinsurance.com/jds-news.htm">News &amp; humour</a></li><li><a class="dropdown-item rounded-2" href="https://jdsmithinsurance.com/jds-meditations.htm">Reflection &amp; encouragement</a></li></ul>
+          <ul class="dropdown-menu border-0 shadow-lg rounded-4 p-2"><li><h6 class="dropdown-header text-uppercase small fw-semibold text-primary">For clients</h6></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-claims.htm">Report a claim</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-online_payments.htm">Make a payment</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-insurance_companies.htm">Insurance companies</a></li><li><hr class="dropdown-divider"></li><li><h6 class="dropdown-header text-uppercase small fw-semibold text-primary">Advice</h6></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-12waystosave.htm">12 ways to save</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-hot_topics.htm">20 hot topics</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-ask_broker.htm">Drive safe and save</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-winter_storage.htm">Winter storage tips</a></li><li><hr class="dropdown-divider"></li><li><h6 class="dropdown-header text-uppercase small fw-semibold text-primary">Reading</h6></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-news.htm">News &amp; humour</a></li><li><a class="dropdown-item rounded-2" href="pages/resources/jds-meditations.htm">Reflection &amp; encouragement</a></li></ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="pages/about/jds-values.htm" role="button" data-bs-toggle="dropdown" aria-expanded="false">About</a>
@@ -94,7 +94,6 @@ const SITE_FOOTER = `
           <li><a class="footer-link" href="pages/resources/jds-claims.htm">Report a claim</a></li>
           <li><a class="footer-link" href="pages/resources/jds-online_payments.htm">Make a payment</a></li>
           <li><a class="footer-link" href="pages/resources/jds-insurance_companies.htm">Insurance companies</a></li>
-          <li><a class="footer-link" href="pages/resources/jds-12waystosave.htm">Tips &amp; resources</a></li>
         </ul>
       </div>
       <div class="col-6 col-md-3 col-xl-2">
@@ -103,9 +102,10 @@ const SITE_FOOTER = `
           <li><a class="footer-link" href="pages/about/jds-values.htm">Core values</a></li>
           <li><a class="footer-link" href="pages/about/jds-advantage.htm">The broker advantage</a></li>
           <li><a class="footer-link" href="pages/about/jds-staff.htm">Staff &amp; contacts</a></li>
-          <li><a class="footer-link" href="pages/about/jds-staff_videos.htm">Staff videos</a></li>
-          <li><a class="footer-link" href="pages/about/jds-job_postings.htm">Careers</a></li>
+          <li><a class="footer-link" href="pages/about/jds-staff_videos.htm">Staff video messages</a></li>
+          <li><a class="footer-link" href="pages/about/jds-job_postings.htm">Job opportunities</a></li>
           <li><a class="footer-link" href="pages/about/jds-community.htm">Community</a></li>
+          <li><a class="footer-link" href="pages/about/jds-racing_team.htm">Car racing team</a></li>
         </ul>
       </div>
       <div class="col-6 col-md-3 col-xl-2">

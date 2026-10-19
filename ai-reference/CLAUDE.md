@@ -4,7 +4,7 @@
 - `index.html` (homepage) is the only page in the root. Every other page is in `pages/<section>/`:
   `pages/personal/` (personal overview, auto, home, UberX), `pages/auto-reform/` (the auto reform page, its four
   sub-pages and Accident benefits explained), `pages/about/` (core values, the broker advantage, staff, staff videos, job postings, community, car racing team, speeder's remorse, and the four legal pages: privacy statement, terms of use, code of consumer rights, E. & O. E. disclaimer),
-  `pages/resources/` (Claims, Claims: when you have an auto accident, 12 ways to save, 20 hot topics, Online payments and Insurance companies) and `pages/quotes/` (Get a free quote). Put a new page in
+  `pages/resources/` (Claims, Claims: when you have an auto accident, 12 ways to save, 20 hot topics, Drive safe and save, Winter storage tips, Online payments, Insurance companies and Reflection & encouragement) and `pages/quotes/` (Get a free quote). Put a new page in
   the section its navbar menu belongs to.
 - Shared assets stay in the root: `css/`, `js/`, `Applications/` (PDF applications) and `images/`.
   `images/` holds the site photos (`stock/`, `staff/`, `office/`, `life/`, `community/`, plus a few in the root) and the photo
@@ -43,8 +43,8 @@ info pages.
 ### Core values — `pages/about/jds-values.htm`
 The About page, built from `ai-reference/PAGE_CONTENT.md` section F1 (supporting page). The navbar About toggle and
 About > Core values, the footer About > Core values, every About-page breadcrumb, the "core values" link in Dr. Smith's bio on
-`pages/about/jds-staff.htm` (`#core-values`) and the homepage "RIBO broker facts" link (`#ribo`) all go here. It holds the
-auto reform notice banner, what we offer with the group photo, the JDS Financial Group companies, mission / vision /
+`pages/about/jds-staff.htm` (`#core-values`) and the homepage "RIBO broker facts" link (`#ribo`) all go here. It holds
+what we offer with the group photo, the JDS Financial Group companies, mission / vision /
 corporate goal, the 4 core value cards (`#core-values`), the "independent broker covers you best" text with the address
 card, the RIBO broker fact sheet (`#ribo`), the racing team teaser (its "More racing team pictures" button goes to `jds-racing_team.htm`), and the "Contact your broker" CTA with contact block.
 The live page has 4 core values, not 7 (STAKEHOLDER_NOTES 8.8), so the bio link says "core values" with no number until the office confirms. The mission wording comes from the staff page bio.
@@ -54,7 +54,7 @@ and `images/racing/` (Gary Elliott photos copied from the live site).
 ### The broker advantage — `pages/about/jds-advantage.htm`
 Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section F2. The navbar About > The broker
 advantage, the footer About > The broker advantage and the homepage "Why choose JD Smith?" link "The broker advantage" go
-here. It holds the auto reform notice banner, "we work for you" with the four "right" cards (policy, company, price,
+here. It holds "we work for you" with the four "right" cards (policy, company, price,
 solution) and Mark Smith's "completely up front" quote, the four-point broker solution, how we do business with the
 insurer list, "works for you… and only you" with the committed-to-you points, and the "It makes sense to talk to J. D.
 Smith Insurance" CTA (Get a free quote, Contact your broker) with contact block. It keeps the live "over 30 licensed
@@ -85,7 +85,7 @@ It uses the same warm style as the staff page and reuses its photos. The hero is
 
 ### Community involvement — `pages/about/jds-community.htm`
 Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section F3. The navbar About > Community and
-the footer About > Community go here. It holds the auto reform notice banner, local sports (teams and long-distance runs in
+the footer About > Community go here. It holds local sports (teams and long-distance runs in
 Richmond Hill, Aurora, Markham, Unionville and Newmarket), the Durham Crusaders hockey and kids fishing derby (Children's Aid
 Society & Friends Outreach Canada) sponsorship cards, the St. Mary Immaculate CES thank-you, staff on Richmond Hill committees
 (Mark Smith and the Mayor's Prayer Breakfast Council, the Richmond Hill Chamber of Commerce), and the "Want JD Smith to support
@@ -95,8 +95,8 @@ shoebox photos stay in the staff page's "Life at JD Smith" section, which the CT
 
 ### Car racing team — `pages/about/jds-racing_team.htm`
 Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section F4 and the two race reports in its
-Appendix. The navbar About > Car racing team and the "More racing team pictures" button on `pages/about/jds-values.htm` go here.
-It holds the auto reform notice banner, why we sponsor the team (track, not the streets, with the Speeder's remorse
+Appendix. The navbar About > Car racing team, the footer About > Car racing team and the "More racing team pictures" button on `pages/about/jds-values.htm` go here.
+It holds why we sponsor the team (track, not the streets, with the Speeder's remorse
 link to `jds-speeders_remorse.htm`), the photo gallery from the live page, the race reports as one accordion (`#race-reports`, `#reports-list`, item ids
 `#report-2019-1` and `#report-2017-17`, newest first; `js/accordions.js` opens an item from the URL hash), and the F4 CTA
 (Visit Gary Elliott Motorsports, Get an auto quote) with contact block. Photos: `images/racing/` (all copied from the live
@@ -105,7 +105,7 @@ site, incl. the hero `racing_team_front.jpg`; real photos, so no Unsplash hero).
 ### Speeder's remorse — `pages/about/jds-speeders_remorse.htm`
 Supporting page (no quote options), built from the "Speeder's Remorse Pictures" section of `ai-reference/PAGE_CONTENT.md`
 (live `jds-speeders_remorse.htm`). The "See what we mean" links on `pages/about/jds-values.htm` and `pages/about/jds-racing_team.htm`
-go here; its breadcrumb and CTA go back to `jds-racing_team.htm`. It holds the auto reform notice banner, the live wording and the
+go here; its breadcrumb and CTA go back to `jds-racing_team.htm`. It holds the live wording and the
 14 photos in a 3-column grid, and the F4-style CTA (Meet our racing team, Get an auto quote) with contact block. The photos are the
 full-size `speeder-NN.jpg` (450px wide) in `images/speeders/`, restored from the backup. Hero: `images/racing/racing_team_front.jpg`.
 
@@ -154,7 +154,7 @@ comment in the page. Each video card also has the person's extension and a link 
 
 ### Auto insurance — `pages/personal/jds-quote_auto.htm`
 The first quotation page, built from `ai-reference/template/index.html` and `ai-reference/PAGE_CONTENT.md` section A1. The navbar
-Personal > Auto insurance links here. It holds the auto reform notice banner, the two quote methods from
+Personal > Auto insurance links here. It holds the two quote methods from
 `pages/quotes/jds-get_a_quote.htm` (online rater, call 1-800-917-7283), why choose us (Jessica Antoniel, ext. 233), online
 eligibility, an Ontario auto reform 2026 section linking to `pages/auto-reform/jds-auto_reform.htm` and
 `pages/auto-reform/jds-client_auto_insurance_changes_2016.htm`, Hagerty driving tips, the bottom CTA with contact block, and related
@@ -174,7 +174,7 @@ reform banner. Photos: `images/stock/home.jpg` (hero) and `images/stock/backflow
 
 ### All personal insurance — `pages/personal/jds-quote_me.htm`
 The Personal overview page, built from `ai-reference/PAGE_CONTENT.md` section A0. The navbar Personal > All personal
-insurance and the footer Personal link go here. It holds the auto reform notice banner, one product card per item
+insurance and the footer Personal link go here. It holds one product card per item
 in header order (Auto, Home, Boat, UberX) with "Learn more" and its quote method (the hero "Get a free quote" button
 jumps to these cards; the separate "Free quote" section of five quote methods was removed on 2026-10-18), an Ontario auto reform 2026 section linking to `pages/auto-reform/jds-auto_reform.htm` and
 `pages/auto-reform/jds-client_auto_insurance_changes_2016.htm`, the top 10 most stolen cars (2022 figures, see STAKEHOLDER_NOTES),
@@ -183,12 +183,13 @@ the RIBO trust strip, and the bottom CTA with contact block. Photos: `images/sto
 
 ### UberX ride-sharing — `pages/personal/uberx.htm`
 Quotation page built from `ai-reference/template/index.html` and `ai-reference/PAGE_CONTENT.md` section A4. The navbar Personal > UberX
-ride-sharing links here. It holds the auto reform notice banner, the two quote methods (the short quote form and a call
+ride-sharing links here. It holds the two quote methods (the short quote form and a call
 to 1-800-917-7283), the "your policy does not cover you" warning, what the endorsement covers ($1–5 million third-party
-limits, up to 20 hours a week), eligibility, the sample rate table, a checklist of what the quote form asks for, the
-bottom CTA with contact block, and related links. Until the office confirms an https form endpoint (STAKEHOLDER_NOTES
-4.7), the form buttons open the live form at `https://jdsmithinsurance.com/uberx.htm#request`; the rebuilt form is in a
-comment in the page, ready to swap in. The dated "News flash" was left out (STAKEHOLDER_NOTES 8.4). Photo:
+limits, up to 20 hours a week), eligibility, the sample rate table, the quick quote form (`#quote-form`, form id `request`,
+the live form's fields, labels and field names), the bottom CTA with contact block, and related links. Every "Fill in the
+quote form" button (this page, `jds-quote_me.htm`, `pages/quotes/jds-get_a_quote.htm`) goes to `uberx.htm#quote-form`. Since
+2026-10-19 the live `formmail.asp` returns 404, so the form's Submit is disabled with a "call us" note until the office sends
+an email address or https endpoint (STAKEHOLDER_NOTES 4.7); the comment above the form says how to turn on `js/quote-forms.js`. The dated "News flash" was left out (STAKEHOLDER_NOTES 8.4). Photo:
 `images/stock/uberx.jpg`.
 
 ### Ontario auto reform 2026: What is changing — `pages/auto-reform/jds-auto_reform.htm`
@@ -217,7 +218,7 @@ SABS disclaimer, the "Talk to your broker" CTA with contact block, and "More on 
 
 ### Ontario auto reform 2026: Accident benefits explained — `pages/auto-reform/jds-client_auto_insurance_changes_2016.htm`
 Informational page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section A6. The navbar Personal > Ontario
-auto reform 2026 > Accident benefits explained links here. It holds the auto reform notice banner, the earlier reform
+auto reform 2026 > Accident benefits explained links here. It holds the earlier reform
 (Fighting Fraud act), why accident benefits matter, when to customize your policy, the standard limits ($1,000,000 /
 $65,000, marked as the earlier reform's limits, see STAKEHOLDER_NOTES 8.4), your options, a soft "Talk to your broker"
 CTA with contact block, and related links. The 2016 winter tire dates were left out. Photo: `images/happy_couple_in_car.jpg`.
@@ -228,7 +229,7 @@ quick action, the navbar Resources > Claims, the footer "Report a claim", the "M
 `pages/about/jds-staff.htm` and the Claims card on `pages/personal/jds-quote_home.htm` (`#home-claim`) go here. Right under
 the hero, three "What happened?" cards send visitors on: "Had an auto accident?" to `jds-claims_auto_accident.htm`,
 "Damage to your home?" to `#home-claim` and "A large emergency?" to `#emergency`. This is the one place the claims flow
-splits, so the homepage keeps a single "Report a claim" action. The page holds the auto reform notice banner, talk to your
+splits, so the homepage keeps a single "Report a claim" action. The page holds talk to your
 broker first (ext. 232, 1-800-917-7283), should you claim (small claims, adjusters, fraud, Ask the Adjuster), report online
 with each insurer (logos, copy manager@), the 24/7 insurer lines (same as `pages/about/jds-staff.htm`, STAKEHOLDER_NOTES 8.1),
 a card to the auto accident page (the auto steps are not repeated here), reporting your home claim (with the water damage
@@ -249,7 +250,7 @@ footer. The link text comes from the A1 related links in `PAGE_CONTENT.md`. So t
 The "Claims: when you have an auto accident" links on `pages/personal/jds-quote_auto.htm` and `pages/personal/uberx.htm`
 and the "Had an auto accident?" cards on `pages/resources/jds-claims.htm` go here. Its breadcrumb and "All claims" card go
 back to `jds-claims.htm`.
-It holds the auto reform notice banner, talk to your broker first (Claims Help Line ext. 232, 1-800-917-7283), the five
+It holds talk to your broker first (Claims Help Line ext. 232, 1-800-917-7283), the five
 accident steps (other driver's details, Collision Reporting Centre, police report), preferred repair shops, small-claims
 and adjuster advice (fraud note, Ask the Adjuster), report online with each insurer (logos, copy manager@), the 24/7
 insurer lines (the same numbers as `pages/about/jds-staff.htm`, so Wawanesa is 1-800-268-7300, STAKEHOLDER_NOTES 8.1),
@@ -262,7 +263,7 @@ backflow valve, the other claim stories and the Stella Awards stay on the full c
 Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E4. The navbar Resources > Advice >
 12 ways to save, the footer Clients > "Tips & resources", the homepage "Helpful resources" card, the FAQ, backflow section
 (`#backflow`, links to `#discounts`) and "Also useful" links on `pages/personal/jds-quote_home.htm`, and the "Also useful" link
-on `pages/personal/jds-quote_auto.htm` go here. It holds the auto reform notice banner, the 12 ways as numbered cards (`#ways`),
+on `pages/personal/jds-quote_auto.htm` go here. It holds the 12 ways as numbered cards (`#ways`),
 the home & condo and auto discounts (`#discounts`; the water prevention discount links to the home page's `#backflow`), car
 theft methods and defences (`#car-theft`, which links to `pages/personal/jds-quote_me.htm#stolen-cars` for the top 10 list
 instead of repeating it), the IBC link, the "Make sure you have all the discounts you deserve" CTA (Get a free quote, call)
@@ -270,7 +271,7 @@ with contact block, and related links. Photo: `images/stock/save.jpg` (hero, Uns
 
 ### 20 hot topics — `pages/resources/jds-hot_topics.htm`
 Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E5. The navbar Resources > Advice > 20 hot
-topics goes here. It holds the auto reform notice banner, the "Staying in Touch" newsletter intro (IBAO copyright) with an archive
+topics goes here. It holds the "Staying in Touch" newsletter intro (IBAO copyright) with an archive
 note and a sticky table of contents, and the topics as one accordion (`#topics-list`, item ids `#impaired-driving`, `#boating`,
 `#graduated-licensing`, `#travel-tips`, `#road-rage`, `#insurance-fraud`, `#licence-valid`, `#insure-to-value`, `#online-safety`,
 `#trusted-partner`, `#tips-to-save`, `#discounts`, `#car-rentals`, `#carbon-monoxide`, `#credit-card-fraud`, `#banks`, `#ice-storm`,
@@ -281,10 +282,33 @@ to the auto reform pages. The wording is the live wording with small typo fixes.
 broker." (Contact your broker, Get a free quote) with contact block, and related links. Photo: `images/stock/hot_topics.jpg`
 (hero, Unsplash, copied from `images/suggested/`).
 
+### Drive safe and save (Ask a broker) — `pages/resources/jds-ask_broker.htm`
+Supporting page (no quote options besides the E6 auto CTA), built from `ai-reference/PAGE_CONTENT.md` section E6: Dr. J.D. Smith's
+article "How to drive safe and save big bucks". Every link to it is labelled "Drive safe and save" (renamed from "Ask a broker"): the navbar Resources > Advice, the footer Clients,
+the homepage "Helpful resources" card, the "Also useful" line on `pages/personal/jds-quote_auto.htm` and the Related cards on
+`jds-12waystosave.htm` and `jds-hot_topics.htm` go here. It holds the hero with J. D.'s byline photo, an archive note, the article
+(`#article`, sections `#choose-wisely`, `#driving-habits`, `#reducing-costs`, `#car-theft`) with the pastor story as a pull quote,
+the "ways to lower your premium" list as a card and the closing words as a signed warm band, a sticky "On this page" card and
+online auto quote card, "Have a question of your own?" (`#ask`: call, email jds@jdsmithinsurance.com, find your broker), the E6
+CTA (Start online auto quote, call) with contact block, and related links. Live wording with small typo fixes; the dated figures
+are kept and flagged in a comment (STAKEHOLDER_NOTES 8.11), and the "Forever Young edition" sentence is left out. Links to
+`jds-12waystosave.htm` (`#discounts`, `#car-theft`) instead of repeating it. Photos: `images/stock/ask_broker.jpg` (hero,
+Unsplash, copied from `images/suggested/`) and `images/staff/JD_Aug_2023.jpg`.
+
+### Winter storage tips — `pages/resources/jds-winter_storage.htm`
+Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E7. The navbar Resources > Advice > Winter
+storage tips and the "Also useful" link on `pages/personal/jds-quote_auto.htm` go here. It holds the intro and the storage steps as
+one accordion like `jds-hot_topics.htm` (`#steps`: a sticky intro, insurance note and step list on the left; `#steps-list` on the right with item ids
+`#wash-wax`, `#car-cover`, `#oil-change`, `#fuel-tank`, `#battery`, `#parking-brake`, `#tires`, `#rodents`; `js/accordions.js` opens an item from the URL hash), the `#insurance` section (why not to cancel coverage, the classic car note, a "still covered while it's parked"
+list), the two Hagerty links (6 winter driving reminders, 5 tips for your vintage ride), the E7 CTA ("Storing a vehicle for the
+winter?", Contact your broker, call) with contact block, and related links. The live wording is lightly tightened; the first-person
+Fresh Cab line is a plain suggestion (noted in a comment). Photos: `images/stock/winter_storage.jpg` (hero, Unsplash, copied from
+`images/suggested/winter.jpg`) and `images/winter/winter_tips_01.jpg` (copied from `images/original/images/`).
+
 ### Online payments — `pages/resources/jds-online_payments.htm`
 Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E2 and `ai-reference/SITE_MAP.md` section 3.
 The homepage "Make a payment" quick action, the navbar Resources > For clients > Online payments and the footer "Make a payment"
-go here. It holds the auto reform notice banner, the five online banking bill-pay steps (`#pay-online`) with both payee names and
+go here. It holds the five online banking bill-pay steps (`#pay-online`) with both payee names and
 a Copy button for each (an inline script; nothing is stored or sent), the spaces/periods note, a "What you need" card (6-digit
 customer number at the top right of the invoice), the six bank logos (the live CIBC logo's wrong "TD Bank" alt text is fixed,
 noted in a comment), automatic monthly payments (`#monthly`, Accounting ext. 224), the "Having a problem with your payment?" CTA
@@ -295,13 +319,47 @@ paying is done in the client's own online banking. Photos: `images/stock/payment
 ### Insurance companies we represent — `pages/resources/jds-insurance_companies.htm`
 Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E3. The navbar Resources > For clients >
 Insurance companies, the footer "Insurance companies" and the "See all our insurance companies" button on the insurer card of
-`pages/about/jds-advantage.htm` go here. It holds the auto reform notice banner, the E3 intro, the 16
+`pages/about/jds-advantage.htm` go here. It holds the E3 intro, the 16
 insurers as logo cards (`#companies`), each linking to its website in a new tab, with the same links as the insurer card on
 `pages/about/jds-advantage.htm` (Aviva and Travel Underwriters, now TuGo, use their current sites), "...and many others", the IBC
 card, the E3 CTA (Get a free quote, Contact your broker) with contact block, and related links. The logos are the small live-site
 files, some out of date (ACE INA, Economical 2012), noted in a comment until the office sends current ones. Photos:
 `images/stock/insurers.jpg` (hero, Unsplash, copied from `images/suggested/`) and `images/insurers/` (logos and the IBC logo,
 copied from `images/original/`).
+
+### Reflection & encouragement — `pages/resources/jds-meditations.htm`
+Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E9 and the "Reflection & encouragement
+(meditations)" section of its Appendix. The navbar Resources > Reading > Reflection & encouragement goes here. It holds the
+"We are a faith-based insurance broker" intro with a sticky contents list, and the 17 linked live meditation pages inline as one
+accordion in the live order (`#stories-list`, item ids `#bible-verses`, `#gods-voice`, `#explanation-of-god`, `#to-meet-such-a-man`,
+`#table-cloth`, `#seven-ups`, `#why-god-allows-pain`, `#red-marbles`, `#easter-obituary`, `#carrots-eggs-coffee`, `#rick-warren`,
+`#thorn-of-anxiety`, `#for-a-friend`, `#mud-puddles`, `#so-blessed`, `#the-carpenter`, `#pickle-jar`; `js/accordions.js` opens an
+item from the URL hash), Dario's thoughts and comments (`#dario`, links to `jds-dario_thoughts.htm` and has the email request), videos & more (`#more`: That's My King!, An Interview With God, billygraham.ca, the live church signs
+page), the "Going through a tough time?" CTA (`#help`, from the Bible verses page: drop us a note, Contact your broker) with
+contact block, and related links. Live wording with small typo fixes. Left out (noted in comments, STAKEHOLDER_NOTES 8.12): the
+Covid-19 wording, the dead Franklin Graham and "Unfolding The Rose" links, chain-email lines, decorative gifs and the Thorn of
+Anxiety author's personal email. The Easter obituary is an image of text, so its text is given beside it. Photos:
+`images/stock/reflection.jpg` (hero, Unsplash, copied from `images/suggested/`) and `images/reflection/` (copied from
+`images/original/`).
+
+### News & humour — `pages/resources/jds-news.htm`
+Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E8 and the "News & humour articles"
+section of its Appendix. The navbar Resources > Reading > News & humour, the homepage "Helpful resources" card ("Insurance news")
+and the Related card on `pages/resources/jds-meditations.htm` go here (since 2026-10-19; none link to the live page any more).
+Its Meditations card goes to the local `jds-meditations.htm`, and its Dario card to the local `jds-dario_thoughts.htm`. Page-only styles and script: `css/news.css`, `js/news.js`.
+
+### Dario's thoughts and comments — `pages/resources/jds-dario_thoughts.htm`
+Supporting page (no quote options), built from `ai-reference/PAGE_CONTENT.md` section E9.1 and the 59 live `/dario/` pages (text
+copied on 2026-10-19; the live intro says 58, but "I'm not saying anything but" is there twice, 2008 and 2009). The "Read Dario's
+thoughts" button on `jds-meditations.htm` (`#dario`) and the Dario card in the "Meditations, and thoughts from Dario" item on
+`jds-news.htm` go here; its breadcrumb goes back to `jds-meditations.htm`. It holds the E9.1 intro with a sticky "By year" list and the
+"Get them by email" card (`#by-email`), the devotionals as nested accordions by year, newest first (`#dario-list`, year items
+`#dario-2020` … `#dario-2008` with counts, devotional ids = the old file names, e.g. `#dario_08_05_22`, so the old `/dario/` pages can
+redirect here; `js/accordions.js` opens them from the URL hash), a link back to the stories, the "Going through a tough time?" CTA
+with contact block, and related links. Each devotional has its verse as a blockquote with the reference, the text, and the "Rejoice in
+the Lord always! / Dario Ferko" sign-off. Live wording with small typo fixes; titles in sentence case. Gaps that are on the live pages
+too and the uncertain 2020 date are noted in a comment. Photos: `images/reflection/darios_thoughts-front.jpg` (the live hero) and
+`images/reflection/news_dario.gif`.
 
 ## Navbar and footer are the same on every page
 - The navbar and footer are shared components in `js/components.js` (`SITE_HEADER` and `SITE_FOOTER`).
@@ -319,6 +377,9 @@ copied from `images/original/`).
 - The navbar button says "Contact us" and links to `pages/about/jds-staff.htm`. The footer has no contact button.
   It doesn't say "Get a quote".
 - No page has the blue top banner (the `bg-primary` strip above the navbar). Don't add it back.
+- The auto reform notice banner ("All auto policies in Ontario have changed as of July 2026. Learn what's different") is only on
+  three pages: the homepage (`index.html`), All personal insurance (`pages/personal/jds-quote_me.htm`) and Auto insurance
+  (`pages/personal/jds-quote_auto.htm`). Don't add it to any other page.
 - Phone numbers are always `tel:` links. An extension uses a comma pause: `tel:+19057647868,232`.
 
 ## What's in the project (since 2026-10-18)
@@ -330,8 +391,8 @@ The nav and footer link removed pages to the live site (`https://jdsmithinsuranc
 - The items on `pages/quotes/jds-get_a_quote.htm` must match the items in `ai-reference/SITE_MAP.md` section 1 (Quotes):
   1a Personal, 1b Small Business, 1c Commercial, 1d Life & Health. If one changes, update the other.
 - Use the quote method that `ai-reference/SITE_MAP.md` lists for each item, including phone extensions and PDF names.
-- The forms (`jds-quote.htm`, `uberx.htm`, `jds-renewable_energy_quote.htm`) are no longer in the project, so the
-  page links to them on the live site, `https://jdsmithinsurance.com/...`. All of those links returned 200 on 2026-10-18.
+- The UberX form is on `pages/personal/uberx.htm#quote-form`. The other forms (`jds-quote.htm`,
+  `jds-renewable_energy_quote.htm`) are no longer in the project, so the page links to them on the live site, `https://jdsmithinsurance.com/...`. All of those links returned 200 on 2026-10-18.
 - The application PDFs are in the project's `Applications/` folder (all 56 from the live site, restored from the backup
   on 2026-10-18), so every PDF link is relative: `../../Applications/<file>.pdf`. This includes `campground.pdf` and the old
   `church.pdf` (STAKEHOLDER_NOTES 1.1 and 1.2), which no page links to yet.

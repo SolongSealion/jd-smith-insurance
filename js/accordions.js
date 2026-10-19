@@ -22,13 +22,28 @@
     var target = id && document.getElementById(id);
     if (!target) return;
 
+    /* An id inside a Bootstrap tab pane (or the pane itself) shows that tab first. */
+    var pane = target.closest('.tab-pane');
+    var tab = pane && document.querySelector('[data-bs-toggle="tab"][data-bs-target="#' + pane.id + '"]');
+    if (tab) {
+      bootstrap.Tab.getOrCreateInstance(tab).show();
+      if (target === pane) {
+        var tabs = tab.closest('.scroll-mt') || tab;
+        setTimeout(function () { tabs.scrollIntoView({ block: 'start' }); }, 50);
+        return;
+      }
+    }
+
     var panels = [];
     var own = target.classList.contains('accordion-item') ? target.querySelector(':scope > .accordion-collapse') : null;
     if (own) panels.push(own);
     for (var p = target.closest('.accordion-collapse'); p; p = p.parentElement.closest('.accordion-collapse')) {
       if (panels.indexOf(p) === -1) panels.push(p);
     }
-    if (!panels.length) return;
+    if (!panels.length) {
+      if (tab) setTimeout(function () { target.scrollIntoView({ block: 'start' }); }, 50);
+      return;
+    }
 
     panels.reverse().forEach(function (panel) {
       bootstrap.Collapse.getOrCreateInstance(panel, { toggle: false }).show();

@@ -27,13 +27,6 @@
   <site-header></site-header>
 
   <main id="main-content">
-    <div class="alert alert-warning rounded-0 border-0 border-bottom border-warning-subtle mb-0 py-2 small" role="note">
-      <div class="container d-flex flex-wrap align-items-center justify-content-center gap-2 text-center">
-        <i class="bi bi-exclamation-triangle-fill"></i>
-        <strong>All auto policies in Ontario have changed as of July 2026.</strong>
-        <a class="alert-link" href="../auto-reform/jds-auto_reform.htm">Learn what's different &rarr;</a>
-      </div>
-    </div>
 
     <!-- ===== Hero ===== -->
     <section class="page-hero">
@@ -66,13 +59,13 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
-            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="https://jdsmithinsurance.com/uberx.htm#request" target="_blank" rel="noopener">
+            <a class="card h-100 border-0 shadow-sm rounded-4 text-decoration-none card-lift" href="#quote-form">
               <div class="card-body p-4 d-flex flex-column">
                 <div class="d-flex align-items-center gap-2 mb-3"><span class="icon-badge"><i class="bi bi-taxi-front"></i></span><span class="badge rounded-pill text-bg-primary">Fastest</span></div>
                 <span class="badge rounded-pill text-bg-light border align-self-start mb-2">Short form</span>
                 <h3 class="h5 fw-semibold text-body mb-2">Quick quote form</h3>
                 <div class="text-body-secondary mb-3">The endorsement that lets you carry paying passengers. Tell us about you and your vehicle and a broker will call you.</div>
-                <span class="mt-auto fw-semibold text-primary">Fill in the quote form <i class="bi bi-box-arrow-up-right small"></i></span>
+                <span class="mt-auto fw-semibold text-primary">Fill in the quote form <i class="bi bi-arrow-down"></i></span>
               </div>
             </a>
           </div>
@@ -161,72 +154,62 @@
             </section>
 
             <section class="mb-0 scroll-mt" id="quote-form">
-              <div class="bg-white rounded-4 shadow-sm p-4">
+              <div class="bg-white rounded-4 shadow-sm p-4 p-lg-5">
                 <h2 class="h4 fw-bold mb-1">The quick quote form</h2>
-                <p class="text-body-secondary mb-4">For a quick quote, fill in the short form and a broker will call you. Have these details ready:</p>
-                <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-                  <div class="col">
-                    <div class="fw-semibold mb-2"><i class="bi bi-person text-primary me-2"></i>About you</div>
-                    <ul class="small text-body-secondary ps-3 mb-0">
-                      <li>Name and address</li>
-                      <li>Email and cell phone number</li>
-                      <li>Best time to call you</li>
-                      <li>Hours of ride-sharing: under 10 or up to 20 a week</li>
-                    </ul>
+                <p class="text-body-secondary mb-4">For a quick quote, enter the information below and click the submit button. A broker will call you. Fields marked <span class="text-danger">*</span> are required.</p>
+                <!-- Submit is disabled until the office says where requests go (STAKEHOLDER_NOTES 4.7). The live form posted to
+                     formmail.asp, which returned 404 on 2026-10-19, and sent each request to badams@interad.ca, an outside address.
+                     To turn it on: add data-mailto="<office email>" (and data-endpoint="<https form handler>" if there is one) to the
+                     <form>, remove `disabled` and aria-describedby from the Submit button, and delete the #submit-note paragraph.
+                     js/quote-forms.js then sends it. Field names match the live form. -->
+                <form id="request" class="needs-validation" data-endpoint="" novalidate>
+                  <input type="hidden" name="_subject" value="Request For Ride Sharing Insurance">
+
+                  <h3 class="h6 fw-semibold mb-3"><i class="bi bi-person text-primary me-2"></i>About you</h3>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-name">Your name <span class="text-danger">*</span></label><input class="form-control" type="text" id="f-name" name="Name" autocomplete="name" required></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-email">Email address <span class="text-danger">*</span></label><input class="form-control" type="email" id="f-email" name="email" autocomplete="email" required></div>
+                    <div class="col-12"><label class="form-label fw-medium" for="f-address">Address</label><input class="form-control" type="text" id="f-address" name="Address" autocomplete="street-address"></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-city">City</label><input class="form-control" type="text" id="f-city" name="City" autocomplete="address-level2"></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-postal">Postal code</label><input class="form-control" type="text" id="f-postal" name="Postal Code" autocomplete="postal-code"></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-phone">Cell phone number <span class="text-danger">*</span></label><input class="form-control" type="tel" id="f-phone" name="Cellphone Number" autocomplete="tel" required></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-time">Best time to call you</label><input class="form-control" type="text" id="f-time" name="Best Call Time"></div>
+                    <fieldset class="col-12">
+                      <legend class="form-label fw-medium fs-6">Choose your rate category of ride-sharing activity <span class="text-danger">*</span></legend>
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Ride Sharing Activity" id="f-h1" value="Under 10 hours" required><label class="form-check-label" for="f-h1">Under 10 hours per week</label></div>
+                        <div class="form-check"><input class="form-check-input" type="radio" name="Ride Sharing Activity" id="f-h2" value="Max 20 hours" required><label class="form-check-label" for="f-h2">Maximum of 20 hours per week</label></div>
+                      </div>
+                    </fieldset>
                   </div>
-                  <div class="col">
-                    <div class="fw-semibold mb-2"><i class="bi bi-car-front text-primary me-2"></i>Your vehicle</div>
-                    <ul class="small text-body-secondary ps-3 mb-0">
-                      <li>Make, model and year</li>
-                      <li>Number of vehicles in the household</li>
-                    </ul>
+
+                  <h3 class="h6 fw-semibold mb-3"><i class="bi bi-car-front text-primary me-2"></i>Your vehicle</h3>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-4"><label class="form-label fw-medium" for="f-make">Make of your vehicle</label><input class="form-control" type="text" id="f-make" name="Vehicle Make"></div>
+                    <div class="col-md-4"><label class="form-label fw-medium" for="f-model">Model of your vehicle</label><input class="form-control" type="text" id="f-model" name="Vehicle Model"></div>
+                    <div class="col-md-4"><label class="form-label fw-medium" for="f-year">Year of your vehicle</label><input class="form-control" type="text" id="f-year" name="Vehicle Year" inputmode="numeric"></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-vehicles">Number of vehicles in the household</label><input class="form-control" type="number" min="0" id="f-vehicles" name="Vehicles in household"></div>
                   </div>
-                  <div class="col">
-                    <div class="fw-semibold mb-2"><i class="bi bi-clipboard-check text-primary me-2"></i>Your record</div>
-                    <ul class="small text-body-secondary ps-3 mb-0">
-                      <li>Tickets, accidents and claims in the past 3 years</li>
-                      <li>Years insured in Ontario</li>
-                      <li>Your present insurance company</li>
-                      <li>Your Uber web site</li>
-                    </ul>
+
+                  <h3 class="h6 fw-semibold mb-3"><i class="bi bi-clipboard-check text-primary me-2"></i>Your record</h3>
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-4"><label class="form-label fw-medium" for="f-tickets">Number of traffic tickets in past 3 years</label><input class="form-control" type="number" min="0" id="f-tickets" name="Tickets past 3 years"></div>
+                    <div class="col-md-4"><label class="form-label fw-medium" for="f-accidents">Number of accidents in past 3 years</label><input class="form-control" type="number" min="0" id="f-accidents" name="Accidents past 3 years"></div>
+                    <div class="col-md-4"><label class="form-label fw-medium" for="f-claims">Number of insurance claims in past 3 years</label><input class="form-control" type="number" min="0" id="f-claims" name="Claims in past 3 years"></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-years">Number of years insured in Ontario</label><input class="form-control" type="number" min="0" id="f-years" name="Years insured in Ontario"></div>
+                    <div class="col-md-6"><label class="form-label fw-medium" for="f-insurer">Your present insurance company</label><input class="form-control" type="text" id="f-insurer" name="Present insurance company"></div>
+                    <div class="col-12"><label class="form-label fw-medium" for="f-uber">Your Uber web site</label><input class="form-control" type="text" id="f-uber" name="Uber web site"></div>
                   </div>
-                </div>
-                <div class="d-flex flex-wrap gap-2">
-                  <a class="btn btn-primary rounded-pill px-4" href="https://jdsmithinsurance.com/uberx.htm#request" target="_blank" rel="noopener">Fill in the quote form <i class="bi bi-box-arrow-up-right small ms-1"></i></a>
-                  <a class="btn btn-outline-primary rounded-pill px-4" href="tel:18009177283"><i class="bi bi-telephone me-2"></i>Or call 1-800-917-7283</a>
-                </div>
+
+                  <p class="alert alert-warning rounded-4 small d-flex gap-2 mb-3" id="submit-note"><i class="bi bi-info-circle"></i><span>Online submission is coming soon. For now, please call us at <a class="alert-link" href="tel:18009177283">1-800-917-7283</a> and we'll quote you by phone.</span></p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary rounded-pill px-4" type="submit" disabled aria-describedby="submit-note">Submit</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4" type="reset">Clear</button>
+                    <a class="btn btn-link px-2" href="tel:18009177283"><i class="bi bi-telephone me-2"></i>Or call 1-800-917-7283</a>
+                  </div>
+                  <div data-form-status hidden role="status"></div>
+                </form>
               </div>
-              <!-- The quote form is not rebuilt here yet: the live form posts over plain http:// to formmail.asp and its
-                   recipient needs confirming (STAKEHOLDER_NOTES 4.7). Once the office confirms an https endpoint, replace
-                   the checklist above with this form (field names match the live form) and point the CTAs at #quote-form.
-              <form class="row g-3" action="https://www.jdsmithinsurance.com/formmail.asp" method="post">
-                <input type="hidden" name="_subject" value="Request For Ride Sharing Insurance">
-                <input type="hidden" name="_redirect" value="https://www.jdsmithinsurance.com/jds-quote_thank_you.htm">
-                <div class="col-md-6"><label class="form-label" for="f-name">Your name *</label><input class="form-control" id="f-name" name="Name" autocomplete="name" required></div>
-                <div class="col-md-6"><label class="form-label" for="f-address">Address *</label><input class="form-control" id="f-address" name="Address" autocomplete="street-address" required></div>
-                <div class="col-md-6"><label class="form-label" for="f-city">City *</label><input class="form-control" id="f-city" name="City" autocomplete="address-level2" required></div>
-                <div class="col-md-6"><label class="form-label" for="f-postal">Postal code *</label><input class="form-control" id="f-postal" name="Postal Code" autocomplete="postal-code" required></div>
-                <div class="col-md-6"><label class="form-label" for="f-email">Email address *</label><input class="form-control" id="f-email" name="email" type="email" autocomplete="email" required></div>
-                <div class="col-md-6"><label class="form-label" for="f-phone">Cell phone number *</label><input class="form-control" id="f-phone" name="Cellphone Number" type="tel" autocomplete="tel" required></div>
-                <fieldset class="col-12">
-                  <legend class="form-label fs-6">Hours of ride-sharing per week *</legend>
-                  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="Ride Sharing Activity" id="f-h1" value="Under 10 hours" required><label class="form-check-label" for="f-h1">Under 10 hours</label></div>
-                  <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="Ride Sharing Activity" id="f-h2" value="Max 20 hours"><label class="form-check-label" for="f-h2">Maximum of 20 hours</label></div>
-                </fieldset>
-                <div class="col-md-4"><label class="form-label" for="f-make">Vehicle make *</label><input class="form-control" id="f-make" name="Vehicle Make" required></div>
-                <div class="col-md-4"><label class="form-label" for="f-model">Vehicle model *</label><input class="form-control" id="f-model" name="Vehicle Model" required></div>
-                <div class="col-md-4"><label class="form-label" for="f-year">Vehicle year *</label><input class="form-control" id="f-year" name="Vehicle Year" inputmode="numeric" required></div>
-                <div class="col-md-4"><label class="form-label" for="f-tickets">Traffic tickets, past 3 years</label><input class="form-control" id="f-tickets" name="Tickets past 3 years" type="number" min="0"></div>
-                <div class="col-md-4"><label class="form-label" for="f-accidents">Accidents, past 3 years</label><input class="form-control" id="f-accidents" name="Accidents past 3 years" type="number" min="0"></div>
-                <div class="col-md-4"><label class="form-label" for="f-claims">Insurance claims, past 3 years</label><input class="form-control" id="f-claims" name="Claims in past 3 years" type="number" min="0"></div>
-                <div class="col-md-6"><label class="form-label" for="f-years">Years insured in Ontario</label><input class="form-control" id="f-years" name="Years insured in Ontario" type="number" min="0"></div>
-                <div class="col-md-6"><label class="form-label" for="f-vehicles">Vehicles in the household</label><input class="form-control" id="f-vehicles" name="Vehicles in household" type="number" min="1"></div>
-                <div class="col-md-6"><label class="form-label" for="f-insurer">Your present insurance company</label><input class="form-control" id="f-insurer" name="Present insurance company"></div>
-                <div class="col-md-6"><label class="form-label" for="f-uber">Your Uber web site</label><input class="form-control" id="f-uber" name="Uber web site" type="url"></div>
-                <div class="col-md-6"><label class="form-label" for="f-time">Best time to call you</label><input class="form-control" id="f-time" name="Best Call Time"></div>
-                <div class="col-12"><button class="btn btn-primary rounded-pill px-4" type="submit">Send</button></div>
-              </form>
-              -->
             </section>
 
           </div>
@@ -242,7 +225,7 @@
             <h2 class="h3 fw-bold mb-2">Ready to drive with peace of mind?</h2>
             <p class="text-white text-opacity-75 mb-4">Fill in the short quote form, or call us at 1-800-917-7283. Our staff will assist you with pricing and coverage.</p>
             <div class="d-flex flex-wrap gap-3">
-              <a class="btn btn-light btn-lg rounded-pill px-4 fw-semibold" href="https://jdsmithinsurance.com/uberx.htm#request" target="_blank" rel="noopener">Fill in the quote form <i class="bi bi-box-arrow-up-right small ms-1"></i></a>
+              <a class="btn btn-light btn-lg rounded-pill px-4 fw-semibold" href="#quote-form">Fill in the quote form <i class="bi bi-arrow-down ms-1"></i></a>
               <a class="btn btn-outline-light btn-lg rounded-pill px-4" href="tel:18009177283"><i class="bi bi-telephone me-2"></i>1-800-917-7283</a>
             </div>
           </div>
@@ -250,13 +233,12 @@
             <div class="bg-white text-body rounded-4 p-4 shadow">
               <div class="fw-semibold mb-2">JD Smith &amp; Associates Insurance Brokers Inc.</div>
               <address class="small text-body-secondary mb-3" style="font-style: normal">105 West Beaver Creek Rd., Richmond Hill, ON L4B 1C6</address>
-              <ul class="list-unstyled small mb-3">
+              <ul class="list-unstyled small mb-0">
                 <li class="mb-1"><i class="bi bi-telephone text-primary me-2"></i>Toll free <a href="tel:18009177283">1-800-917-7283</a></li>
                 <li class="mb-1"><i class="bi bi-telephone text-primary me-2"></i>Local <a href="tel:9057647868">905-764-7868</a></li>
                 <li class="mb-1"><i class="bi bi-printer text-primary me-2"></i>Fax 905-764-9618</li>
                 <li><i class="bi bi-clock text-primary me-2"></i>Mon–Thu 9:00–4:00, Fri 9:00–3:00</li>
               </ul>
-              <a class="btn btn-primary rounded-pill px-4" href="../about/jds-staff.htm">Contact your broker</a>
             </div>
           </div>
         </div>
@@ -281,5 +263,6 @@
   <site-footer></site-footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../../js/quote-forms.js"></script>
 </body>
 </html>

@@ -48,6 +48,11 @@
 }
 
 /* ===== Navigation ===== */
+/* keep the header and its dropdowns above sticky page content (.sticky-*-top and .position-sticky
+   share Bootstrap's 1020 and would otherwise paint over it); stays below modals/offcanvas (1040+) */
+.site-header { z-index: 1035; }
+/* the skip link sits under the header, so lift it above it while focused */
+.visually-hidden-focusable:focus { z-index: 1036 !important; }
 @media (min-width: 992px) {
   /* [data-bs-popper] matches Bootstrap's own `left: 0` rule so this one wins */
   .dropdown-mega,
