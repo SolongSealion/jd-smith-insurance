@@ -2,3 +2,9 @@
 .claude/
 wrangler.jsonc
 content/
+ai-reference/
+CLAUDE.md
+.gitignore
+.assetsignore
+images/original/
+images/suggested/

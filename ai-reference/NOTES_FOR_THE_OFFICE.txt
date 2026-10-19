@@ -1,0 +1,484 @@
+NOTES FOR THE OFFICE: THE NEW JD SMITH WEBSITE
+Updated 19 October 2026
+
+====================================================================
+ABOUT THESE NOTES
+====================================================================
+
+There are two websites in these notes:
+
+  - The CURRENT website is the one people see today at
+    jdsmithinsurance.com. It was built by your old web company
+    (Interad / WSI).
+
+  - The NEW website is the one we have rebuilt for you. It has the
+    same pages and information, but with a modern look, and it works
+    well on phones. It is NOT online yet. Visitors still see the
+    current website until the switch-over (see Part 5).
+
+While rebuilding every page, we found things that only the office can
+answer or send. They are listed below, most urgent first. Each item
+says what we need from you.
+
+You do not need to read the whole document at once. If you only have
+five minutes, read Part 1.
+
+
+====================================================================
+PART 1. URGENT: THE CURRENT WEBSITE IS LOSING QUOTE REQUESTS
+====================================================================
+
+1.1 Three quote forms on the current website do not work
+
+    What is happening
+    Some pages on the current website have a form that visitors fill
+    in and send to the office. For three of these forms, when a
+    visitor presses "Send", the request goes nowhere:
+
+      - the business quote request form
+      - the solar & wind quote form
+      - the UberX (ride-sharing) quote form
+
+    These forms were set up to pass requests through a service that
+    belonged to your old web host. That service no longer exists. So
+    the visitor gets an error message, and the office is never told
+    that someone wanted a quote. This has probably been going on for
+    some time.
+
+    What we need from you
+    a) Please tell us which email address should receive each kind of
+       request. Today they are set to go to:
+         - business quote requests: manager@jdsmithinsurance.com
+         - solar & wind requests:   sales@jdsfinancial.ca
+         - UberX requests:          badams@interad.ca
+       The last one is a person at your old web company, not someone
+       at the office. We suggest changing it to an office address.
+    b) Please let us set up a new, secure service that sends these
+       requests to your email (for example a service called
+       Formspree). If whoever runs your new website hosting already
+       offers this, we can use theirs instead. Either way, you only
+       need to say yes and give us the email addresses in (a).
+    c) Until the forms work again: on the new website, the UberX form
+       already shows a "please call us" message instead of a Send
+       button. Should the business and solar & wind forms do the
+       same?
+    d) On the current website: please ask Interad / WSI to put a
+       "please call us at 1-800-917-7283" note on these forms now, so
+       visitors stop sending requests that never arrive.
+
+1.2 The online auto quote does not work
+
+    What is happening
+    The "Get an online auto quote" buttons send visitors to a quoting
+    tool run by a company called Applied Systems, under your account
+    "JDSMITH". The tool no longer gives visitors a quote. This is the
+    main way people get an auto quote online, and it is on the
+    current website and on the new one.
+
+    What we need from you
+    Please call or email Applied Systems and ask:
+      - Is the JDSMITH account still active?
+      - Has the link for the online auto quote changed?
+    Send us the new link and we will update every page. Until then,
+    visitors can still call 1-800-917-7283.
+
+1.3 The online business quote tool may not be working
+
+    What is happening
+    The "Quote online" buttons on the small business pages (special
+    events, barbers, fitness, photography and so on) go to an online
+    quote-and-buy tool run by APOLLO Insurance, under an account
+    called "jdsmithinsurance". When we tested it, it said "This page
+    does not exist". This may only be because it blocked our test
+    computer, or the account may have stopped working.
+
+    This tool is separate from your website. Moving to the new
+    website will not break it or fix it. But whoever holds the APOLLO
+    login controls who sees the quotes and sales made through it.
+
+    What we need from you
+    1. Test it: on an office computer, go to
+         jdsmithinsurance.securequotebot.com/special-event
+       and start a quote. Does it work? Does it show JD Smith's name
+       and logo?
+    2. Find out who has the APOLLO login. Ask inside the office first
+       (Mark Smith, Haig Papazian, the commercial team), then
+       Interad / WSI.
+    3. If nobody has it, contact APOLLO (apollocover.com, under
+       "Brokers" or "Contact us") from an office email address, and
+       ask them to make an office manager the administrator of the
+       "jdsmithinsurance" account. They will probably ask for your
+       RIBO licence and the brokerage's name and address.
+    4. Once you are in, check that:
+       - only office staff have access (remove the old web company
+         if they are listed);
+       - quote and sale notices go to an office email address;
+       - the brokerage name, logo, phone number and address are
+         correct;
+       - the prices match what you want to charge (see Part 3.1).
+
+
+====================================================================
+PART 2. THINGS WE NEED YOU TO SEND
+====================================================================
+
+The new website is already built to take each of these. When they
+arrive, we put them in, and nothing else needs to change.
+
+2.1 Your logo (please decide first)
+    The current website uses three different JDS logos:
+      - "JDS / JDSmithInsurance.com / Auto, Home & Business
+        Solutions" (at the top of every page)
+      - "JDS Financial Group" (on the Core values page)
+      - "JDS / For the Faith Community / 1-800-917-SAVE"
+    None of them is sharp enough for today's screens.
+    Please:
+      - choose ONE main logo,
+      - tell us if the Financial Group and Faith Community versions
+        should still be used, and
+      - ask your designer or printer for the logo "as a vector file"
+        (SVG, AI, EPS or PDF). If they don't have one, a large PNG
+        image with a see-through background will do.
+
+2.2 Staff and office photos
+    The photos on the current website are small and look blurry on
+    the new one, especially on big screens and phones. Please send
+    the ORIGINAL photos, full size, straight from the camera or phone:
+      - headshots of JD Smith, Mark Smith, Jessica Antoniel, Giuseppe
+        Simmarano and Rocco Scarano, and of any other staff who would
+        like a photo (staff without a photo show their initials)
+      - the group photos: full staff (2023) and commercial team
+        (September 2023)
+      - the office: the outside of the building, the lobby, the
+        boardroom, the office dog and the rainbow over the building
+      - staff and community life: food bank day, Operation Christmas
+        Child shoeboxes, the baseball team, the hockey sponsor
+        banner, staff lunches, staff night out, the Christmas dinner
+        theatre, and Karen's and Dorret's retirements
+      - the large photo at the top of the Contact page
+
+2.3 Staff video messages
+    The current website has three video messages. They use an old
+    video format (Flash) that today's web browsers can no longer
+    play:
+      - "A message from Rocco Scarano & Dr. J.D. Smith"
+      - "A message from Dr. J.D. Smith" (Canadian Welding Bureau page)
+      - "A message from Mark Smith & Dr. J.D. Smith" (Renewable
+        Energy page)
+    Please send the original video files (for example from the
+    person who filmed or edited them), or record new messages. If
+    any of them should be dropped, just tell us. If the originals
+    can't be found, we can convert the old files, but the quality
+    will be poor.
+
+2.4 Customs bond application
+    The Customs Bonds page asks visitors to "complete our 2-page
+    application", but the form is not on the website. Please send it
+    (a PDF or a scan is fine).
+
+2.5 Mortgage insurance wording
+    The Mortgage Insurance page on the current website is one large
+    picture with words in it. Search engines and people using screen
+    readers can't read it. Please send the wording as text (an email
+    or Word document is fine).
+
+2.6 Insurer logos
+    Some insurance company logos on the website are old: ACE INA is
+    now Chubb, and Economical is now Definity. If you have current
+    logos from the insurers, please send them. Otherwise we can find
+    them on the insurers' own websites.
+
+
+====================================================================
+PART 3. QUESTIONS: PLEASE PICK ONE ANSWER
+====================================================================
+
+The current website says different things in different places. The
+new website has to say one thing. For each item, please tell us
+which is right.
+
+3.1 Starting prices
+    The Small Business overview page and each product's own page give
+    different starting prices:
+      - Special events:          $100  or  $125?
+      - Barbers & hairstylists:  $200  or  $275?
+    (The $275 for barbers may have been copied by mistake from the
+    Health & Fitness page.)
+    The new website shows $100 and $200 for now. Please also check
+    the prices in the APOLLO quote tool (Part 1.3) match.
+
+3.2 J.D. Smith's phone extension: 223 or 234?
+    The Staff List says 234. The Life, Group Life, Mortgage and
+    Critical Illness pages say 223. No one else on the Staff List has
+    223. Which is right?
+
+3.3 How many brokers?
+    One page says 24, another 34, and another "over 30". Which number
+    should every page use?
+
+3.4 Contractors' discount for TCA / MCA members
+    The Contractors page says "an additional 20% discount" at the top
+    but "10% to 15%" further down. The Landscapers page also says 10%
+    to 15%. Which is right? The new website uses 10% to 15% for now.
+
+3.5 Number of franchises
+    One page says "more than 50 franchises", another "more than 380
+    franchise locations". Which is right?
+
+3.6 Welding program savings (Canadian Welding Bureau)
+    The pages say "over $2,167,000" and "over $1,980,000" in yearly
+    premium savings. Which figure, and for which year?
+
+3.7 Emergency claim phone numbers
+    - Wawanesa: the Claims page says 1-844-929-2637, the Staff List
+      says 1-800-268-7300. Which is right?
+    - The after-hours line for business claims (Crawford Adjusters)
+      is listed as 1-888-224-5677, but that is also Ecclesiastical's
+      claims number. What is Crawford's correct number?
+    - The current Claims page also lists Dominion, Chieftain and
+      Perth. Should they be on the new one?
+
+3.8 Core values: 4 or 7?
+    Dr. Smith's biography says "our 7 core values", but the Core
+    Values page lists 4. Which are the 7? Or should the biography
+    just say "our core values"? (The new website says "our core
+    values" with no number for now.)
+
+3.9 Staff and phone numbers
+    a) Mark Smith's extension: the Car & Truck Fleets page says 245,
+       but the Staff List says 228 (245 is Tom Larha's). We have used
+       228 on the new website. Please confirm.
+    b) Are Kathy Turner (ext. 207) and Caroline Tang (ext. 206) still
+       with the firm? The Application Forms page lists them, but the
+       Staff List gives those extensions to Aaron Paisley and
+       Giuseppe Simmarano.
+    c) Is Jo-Anne Griffiths (ext. 240, Canadian Welding Bureau page)
+       still with the firm? She is not on the Staff List.
+    d) Is John Bell (ext. 255) still the contact for Charity Village
+       members?
+    e) Do these direct phone lines still work? They are on only one
+       page each, so the new website doesn't use them yet:
+         - Mark Smith      905-907-1418
+         - Rocco Scarano   905-907-1417
+         - Haig Papazian   905-907-9210
+
+3.10 Who should visitors call for a quote?
+    Several pages name a specific broker to call for a quote, but the
+    "Get a free quote" page sends everyone to the main number,
+    1-800-917-7283. Should it send them to the named broker instead?
+      - Retail & wholesale: Tom Larha, ext. 245
+      - Solar & wind: Mark Smith, ext. 228
+      - Car & truck fleets: Tom Larha, ext. 245
+      - Windows & doors: Mark Smith, ext. 228, or Tom Larha, ext. 245
+      - Contractors: Rocco Scarano, ext. 215, Mark Smith, ext. 228,
+        or Tom Larha, ext. 245
+      - Non-profits: Mark Smith, ext. 228, or J.D. Smith
+
+3.11 Insurance companies list
+    The "Broker Advantage" page and the "Insurance Companies" page
+    list different insurers. For example, Sovereign is on one list
+    but not the other. The Dominion is now part of Travelers, which
+    already has its own entry. Please send the current list of
+    insurers you work with.
+
+3.12 Life and mortgage insurance
+    The Life Insurance page shows an Empire Life mortgage table based
+    on a 2008 survey, while the Mortgage Insurance page now shows
+    Wawanesa Life. Which product should the website show?
+
+3.13 Cyber insurance prices
+    The prices say "plus 8% PST". Is that wording correct?
+
+
+====================================================================
+PART 4. CONTENT: KEEP, UPDATE OR REMOVE?
+====================================================================
+
+4.1 Stories we have left off the new website (please confirm)
+    a) "The Stella Awards" (Claims page): this list of silly
+       lawsuits is a well-known internet hoax. Apart from the
+       McDonald's coffee case, none of the cases really happened.
+    b) "Forgotten Information on 9/11" (News page): its two stories
+       are well-known false emails that make claims about real,
+       named people.
+    We recommend keeping both off the website, and taking them off
+    the current website too. Do you agree?
+
+4.2 Old videos and slide shows on the News & Humour page
+    There are 15 old videos and slide shows (for example the
+    seatbelt commercial, the kitchen fire video and "Russia's tunnel
+    of death") in formats most browsers can no longer play. Visitors
+    have to download them. They are still stored on the current
+    website, so they will disappear when it is switched off.
+    Should we:
+      - keep them and convert them to formats that play in any
+        browser (we would copy them from the current website), or
+      - replace the useful safety ones (kitchen fire, seatbelt) with
+        current videos on YouTube, or
+      - remove them?
+
+4.3 Older articles with out-of-date facts
+    Several articles were written years ago and contain old figures.
+    The new website keeps the articles, with a note that they come
+    from the archive, but leaves out the figures we know are out of
+    date. Please tell us which to keep, update or remove:
+      - "How to drive safe and save big bucks" (Dr. J.D. Smith):
+        Toronto average premium of about $1,850, "over 600 cars a
+        week are stolen", the pastor's $15,967 premium, and "facility
+        rates are about $4,000". Does J.D. still recommend Boomerang
+        tracking for every car over $45,000?
+      - "20 Hot Topics": 1999 boating rules, the 1998 ice storm and an
+        old bank survey. Also, the page has only 19 topics. Is one
+        missing, or should the title say 19?
+      - "Accident Benefits Explained" and the auto chart on the
+        Claims page describe the 2016 rules, not the July 2026
+        changes.
+      - The "most stolen cars" list uses 2022 figures.
+
+4.4 Ontario auto reform fact sheet
+    The government's fact sheet has a column for coverage limits
+    that just says "Insurers to fill in". The new website says "Set
+    by your insurer". Would you like real limits shown? If so, from
+    which insurer?
+
+4.5 Reflection & encouragement page
+    a) The current page was written "for these difficult Covid-19
+       times". The new page leaves the Covid-19 wording out. Is that
+       OK?
+    b) The Franklin Graham messages it linked to no longer exist.
+       The new page links to billygraham.ca instead. Are there newer
+       messages you would like to share?
+    c) Does Dario still send his "Thoughts and comments" by email?
+
+4.6 Missing or broken items on the News & Humour page
+    Some items link to videos or pages that no longer exist (two
+    YouTube videos, the Goderich tornado story, "Outrageous Celebrity
+    Homes", "The Senior Shopper", the smart parrot video and the
+    Christmas cards). Do you have replacements, or should they be
+    removed? Also, "Protect Your Credit" links to an article about
+    driving. Is there a credit article that went missing?
+
+4.7 Add the Campground Application to the "Get a free quote" page?
+    (Yes / No)
+    It is a separate form from the Day & Night Camp form, and it is
+    not on the website yet.
+
+4.8 The business quote form
+    a) It lists seven forms that don't exist: Business Interruption,
+       Commercial Property, Employee Dishonesty, Liability, Sports,
+       Retail Store, and T.V. & Magazine Liability.
+       Should we make these forms, or remove them from the list?
+    b) We added three questions to the wind power form: number of
+       turbines, make and model, and tower height.
+       Keep them? (Yes / No)
+
+
+====================================================================
+PART 5. BEFORE THE CURRENT WEBSITE IS SWITCHED OFF:
+        YOUR WEB ADDRESS AND EMAIL
+====================================================================
+
+This part is mainly for whoever looks after your IT. We have a more
+detailed technical checklist we can give them.
+
+5.1 What you need to know
+    - Your web address, jdsmithinsurance.com (called the "domain
+      name"), is paid up until December 2030.
+    - The settings for that address are controlled today by your old
+      web company, Interad / WSI. Their contact is
+      badams@interad.ca.
+    - IMPORTANT: the same address also runs the office EMAIL. If the
+      address is moved carelessly, office email can stop working.
+      Nothing should be changed until all the email settings have
+      been copied over first.
+
+5.2 Steps
+    1. Ask Interad / WSI, in writing:
+       - Who is listed as the OWNER of jdsmithinsurance.com? It must
+         be JD Smith & Associates Insurance Brokers Inc., not the web
+         company. If it isn't, ask them to change it.
+       - For a full copy of the address's technical settings (your IT
+         person will know this as the "DNS zone file").
+    2. Choose a new company to hold the address (for example your new
+       website host, or a company such as Cloudflare, Namecheap or
+       GoDaddy). Open the account in the office's name, using an
+       email address that is NOT @jdsmithinsurance.com (for example a
+       Gmail address). That way you can still get into the account
+       if office email ever stops.
+    3. Your IT person copies all the email settings to the new
+       company first, and checks them with Microsoft 365 and
+       Barracuda (your email providers).
+    4. Ask Interad / WSI for the "transfer code" for the address.
+    5. Start the transfer with the new company, using that code. It
+       takes up to a week. Approve the confirmation email when it
+       arrives.
+    6. Test that office email still sends and receives.
+    7. Then we switch the address over to the new website. We will
+       keep the current website running for a few weeks, in case
+       something was missed.
+    8. We will also make sure old links (from Google, bookmarks and
+       insurers' websites) lead to the right page on the new website.
+
+    If Interad / WSI will not hand over the address, the office, as
+    the owner, can go directly to the company behind it (Tucows),
+    with proof that it owns the business.
+
+5.3 Questions
+    - Who is your contact at Interad / WSI, and is your agreement
+      with them ending?
+    - Who at the office should keep the logins for the web address
+      and for APOLLO (Part 1.3)?
+    - Where will the new website be hosted? (If you don't have a
+      preference, we can suggest options.)
+
+5.4 Website visitor statistics (Google Analytics)
+    The new website counts visitors with the same Google Analytics
+    account as the current one. We don't know who owns that account:
+    the office, or Interad / WSI.
+    - Please check whether anyone at the office can log in to Google
+      Analytics for jdsmithinsurance.com. If only Interad / WSI can,
+      ask them to give the office full access before the switch-over.
+    - Google Analytics stores small files ("cookies") in visitors'
+      browsers. The website does not ask visitors about this, and your
+      privacy statement mentions a cookie setting the website doesn't
+      have. Would you like us to add a short cookie notice, or stop
+      counting visitors?
+
+5.5 Three documents still on the current website only
+    These are linked from the new website, but the files are still on
+    the current one, so the links will stop working at the switch-over:
+      - the directors & officers (D&O) news article (Commercial page)
+      - the Canadian Welding Bureau flyer (Welding & steel page)
+      - the Charity Village group discounts page (Non-profits page)
+    We can copy the first two to the new website. For the Charity
+    Village page: is the 40% discount for Charity Village members still
+    offered? If yes, we will rebuild the page; if not, we will remove
+    the link.
+
+
+====================================================================
+FOR YOUR INFORMATION: ALREADY FIXED ON THE NEW WEBSITE
+====================================================================
+
+No action needed. These problems are on the current website only.
+They go away when the new website goes live.
+
+  - The wrong toll-free number on the Retail & Wholesale page
+    (1-800-817-7283 instead of 1-800-917-7283).
+  - Mark Smith's extension on the Car & Truck Fleets page (see 3.9a).
+  - Broken links: several pages, application forms and menu links
+    that led to "page not found".
+  - Wrong labels on the business quote form ("Camp Insurance"
+    opened the Campground form, and "Non Profit" opened an old
+    church form).
+  - Pages with wrong or missing titles, and a typo ("Barder").
+  - The Home Insurance page promised an online quote that doesn't
+    exist. It now says to call.
+  - Every application form is now listed in one place, on the "Get
+    a free quote" page.
+  - Personal email addresses and chain-email lines ("forward this to
+    10 friends") have been taken out of the stories.
+  - (New website, final check) The photo galleries on the Marine
+    cargo, School and Church pages overlapped on phones; they now fit
+    the screen. The "church signs" links now open the pictures on the
+    new News & Humour page instead of the current website.

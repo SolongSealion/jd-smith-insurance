@@ -106,6 +106,7 @@
 .prose-article > p:first-child { font-size: 1.2rem; color: var(--bs-secondary-color); }
 .prose img { height: auto; }
 .prose figure img { max-height: 460px; width: auto; }
+.prose figure img.photo-tile { width: 100%; max-height: none; } /* gallery tiles fill their column (marine, school, church galleries) */
 
 /* ===== Lists ===== */
 .list-check .bi { margin-top: .2rem; }
@@ -203,6 +204,15 @@ img.staff-avatar { object-fit: cover; object-position: 50% 20%; background: var(
 .quote-warm { font-size: 1.35rem; line-height: 1.45; }
 .side-photo { width: 100%; height: auto; aspect-ratio: 3 / 2; }
 @media (min-width: 576px) { .side-photo { width: 11rem; aspect-ratio: 4 / 5; } }
+/* Commercial team photo (338x242 source, so never wider than that). Side by side with its text from sm up:
+   .team-photo is the image half of a flex-sm-row card, .team-photo-float floats it inside a card body. */
+/* Never cropped: always the full 338:242 frame, so nobody in the group is cut off. */
+.team-photo, .team-photo-float { display: block; width: 100%; height: auto; aspect-ratio: 338 / 242; }
+.team-photo-float { border-radius: .75rem; margin-bottom: 1rem; }
+@media (min-width: 576px) {
+  .team-photo { width: min(45%, 338px); flex-shrink: 0; align-self: flex-start; margin: 1.5rem 0 1.5rem 1.5rem; border-radius: .75rem; }
+  .team-photo-float { float: left; width: min(45%, 338px); margin: .25rem 1.5rem .75rem 0; }
+}
 
 /* ===== Footer ===== */
 .footer-heading {
