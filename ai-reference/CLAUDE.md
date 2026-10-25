@@ -38,6 +38,12 @@ since 1979), shows the main contact number, and sends visitors to the right plac
 categories (Personal, Small Business, Commercial, Life & Health), the Get a free quote page, and the
 quick actions (report a claim, make a payment, find your broker). It gives an overview and points elsewhere.
 It does not hold the full detail of each product.
+On phones only (below 768px, since 2026-10-25, from client feedback that the first look wasn't grabbing and took too much
+scrolling) the hero is a brand-blue band like the original site's header, with the photo behind the heading, and a 3×3 icon
+grid of the main sections under the buttons (`.home-icons`: Home & Auto, Small Business, Commercial, Life & Health,
+Evangelical Family, Tips & advice → the Helpful resources card `#resources`, Report a claim, Make a payment, Contact us). The
+quick actions row is hidden there (the grid has them) and the service cards show their photo as a thumbnail beside the text.
+The styles are the "Homepage on phones" block in `css/styles.css`. Tablet and desktop are unchanged.
 
 ### Get a free quote — `pages/quotes/jds-get_a_quote.htm`
 This page is only for direct links to quotes. Each item links straight to its quote method: the online
