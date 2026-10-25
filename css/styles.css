@@ -214,6 +214,131 @@ img.staff-avatar { object-fit: cover; object-position: 50% 20%; background: var(
   .team-photo-float { float: left; width: min(45%, 338px); margin: .25rem 1.5rem .75rem 0; }
 }
 
+/* ===== Homepage on phones (index.html, below 768px only; tablet and desktop are unchanged) =====
+   The hero becomes a brand-blue band like the original site's header, with the photo behind the heading,
+   and .home-icons puts every main section one tap away on the first screen. */
+@media (max-width: 767.98px) {
+  .home-hero {
+    --home-hero-photo-h: 19.25rem;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background-color: #00293d !important;
+    background-image: linear-gradient(180deg, #006699 0, #006699 var(--home-hero-photo-h), #00293d 100%);
+    /* the tall top padding leaves the photo some room above the badge and heading */
+    padding: 3.75rem 0 1.75rem !important;
+  }
+  /* g-5 is wider than the phone container padding and made the page scroll sideways */
+  .home-hero .row { --bs-gutter-x: 2rem; }
+  /* the photo column becomes the band's backdrop: full width across the top, washed in brand blue */
+  .home-hero-photo {
+    position: absolute;
+    inset: 0 0 auto;
+    height: var(--home-hero-photo-h);
+    margin: 0 !important;
+    padding: 0;
+  }
+  .home-hero-photo .ratio { height: 100%; border-radius: 0 !important; box-shadow: none !important; }
+  .home-hero-photo .ratio::before { display: none; }
+  .home-hero-photo img { object-position: 60% 35%; }
+  /* darker on the left behind the heading, light on the right so the thumbs-up shows, solid blue at the bottom */
+  .home-hero-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(0, 102, 153, 0) 60%, #006699 100%),
+      linear-gradient(90deg, rgba(0, 41, 61, .8) 0%, rgba(0, 51, 77, .55) 55%, rgba(0, 61, 92, .1) 100%);
+  }
+  /* text above the photo; the lead and the ticks move below the icon grid */
+  .home-hero-text { position: relative; z-index: 1; display: flex; flex-direction: column; }
+  .home-hero-text > .badge {
+    align-self: flex-start;
+    color: #fff !important;
+    background: rgba(255, 255, 255, .14) !important;
+    border-color: rgba(255, 255, 255, .35) !important;
+    padding: .4rem .8rem !important;
+    margin-bottom: .75rem !important;
+  }
+  /* max-width breaks it as "Insurance with a / personal touch, / since 1979." to keep it off the thumbs-up */
+  .home-hero h1 { max-width: 9.6em; font-size: 1.85rem; text-shadow: 0 1px 12px rgba(0, 41, 61, .5); }
+  .home-hero .lead { order: 1; font-size: 1rem; color: rgba(255, 255, 255, .85) !important; margin: 1.5rem 0 0 !important; }
+  .home-hero .home-hero-ticks { order: 2; color: rgba(255, 255, 255, .85) !important; margin-top: .75rem !important; }
+  .home-hero-ticks .text-primary { color: #8fd0ef !important; }
+  /* the two buttons side by side (stacked on phones narrower than about 350px), white on blue like .cta-band */
+  .home-hero .home-hero-actions {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(9.75rem, 1fr));
+    gap: .5rem !important;
+  }
+  .home-hero-actions .btn {
+    --bs-btn-font-size: .95rem;
+    --bs-btn-padding-y: .65rem;
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+    white-space: nowrap;
+  }
+  .home-hero-actions .bi { margin-right: .35rem !important; }
+  .home-hero .btn-primary {
+    --bs-btn-color: #00527a;
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: #fff;
+    --bs-btn-hover-color: #00293d;
+    --bs-btn-hover-bg: #e6f0f5;
+    --bs-btn-hover-border-color: #e6f0f5;
+    --bs-btn-active-color: #00293d;
+    --bs-btn-active-bg: #cce0eb;
+    --bs-btn-active-border-color: #cce0eb;
+    font-weight: 600;
+  }
+  .home-hero .btn-outline-secondary {
+    --bs-btn-color: #fff;
+    --bs-btn-border-color: rgba(255, 255, 255, .6);
+    --bs-btn-hover-color: #00293d;
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-color: #00293d;
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #fff;
+  }
+
+  /* icon grid of the main sections: 3 across, white tiles with the site's .icon-badge */
+  .home-icons { margin-top: 1.25rem; }
+  .home-icons ul { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 1fr; gap: .625rem; }
+  .home-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+    height: 100%;
+    padding: .75rem .35rem .65rem;
+    border-radius: 1rem;
+    background: #fff;
+    color: var(--bs-body-color);
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 .35rem .9rem rgba(0, 41, 61, .25);
+    transition: transform .15s ease, color .15s ease;
+  }
+  .home-icons a:hover { color: var(--bs-primary); transform: translateY(-2px); }
+  .home-icons a:active { transform: scale(.97); }
+  .home-icons a:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+  .home-icons .icon-badge { width: 2.6rem; height: 2.6rem; border-radius: .8rem; font-size: 1.25rem; }
+  .home-icons .bi-box-arrow-up-right { font-size: .7em; color: var(--bs-secondary-color); }
+
+  /* "How can we help?": the photo is a thumbnail beside the text instead of a full-width banner */
+  .service-card { flex-direction: row; }
+  .service-card .ratio { flex: 0 0 6.5rem; }
+  .service-card .ratio::before { display: none; }
+  .service-card .card-body { padding: 1rem 1.1rem !important; }
+  .service-card .card-title { font-size: 1.05rem; margin-bottom: .35rem; }
+  .service-card .card-text { font-size: .875rem; margin-bottom: .5rem; }
+  .service-card .card-body > span:last-child { font-size: .875rem; }
+}
+
 /* ===== Footer ===== */
 .footer-heading {
   font-size: .8rem;
